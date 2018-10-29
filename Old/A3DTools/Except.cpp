@@ -1,0 +1,27 @@
+// Except.cpp: implementation of the CA3DException class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "A3DTools.h"
+#include "Except.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CA3DException::CA3DException()
+{
+
+}
+
+CA3DException::~CA3DException()
+{
+
+}

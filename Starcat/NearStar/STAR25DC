@@ -1,0 +1,672 @@
+                                                        NSSDC/WDC-A-R&S  82-03
+
+
+
+
+
+
+
+
+                DOCUMENTATION FOR THE MACHINE-READABLE VERSION
+                 OF THE CATALOGUE OF STARS WITHIN 25 PARSECS
+                                  OF THE SUN
+
+
+
+
+
+
+
+
+
+
+
+                             Wayne H. Warren, Jr.
+
+
+
+
+
+
+
+
+
+
+
+                                 January 1982
+
+
+
+
+
+
+
+
+
+
+
+                 National Space Science Data Center (NSSDC)/
+          World Data Center A for Rockets and Satellites (WDC-A-R&S)
+                National Aeronautics and Space Administration
+                         Goddard Space Flight Center
+                             Greenbelt, MD  20771
+
+
+
+
+                            TABLE OF CONTENTS
+
+
+Section 1 - INTRODUCTION ..........................................  1-1
+Section 2 - FILE CONTENTS .........................................  2-1
+Section 3 - FILE CHARACTERISTICS ..................................  3-1
+Section 4 - REMARKS, MODIFICATIONS AND REFERENCES .................  4-1
+
+
+
+                                LIST OF TABLES
+
+TABLE
+
+  1  File Contents ................................................  2-1
+  2  File Characteristics .........................................  3-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    ii
+                          SECTION 1 - INTRODUCTION
+
+
+The "Catalogue of Stars within twenty-five parsecs of the Sun" (Woolley, Epps,
+Penston and Pocock 1970) was constructed at the Royal Greenwich Observatory in
+order to enlarge the "Catalogue of Nearby Stars" compiled by Gliese (1957). The
+catalogue contains data on stars nearer than 25 pc which are not included in
+Gliese's catalogue, plus additional information published since 1957 on stars
+in the Gliese compilation.
+
+The machine-readable version of the "Catalogue of Stars within twenty-five
+parsecs of the Sun" contains essentially all information given in Table Ia of
+the published catalogue, plus positional data and all cross references to
+other catalogue numbers given in Table IIa.  Not included from Table Ia are
+the flags (asterisks appended to catalogue numbers) indicating notes in the
+published catalogue, nor are the notes in machine-readable form.  Omitted from
+Table IIa are the finding chart identifiers (Lowell G numbers or notes
+reference) and miscellaneous cross identifications to other names and
+catalogue identifiers.  Tables Ib and IIb, containing 21 systems originally
+included in Gliese's (1957) catalogue, but for which revised parallaxes have
+placed them farther than 25 pc, are not included in the machine-readable
+version.  A useful extension to the present machine-readable catalogue would
+be the addition of the cross identifiers and the creation of a separate file
+containing the notes.
+
+This document describes the machine-readable version of the subject catalogue
+currently available from the Astronomical Data Center.  Although it should
+enable users to read and process the data file without difficulty, and to
+interpret the data to some extent, the additional information given in the data
+descriptions and the notes in the published catalogue make it advisable to
+consult the latter when analyzing and/or intepreting the data in the machine
+version.
+
+
+SOURCE REFERENCE
+
+Woolley, R., Epps, E. A., Penston, M. J. and Pocock, S. B. 1970, Catalogue of
+   Stars within twenty-five parsecs of the Sun, Roy. Obs. Ann., No. 5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    1-1
+
+                          SECTION 2 - FILE CONTENTS
+
+
+    A byte-to-byte description of the contents of the logical records in the
+"Catalogue of Stars within twenty-five parsecs of the Sun" is given in Table 1.
+The suggested format specifications are presented in order to clarify the units
+and data types, and they can be modified depending upon usage; however, care
+must be exercised when using integer and real format specifications in place of
+character (A) formats because some data fields contain blanks when data are
+absent.  All data is recorded as integers, but real (F) format specifications
+are suggested when more appropriate and to show decimal point locations.  Since
+data fields are blank for missing data, records should be buffered in or fields
+tested in some way to distinguish between blanks and zero.  Alternate
+specifications are given in parentheses.  For complete data descriptions, the
+user should consult the published catalogue referenced on page 1-1.
+
+
+Table 1.  File Contents.  Catalogue of Stars within 25 parsecs of the Sun
+
+                      Suggested
+Byte(s)    Units       Format      Description
+
+  1-  4     ---         I4         Star number.  Numbers in Gliese's (1957)
+                                   catalog retained; newly added stars have
+                                   numbers starting at 9001 and increasing
+                                   with right ascension (1950), but since
+                                   numbering of extension, new parallaxes have
+                                   removed 9419 and added two new stars:  9849,
+                                   9850 (both at R.A. (1950) = 4h 19m),
+                                   The Sun (first record) has number 0.
+
+      5     ---         A1         Component identification (A, B, ...) for
+                                   stars having the same number.  Stars with
+                                   separately published parallaxes have
+                                   generally been assigned separate numbers.
+                                   Components are given for extension stars
+                                   when they are known or suspected to form a
+                                   physical system.
+
+  6-  8    arcsec       F3.3       Parallax. The main sources of trigonometric
+                                   parallaxes are the Yale "General Catalogue of
+                                   Trigonometric Stellar Parallaxes" and its
+                                   supplement (Jenkins 1952, 1963).  Some
+                                   spectroscopic parallaxes are included and
+                                   indicated by the probable error code
+                                   following.
+
+
+
+
+
+
+
+
+                                    2-1
+Table 1.  (continued)
+
+                      Suggested
+Byte(s)    Units       Format      Description
+
+
+  9- 10    arcsec       A2         Probable error of a trigonometric parallax.
+                                   The two bytes given are the least
+                                   significant digits in a number of the form
+                                   +/- 0.0XX which, for pure numbers, could be
+                                   read in format F2.3; however, for
+                                   spectroscopic parallax, byte 9 is blank and
+                                   byte 10 contains "S".
+
+     11     ---         I1 (A1)    "8" if p.e. (parallax) < 15%
+                                   "9" if p.e. (parallax) < 10%
+                                   blank otherwise
+
+ 12- 16    sec/yr       F5.4       Annual proper motion of R.A. in seconds of
+                                   time; blank if not present.  Note that most
+                                   data are given to a precision of 0.0001 sec;
+                                   however, many values are only quoted to
+                                   0.001 sec. In the latter case, byte 16 is
+                                   blank, hence precision can be ascertained
+                                   by reading the field in an A format and
+                                   testing for a blank in byte 16.
+
+ 17- 22  arcsec/yr      F6.3       Annual proper motion of Dec. in arcseconds;
+                                   blank if not present.  See note on
+                                   precision for R.A. proper motion above.
+
+ 23- 27    km/sec       F5.1       Radial velocity taken from the GCRV (Wilson
+                                   1953), unmodified for Wilson codes a and b,
+                                   revised for codes c and d if additional
+                                   measures were available.  Observed
+                                   velocities are given for white dwarfs
+                                   (uncorrected for gravitational redshift).
+                                   Additional unpublished velocities from
+                                   various observations are included where
+                                   needed.  Field blank if no datum present;
+                                   if datum present, sign always in byte 23.
+
+     28     ---         I1 (A1)    Radial velocity code:  1 if mean value of
+                                   combined components of binary (symbol J in
+                                   published catalogue); 3 if velocity
+                                   variable (symbol V in published catalogue);
+                                   otherwise blank.
+
+
+
+
+
+
+
+
+                                    2-2
+Table 1.  (continued)
+
+                      Suggested
+Byte(s)    Units       Format      Description
+
+
+ 29- 32    km/sec       I4         U component of space velocity relative to
+                                   Sun (blank if no data).
+
+ 33- 36    km/sec       I4         V component of space velocity relative to
+                                   Sun (blank if no data).
+
+ 37- 40    km/sec       I4         W component of space velocity relative to
+                                   Sun (blank if no data).
+
+ 41- 45     ---         F5.4       Box orbit parameter, omega, the distance of
+                                   the epicenter of the box from the Galactic
+                                   center (see Woolley and Candy 1968).  Note
+                                   that the quantities omega, e, and i are
+                                   normalized to the solar distance from the
+                                   Galactic center and the unit of velocity is
+                                   the Sun's circular velocity, taken to be 250
+                                   km/sec.  The solar motion used is u(o)= +10
+                                   km/sec, v(o)=+10 km/sec, w(o)=+7 km/sec, 
+                                   while the Oort's constants adopted are 
+                                   A = +14.6 km/sec/kpc, B = -11.5 km/sec/kpc.  
+                                   For multiple systems omega, e, and i have 
+                                   been computed for the first component only 
+                                   using available values of u, v, and w. Field
+                                   blank if no datum.
+
+ 46- 49     ---         F4.4       Box orbit parameter, e, the eccentricity of
+                                   the orbit; blank if no data.
+
+ 50- 53     ---         F4.4       Box orbit parameter, i, the box angle;
+                                   blank if no data.
+
+     54     ---         I1 (A1)    Luminosity class code (MK or Mt. Wilson):
+                                   1 - I or c; 2 - II or c; 3 - III or g;
+                                   4 - IV or sg; 5 - V or d; 6 - VI or sd;
+                                   7 - D or wd.  Blank for no data.  Note:
+                                   Intermediate luminosity classes have no
+                                   codes; e.g., 4 is given for class IV-V.
+
+ 55- 57     ---         A3         Spectral type (MK where available, mostly
+                                   from Jaschek et al. 1964; preference given
+                                   to Wilson 1953 for remaining types).
+                                   Peculiarity indicators (n, e, etc.) given
+                                   in upper case.
+
+
+
+
+
+
+                                    2-3
+Table 1.  (continued)
+
+                      Suggested
+Byte(s)    Units       Format      Description
+
+     58      ---        I1 (A1)    Spectral-type code:  1 - MK; 2 - combined
+                                   MK type for multiple system; 4 - combined
+                                   non-MK; blank - non-MK.
+
+ 59- 62      mag        F4.2       Magnitude V, m(v) or m(pg).  V preferred,
+                                   sometimes weighted means.  Photoelectric
+                                   data are given to 0.01 mag precision, M(v)
+                                   and M(pg) to 0.1 mag precision (byte 62
+                                   blank).  Data always present except for Sun
+                                   (first record).
+
+     63      ---        I1 (A1)    Magnitude code:  1 - combined light value
+                                   for multiple system (symbol J in published
+                                   catalogue); 2 - photographic magnitude (P
+                                   in published catalogue); 3 - variable
+                                   magnitude (V in published catalogue);
+                                   otherwise blank.
+
+ 64- 67      mag        F4.2       B-V color.  Field blank if no data; sign
+                                   always in byte 64 if value present.
+
+ 68- 71      mag        F4.2       U-B color.  Field blank if no data;  sign
+                                   always in byte 68 if value present.
+
+ 72- 75      mag        F4.2       Absolute visual magnitude M computed from
+                                   apparent magnitude and parallax:  M = m + 5
+                                   + 5 log (parallax), reported to 0.01 mag if
+                                   both probable error of parallax < 10% and V
+                                   magnitude given to 0.01 mag.
+
+ 76- 77     hours       I2         R.A. (1900)
+
+ 78- 80      min        F3.1       R.A. (1900)
+
+     81      ---        A1         Sign of Dec. (1900)
+
+ 82- 83    degrees      I2         Dec. (1900)
+
+ 84- 85    arcmin       I2         Dec. (1900)
+
+
+
+
+
+
+
+
+
+
+
+                                     2-4
+Table 1.  (continued)
+
+                      Suggested
+Byte(s)    Units       Format      Description
+
+ 86- 87     hours       I2         R.A. (1950) taken, in order of preference,
+                                   from the "Smithsonian Astrophysical 
+                                   Observatory Star Catalog" (SAO 1966),
+                                   the lists of Giclas et al.(1959-1969)
+                                   and the "General Catalogue" (GC, Boss 1937).
+                                   Positions precessed from those given in
+                                   parallax references in other cases.
+
+ 88- 89      min        I2         R.A. (1950)
+
+ 90- 91      sec        I2         R.A. (1950)
+
+     92      ---        A1         Sign of Dec. (1950)
+
+ 93- 94    degrees      I2         Dec. (1950)
+
+ 95- 97    arcmin       F3.1       Dec. (1950)
+
+ 98-102      ---        A4, A1     Number in "General Catalogue of Trigono-
+                                   metric Parallaxes" (Jenkins 1952, 1963).
+                                   For GCTP numbers form XXXX.X, the decimal
+                                   point lies between bytes 101 and 102; i.e.,
+                                   the numbers can be read with format F5.1,
+                                   but the field is blank when there is no
+                                   value given.
+
+103-108      ---        I6 (A6)    "Henry Draper" (HD) catalogue number.  Blank
+                                   for no data.
+
+109-110      ---        A2         DM catalog designation. The HD convention of
+                                   DM assignment is followed: BD north of -23
+                                   deg, CD -23 deg >=  declination zone >=
+                                   -52 deg, CPD south of -52 deg.
+
+111          ---        A1         Sign of DM declination zone.
+
+112-113      ---        I2 (A2)    DM zone.
+
+114-118      ---        I5 (A5)    DM number.  DM field is entirely blank for
+                                   no data.
+
+119-123      ---        I5 (A5)    Number in the GCRV (Wilson 1953).  Blank
+                                   if not present.
+
+
+
+
+
+
+
+                                    2-5
+Table 1.  (concluded)
+
+                      Suggested
+Byte(s)    Units       Format      Description
+
+124-129     ---         A6         Other proper-motion catalogue designations;
+                                   byte 124 or bytes 124-125 can contain the
+                                   following letter codes:  L - Luyten LTT
+                                   catalogues (1957, 1961, 1962);
+                                   C - Cincinnati Publ. No 18 (Porter et al.
+                                   1915); CC - Cincinnati Publ. No. 20 (Porter
+                                   et al. 1930).  A pure numerical designation
+                                   implies a GC number.  Priority is GC, CC,
+                                   C, LTT.  Field blank when no data.
+
+130-133     ---         I4 (A4)    YBS = HR number from "Catalogue of Bright
+                                   Stars" (Hoffleit 1964).  Blank for missing
+                                   number.
+
+134-136     ---         I3 (A3)    Numbers in red-dwarf lists of Vyssotsky and
+                                   collaborators (1943, 1946, 1952, 1956) and
+                                   in supplementary list (Vyssotsky 1958).
+                                   Blank for missing data.
+
+    137     ---         A1         Remarks code:
+                                   Code    Abbrev.
+                                    2        SB      spectroscopic binary
+                                    3        ST      spectroscopic triple
+                                    4        D       unresolved double,
+                                                       unknown nature
+                                    5        UV      UV Ceti flare star
+                                    6        EB      eclipsing binary
+                                    7        SR      semi-regular variable
+                                    8        AB      astrometric binary
+                                    9        PL NEB  planetary nebula
+
+    138     ---          A1        Remarks code as above.  Two bytes are used
+                                   to allow for at least two remarks for the
+                                   same star.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    2-6
+                      SECTION 3 - FILE CHARACTERISTICS
+
+
+The information contained in Table 2 is sufficient to enable a user to read
+the machine version of the catalogue.  Information for the entire catalog is
+given in the table, but parameters which are easily varied from installation
+to installation, such as block size (physical record length), blocking factor
+(number of logical records per physical record), total number of blocks, file
+density, and coding (EBCDIC, ASCII, BCD) are not included for tape copies. This
+information should always be supplied if secondary copies of the machine-
+readable catalogue are transmitted to other users or installations.
+
+
+
+Table 2.  File Characteristics. Catalogue of Stars within twenty-five parsecs
+          of the Sun.
+
+NUMBER OF FILES  ..................................................     1
+
+LOGICAL RECORD LENGTH (BYTES) .....................................   138
+
+RECORD FORMAT ..................................................... Fixed
+
+TOTAL NUMBER OF LOGICAL RECORDS ...................................  2150
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   3-1
+            SECTION 4 - REMARKS, MODIFICATIONS AND REFERENCES
+
+
+A magnetic tape version of the "Catalogue of Stars Within twenty-five parsecs
+of the Sun" was received from the Centre de Donnees Stellaires, Strasbourg (CDS
+catalogue number 5004).  As received the logical record length was 160 bytes
+and the file had been recorded in O26 character code.  The file was converted
+to O29 code (& converted to + signs, etc.) and reformatted to eliminate all
+unnecessary blank characters, thus resulting in the current 135-byte logical
+record length.  The remarks coding (bytes 134-135) originally included seven
+codes (2-8), as defined in Table 1; however, one star (9785) in the published
+catalogue (Table Ia) contains the note "PL NEB", which had not been assigned a
+remarks code.  The code 9 has been assigned to the planetary nebula category
+and entered into byte 137 of the record for star 9785.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   4-1
+REFERENCES
+
+
+Boss, B. 1937, General Catalogue of 33342 Stars, Publ. Carnegie Inst.,
+   Washington, No. 468.
+
+Gliese W. 1957, Mitt. Astron. Rechen-Inst., Ser. A, No. 8.
+
+Jaschek, C., Conde, H. and de Sierra, A. C. 1964, Catalogue of Stellar Spectra
+   Classified in the Morgan-Keenan System, Publ. La Plata Obs., Ser. Astron.
+   Vol. 28, No. 2.
+
+Jenkins, L. F. 1952, General Catalogue of Trigonometric Stellar Parallaxes
+   (New Haven:  Yale University Observatory)
+
+Jenkins, L. F. 1963, Supplement to the General Catalogue of Trigonometric
+   Stellar Parallaxes (New Haven:  Yale University Observatory)
+
+Luyten, W. J. 1957,  Catalogue of 9687 Stars in the Southern Hemisphere with
+   Proper Motions Exceeding 0.2 arcsec Annually (Minneapolis:  The Lund Press).
+
+Luyten, W. J. 1961, Catalogue of 7127 Stars in the Northern Hemisphere with
+   Proper Motions Exceeding 0.2 arcsec Annually (Minneapolis:  The Lund Press).
+
+Luyten, W. J. 1962, First Supplement to the LTT Catalogue (Minneapolis:  Univ.
+   Minnesota Observatory).
+
+Porter, J. G., Yowell, E. I. and Smith, E. 1915, Publ. Cincinnati Obs., No.
+   18.
+
+Porter, J. G., Yowell, E. I. and Smith, E. 1930, Publ. Cincinnati Obs., No.
+   20.
+
+Smithsonian Astrophysical Observatory. 1966, Star Catalog, Smithsonian Publ.
+   4652.
+
+Vyssotsky, A. N. 1943, Astrophys. J. 97, 381.
+
+Vyssotsky, A. N. 1956, Astrophys. J. 61, 201.
+
+Vyssotsky, A. N. 1958, Astrophys. J. 63, 211.
+
+Vyssotsky, A. N. and Bateer, A. M. 1952, Astrophys J. 116, 117.
+
+Vyssotsky, A. N., Janssen, E. M., Miller, W. J. and Walther, M. E. 1946,
+   Astrophys. J. 104, 234.
+
+Wilson, R. E. 1953, General Catalogue of Stellar Radial Velocities, Publ.
+   Carnegie Inst., Washington, No. 601.
+
+Woolley, R. v.d. R. and Candy, M. P. 1968, Mon. Not. R. Astron. Soc. 141, 277.
+
+Woolley, R., Epps, E. A., Penston, M. J. and Pocock, S. B. 1970, Catalogue of
+   Stars within twenty-five parsecs of the Sun, Roy. Obs. Ann., No. 5.
+
+                                  4-2

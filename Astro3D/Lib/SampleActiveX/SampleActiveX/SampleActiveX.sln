@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleActiveX", "SampleActiveX.csproj", "{9460A039-19E8-47BA-9842-1A6398F18073}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleActiveXWrapper", "http://localhost/Samples/SampleActiveXWrapper/SampleActiveXWrapper.csproj", "{A1407D48-F266-457E-9F8C-5C00EC984376}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9460A039-19E8-47BA-9842-1A6398F18073}.Debug.ActiveCfg = Debug|.NET
+		{9460A039-19E8-47BA-9842-1A6398F18073}.Debug.Build.0 = Debug|.NET
+		{9460A039-19E8-47BA-9842-1A6398F18073}.Release.ActiveCfg = Release|.NET
+		{9460A039-19E8-47BA-9842-1A6398F18073}.Release.Build.0 = Release|.NET
+		{A1407D48-F266-457E-9F8C-5C00EC984376}.Debug.ActiveCfg = Debug|.NET
+		{A1407D48-F266-457E-9F8C-5C00EC984376}.Debug.Build.0 = Debug|.NET
+		{A1407D48-F266-457E-9F8C-5C00EC984376}.Release.ActiveCfg = Release|.NET
+		{A1407D48-F266-457E-9F8C-5C00EC984376}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

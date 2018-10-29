@@ -1,0 +1,418 @@
+                        SKY2000 MASTER STAR CATALOG*
+
+        Joanne R. Myers, Christopher B. Sande, and Alvin C. Miller**
+                          Wayne H. Warren, Jr.***
+                            David A. Tracewell§
+
+Abstract:
+     The SKY2000 Master Star Catalog is a completely revised and enhanced
+     version of the old SKYMAP catalog that has been in use during the last
+     2 decades for spacecraft acquisition and tracking applications. The
+     previous release of this catalog, still called SKYMAP at the time,
+     included new astrometric data and improved and extended
+     (near-infrared) photoelectric photometric observations and better data
+     for multiple stars. Changes made to produce the current SKY2000
+     catalog include reprocessing of the photovisual and photographic
+     magnitudes and of the double/multiple-star data, ingestion of star
+     identification numbers from the principal astrometric source catalog,
+     propagation of positional errors to the standard catalog epoch, and
+     addition of several fields for new data. Also, individual errors have
+     been detected and corrected. The quality assurance work continues.
+
+INTRODUCTION
+   The original SKYMAP Master Star Catalog (Ref 1) was developed to support
+   fixed-head star trackers in spacecraft attitude determination software
+   developed at the National Aeronautics and Space Administration's
+   (NASA's) Goddard Space Flight Center. The original versions were
+   designed as a compilation of stellar objects that would be essentially
+   complete to a blue or visual magnitude of 9.0. Successive versions of
+   the SKYMAP catalog were issued between 1978 and 1993 to correct
+   individual errors discovered in each interim, but the basic catalog
+   content and format remained the same.
+
+   The development of more accurate star trackers in the late 1980s,
+   especially charge-coupled-device-based detector systems, resulted in the
+   decision to update the catalog to include magnitude and color data in
+   the near-infrared region of the electromagnetic spectrum where
+   charge-coupled devices have their maximum sensitivity. However, several
+   other factors led to the final decision to redesign and build the
+   catalog anew. These factors included the availability of vastly superior
+   and more abundant primary data, the presence of many "derived" data in
+   SKYMAP, inadequate and sometimes erroneous cross identifications, and
+   lingering errors for individual stars (especially multiple systems).
+
+   The first edition of the rebuilt catalog was called SKYMAP 4.0 (Ref. 2)
+   and its slightly revised successor became SKYMAP 4.0a (Ref 3). Earlier
+   versions of the SKYMAP Master Star Catalog were in binary format, but
+   the new version was prepared entirely in character-coded (alphanumeric)
+   form, which has the advantages of easy access (readability) without
+   specialized software and of being able to store data of identifiable and
+   variable precision in the same field. Thus, the new catalog stores data
+   in an appropriate precision corresponding to their accuracy, and the
+   precision can vary within the same data field.
+
+   In addition to the removal of many derived data, wideband photometric
+   data in the R (red) and I (infrared) systems were added as new fields.
+   However, the major change in Version 4.0 was the replacement of
+   astrometric (positions and proper motions) data with more accurate
+   values stored at full precision, where appropriate.
+
+   The current version of the SKYMAP Master Star Catalog (4.1), now renamed
+   SKY2000 Master Star Catalog, includes additional modifications to
+   improve mission support, as well as some reformatted data to comply with
+   standard astronomical practice. The primary objectives for SKY2000 are
+   to:
+      * Improve cross-identification information
+      * Generate more realistic positional errors
+      * Correct and expand double- and multiple-star data
+      * Provide improved reference magnitudes for stars not having
+      photoelectrically measured values
+      * Port the Master Star Catalog and the associated SKY2000 software
+      system from a mainframe to a workstation platform
+
+GENERATION OF NEW SKY2000 MASTER CATALOG
+   The following subsections provide additional details on all of the major
+   modifications made to Version 4.0a to produce SKY2000. the current
+   format specifications for the catalog. summarize the statistics of the
+   Master Star Catalog. The final subsection summarizes the work and
+   briefly outlines plans for further enhancements.
+
+Incorporation of PPM Numbers into the SKY2000 Master Catalog
+   PPM numbers are the primary identifiers for stars in the Catalogue of
+   Positions and Proper Motions (PPM) (Ref. 4). The SKYMAP Master Star
+   Catalog, Versions 4.0 and 4.0a, contained a data field for the PPM
+   numbers, but the data for this field have only recently been
+   incorporated into the new SKY2000. The PPM - North, PPM - South, and PPM
+   Supplement (Ref. 4) were all used for the PPM number additions and were
+   processed individually. To process the PPM catalogs, common identifiers
+   between the PPM catalogs and the Master Star Catalog were used: the
+   Henry Draper (HD), Durchmusterung (DM), Smithsonian Astrophysical
+   Observatory (SAO), and Dritter Katalog der Astronomischen Gesellschaft
+   (AGK3) numbers. For each identifier type, software utilities were
+   created to find common numbers between the PPM catalogs and the Master
+   Star Catalog, and the PPM number for that star was added to SKY2000.
+   Each utility executed decreased the number of SKY2000 stars with no PPM
+   numbers.
+
+   After all the identifier types were used for PPM number processing, a
+   final utility was created and used to search for common positions
+   between the PPM catalogs and SKY2000 and to add the PPM number when an
+   exact match in position was found. Out of the 299,510 stars in SKY2000,
+   approximately 294,000 now contain PPM numbers. Approximately 300 stars
+   in SKY2000 can be found in the Bright Star Supplement to the PPM. This
+   separate PPM catalog file contains data for bright multiple stars that
+   do not have accurate astrometric data measurements in the PPM catalog.
+   These stars will need to be processed manually because no common
+   identifiers exist between the Supplement and SKY2000. The majority of
+   the remaining stars in SKY2000 without PPM numbers are not in the PPM
+   catalogs, but a number of problem entries exist--most being for double
+   and multiple stars--that remain to be examined.
+
+Photovisual and Photographic Magnitude Reprocessing
+   The photovisual (ptv) and photographic (ptg) magnitudes used in SKY2000
+   have been obtained directly from the PPM and HD catalogs. The
+   reprocessing was accomplished in three separate steps:
+   1. Reading the PPM, searching primarily on HD number and secondarily
+      on both SAO number and DM identifier. DM identifiers were tested on
+      catalog, declination zone, and number in zone. In cases where a star
+      does not have an HD number, the SAO and DM entries were considered
+      primary identifiers. Where a matching HD number was found and one or
+      more of the other identifiers differed, the match was considered
+      successful, but a warning message was written to a report file to
+      ensure further examination after processing.
+   2. Processing a merged catalog, consisting of the HD (Ref. 4) and the
+      HD Extension (Ref. 4), to fill gaps, i.e., magnitudes were sought for
+      cases in which a ptv or ptg magnitude had not been found in the PPM.
+      Again, primary identification was sought by HD number, with only the
+      DM identifier being available as a secondary qualification. Entries
+      with matching HD numbers and differing DM identifiers were considered
+      matches, but a warning message was written to a report file. Only
+      values coded as observed were taken.
+   3. Reprocessing the HD finding chart (Ref. 4) stars was somewhat
+      different. The general approach was that of gap filling, as in step
+      two. The primary criterion was again the HD number, but a position
+      separation check complemented this test; if it failed, a star would
+      be rejected regardless of its HD number. This approach was followed
+      after initial examination of the input catalogs revealed several
+      stars with matching HD numbers and significantly differing positions.
+      A rejection in this case created output to a report file for later
+      examination. Of the many types of magnitudes listed in the HD chart
+      catalog, only quantities unambiguously identifiable as observed
+      magnitudes were taken.
+
+WDS Reprocessing
+   The Washington Catalog of Visual Double Stars (WDS) (Ref. 4) was
+   reprocessed in a single execution run that consisted of two steps.
+      1. All existing multiple-star data in SKY2000 taken from earlier
+      versions of the WDS were blanked out.
+      2. The WDS was read for each SKY2000 entry and searched for matches
+      based on DM number.
+   Unfortunately, the WDS does not include alphanumeric catalog prefixes
+   (CD, CP, BD, SD). However, it does follow a convention for DM catalogs
+   based on declination, but in the overlap zones, identification is not
+   certain. Furthermore, the WDS number itself could not be reliably tested
+   because these identifiers have changed with various updates of the
+   catalog and have not, in all cases, been updated in other catalogs that
+   use this identifier. Tests on individual component identifiers are
+   necessarily too complex to deal with all cases that may be encountered.
+   Designing an algorithm with such flexibility is too time consuming and
+   difficult; therefore, the component selection algorithm was limited to
+   cases in which several entries in the WDS have the same DM number.
+   Within these constraints, matches found in the WDS were placed into the
+   output SKY2000 file, overwriting multiple-star information from other
+   sources where present. Warning messages were written to a report file in
+   cases where input WDS numbers differed for the same DM number or where a
+   WDS number did not exist in an input SKY2000 entry matched to a WDS
+   entry.
+
+Correction of Individual Errors
+   However intelligent the ingestion software may be for catalog work,
+   miscellaneous errors inevitably will occur. These errors may result from
+   actual errors in the source catalogs or from situations so complex
+   (e.g., double and multiple stars) that computer software cannot deal
+   with them. A varied assortment of such problems had to be reckoned with
+   in the SKY2000 Master Star Catalog, and more will no doubt be
+   encountered as the work proceeds. It may be stated with confidence that
+   almost all of these problems result from stellar duplicity and
+   multiplicity, where component identifiers may be reversed, components
+   could not be adequately identified by computer, or multiple systems were
+   not treated thoroughly in the source catalogs.
+
+Propagation of Position Uncertainties to the Year 2000
+   Position uncertainties in earlier versions of SKYMAP were given at
+   epoch. This was also the case for all astrometric catalogs from which
+   data were extracted for SKYMAP Version 4.0a, except for the Bright Star
+   Catalogue (BSC5) (Ref. 4) and the Bright Star Supplement (BSS) (Ref. 4).
+   These two catalogs contained positional data from established
+   astrometric source catalogs, but no positional uncertainties. For these,
+   the positions were extracted, but average position uncertainties were
+   inserted based on the original source catalogs. For example, all stellar
+   positions in the BSC5 that originated from Catalogue of Positions and
+   Proper Motions (PPM) were given the same average position uncertainty at
+   the mean epoch of observation. With the creation of SKY2000, all
+   position uncertainties were propagated to epoch 2000.0 using the
+   following:
+
+      the uncertainty at 2000.0 = [the uncertainty at the central epoch of
+                                  the observations - (t - t(c))**del]**1/2
+      where t(c) = the uncertainty of the central epoch of the observations
+            del = 2(1-eps)
+            eps  = the average uncertainty in proper motion for each source
+                   catalog
+
+   Future plans are to replace all average position uncertainties with
+   actual values extracted from the source catalogs and propagated to
+   2000.0.
+
+SKY2000 STATISTICS
+   Table 2 and Table 3 give the distribution of data based on the source
+   from which the data originated. The source numbers are referenced in
+   ref.dat. Table 4 provides the source distribution of position
+   uncertainties in the Master Star Catalog. Table 5 provides the source
+   distribution of angular separation and magnitude difference for
+   multiple-star systems. Table 1 is the format table that is contained in
+   the ReadMe; Table 6 is ref.dat.
+
+SUMMARY AND FUTURE WORK
+   The new SKY2000 Master Star Catalog (SKYMAP Master Catalog, Version 4.1)
+   has been prepared to support spacecraft acquisition and tracking
+   applications. The major enhancements in SKY2000 include improved cross
+   indexing among star designations, propagation of positional error
+   estimates to the current catalog epoch (2000.0) to make them more
+   realistic, improved ptv and ptg magnitudes throughout the catalog,
+   correction of many individual errors present mostly for double and
+   multiple stars, and an improved format with more uniform data fields. In
+   addition, the entire SKY2000 system has been ported from a mainframe to
+   a workstation environment.
+
+      The position uncertainties will be homogenized in a future version of
+      SKY2000. The astrometry and photometry will be updated from the
+      European Hipparcos space mission data, new ground-based photoelectric
+      data will be added, all existing red and infrared data may possibly
+      be transformed to the currently used Cousins system, and information
+      for double and multiple stars will be improved.
+
+ACKNOWLEDGMENTS
+   The SKY2000 Master Catalog revision was only possible with the help of
+   two Computer Sciences Corporation analysts, N. Ottenstein and S.
+   Abeyagunawardene, who converted software utilities needed for the
+   enhancement effort from the mainframe to the PC and UNIX platforms.
+
+REFERENCES
+   1. D. M. Gottlieb, "SKYMAP: a new catalog of stellar data,"
+      Astrophys. J. Suppl., Vol. 38, 1978, pp. 287-308
+   2. M. A. Slater, Jr., A. C. Miller, W. H. Warren, Jr., and D. A.
+      Tracewell, "The New SKYMAP Master Catalog (Version 4.0),"
+      Astrodynamics 1995, Volume 90 of Advances in the Astronautical
+      Sciences, American Astronautical Society, August 1995, AAS 95-304,
+      pp. 67-81
+   3. W. H. Warren, Jr., A. C. Miller, J. R. Myers, and D. A. Tracewell,
+      "The New NASA Spacecraft Acquisition and Tracking Catalog," presented
+      at the "Thirty Years of Astronomy at Wesleyan University," conference
+      in Middletown, Connecticut, April 19-20, 1996; to be published in
+      Baltic Astronomy, Vol. 6, pp. 81-88, 1997
+
+   4. See ref.dat.
+---------------------------------------------------------------------------
+* This work was supported by NASA's Goddard Space Flight Center in
+Greenbelt, Maryland, under contract NAS5-31000.
+
+** Computer Sciences Corporation, Applied Research Department, 10110
+Aerospace Road, Lanham-Seabrook, Maryland, 20706 USA. Telephone:
+301-794-1000. E-mail: Joanne.Myers@cscgt.gsfc.nasa.gov.
+
+*** Hughes STX, 7701 Greenbelt Road, Greenbelt, Maryland, 20770 USA.
+Telephone: 301-441-4086. E-mail: Wayne.H.Warren.I@gsfc.nasa.gov.
+
+§ Goddard Space Flight Center, Flight Dynamics Division, Greenbelt,
+Maryland, 20771 USA. Telephone: 301-286-3718. E-mail:
+david.tracewell@gsfc.nasa.gov.
+---------------------------------------------------------------------------
+
+                                  Table 2
+              PRELIMINARY SOURCE CATALOG DISTRIBUTION (1 of 2)
+Source Position/b Proper  Rad. Par.    V-mag/b B-mag/b U-mag/b  ptv    ptg
+ No.              Motion  Vel. (p)                              mag    mag
+1(98)              14
+2(98)                                                           88508  28915
+6(98)                          1318
+11(98)                    4755
+[15]   4648/1    2295      295 70      780
+[16]   282692/20 278348                2                        122062 150177
+[17]   4780/8    3727
+[18]   560/99    471
+[19]   284       61                    24
+[20]                                   29375/   29951/   25689/
+                                       2109     2145     1859
+[24]                                   20/1     82/4     18/4
+[25]   13        9087     9093 2899    8629/7   9026/5   7528/5
+[26]             1        1493 254     2453/32  2200/27  1770/21
+[27]                                   4879/589 4996/617 1
+[28]                                   31
+[29]   737       664
+[30]                                   795      8
+[31]                                   362
+<32>                                   13/2
+<33>   31        8                     4        4
+<34>   417       6
+<35>   8                                                        3      4832
+<37>   1
+<39>                                   1        1        1
+<40>   6         6             3
+<41>   6         7             4
+<42>   62        62
+51                                     4
+<52>   1430/7    640
+<53>                                   1
+<55>   1
+<60>   1
+61     1         1
+94(98)                                 12770             219/1
+95(98)                                          1553
+97(98) 3832      1
+99                       6
+                                  Totals
+37     299510/135295399  15642 4548     60143/   47821/   35226/ 210573 183924
+                                        2740     2798     1889
+                                      NOTES
+/b = number blended
+(98) = data included through SKYMAP Master Star Catalog, Version 3.7
+[ ] = new sources for Version 4.0
+< > = new sources for Version 4.0a
+All other sources added for new SKY2000 Master Star Catalog
+
+                                 Table 2
+             PRELIMINARY SOURCE CATALOG DISTRIBUTION (2 OF 2)
+
+Source    MK        1D    Multiplicity Variability                  Pass 1 Pass2
+   2
+ No.   Spectral  Spectral
+         Type      Class
+3(98)            46
+4(98)  3         3
+[10]   69213     54
+[15]             72
+[16]             34855
+[18]                      857
+[19]   614       1053     28451
+[20]   1751      42
+[21]                                              1/1               1/1
+[23]   23556     26
+[24]             2        24
+[25]   8770      2        1473                    822/7          2  2455/13 79
+[26]   2088      5        51
+[27]   1                  55          152         5      13481/
+                                                         2038
+[28]             22                   2225        4                 44
+[29]             41508
+[30]   400       60                   2584
+<36>                                  1
+<38>   1
+<39>   6
+43     1
+44     1
+<60>             1
+95(98)           88
+96(98)           216371
+98(MK) 10090
+                                            Totals
+27     116495    294210   30911       4962        832/8  13481/  2  2500/14 79
+                                                         2038
+                                            NOTES
+/b = number blended
+(98) = data included through SKYMAP Master Star Catalog, Version 3.7
+[ ] = new sources for Version 4.0
+< > = new sources for Version 4.0a
+All other sources added for new SKY2000 Master Star Catalog
+Passband 1: Johnson-R; Russian/b-R; Cousins-R
+Passband 2: Johnson-I; Cousins-I
+
+                                 Table 3
+      PRELIMINARY SOURCE CATALOG DISTRIBUTION (DERIVED V' MAGNITUDES)
+ Derived V' Magnitude                 Observed Input Data
+        234541        Converted HD/AGK3 ptv and ptg, or ptv, or ptg
+                      (spectral class)
+         4225         Unconverted HD ptv and ptg, or ptv
+          4           B and MK spectral type [Standard (B-V)]
+          4           B and HD/AGK3 spectral class [adopted average (B-V)
+                      in that class]
+         591          B and HD/AGK3 ptg [adopted average (B-V) = + 1.00
+                      over all classes]
+ Total = 239365
+                                  Table 4
+        DISTRIBUTION OF POSITION UNCERTAINTIES FOR SELECTED SOURCES
+Source   0-  0.1-   0.2- 0.3-  0.4- 0.5- 0.6- 0.7- 0.8- 0.9-
+        0.1  0.2    0.3  0.4   0.5  0.6  0.7  0.8  0.9  1.0 1-2 2-3 3-4 >10 Totl
+ 15     15322080   1036                                                     4648
+ 16         124018 9838  29   148807                                        282692
+ 17                      4181 460   84   31   13   3   4    4               4780
+ 18                      412  99              49                            560
+ 19                                                                     284 284
+ 25     3                     10                                            13
+ 29     2   80     117   144  52    24   80   118  27  3    89  1           737
+ 33         25     1          3     1                  1                    31
+ 34                      417                                                417
+ 35                           8                                             8
+ 37                1                                                        1
+ 40     6                                                                   6
+ 41     6                                                                   6
+ 42     62                                                                  62
+ 52         1430                                                            1430
+ 55                                                         1               1
+ 60                                                    1                    1
+ 61         1                                          1                    2
+ 97                           1                                     1  3830 3832
+ Total  1611127634 10993 5183 149440109  111  180  30  10   94  1   1  4114 299510
+
+                                  Table 5
+   DISTRIBUTION OF ANGULAR SEPARATION OF COMPONENTS FOR MULTIPLE STARS IN
+                                 ARCSECONDS
+      Source  0-1 1-2  2-3  3-4  4-5 5-10 10-2020-30 30-45 >45  Total
+      18     12   2    2   2    5    20   130  152   115   365  805
+      19     7231 3686 22161546 1241 3866 3460 1776  1054  1773 27849
+      24                             3    5    4     2     3    17
+      25     1387 6    3        1    5    10   12    10    9    1443
+      26     16   2        1    1    1    2    4     1     10   38
+      27     3         2             2    8    9     8     19   51
+      Total  8649 3696 22231549 1248 3897 3615 1957  1190  2179 30203
+Back to Top

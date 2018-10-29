@@ -1,0 +1,57 @@
+The fields in the REMARKS and SUPPLEMENTARY REMARKS:                            
+column 1: A blank.                                                              
+columns 2-5: A 1-4 digit HR number of the star (right justified) OR 4 blanks.   
+columns 6&7: 2 blanks.                                                          
+columns 8-11: A 1-3 letter category followed by a colon (left justified) OR 4   
+        blanks.                                                                 
+column 12: A blank.                                                             
+columns 13-132: The remark for this star & category.                            
+                                                                                
+Cases:                                                                          
+1) Non-blank Star field:  The start of a remark for a new star.                 
+2) Blank Star field and non-blank Category field:  The start of a remark for the
+        previous star in a new category.                                        
+3) Blank Star & Category fields:  A continuation of the remark for the previous 
+        star and category.                                                      
+                                                                                
+Codes for non-ASCII characters.                                                 
+The at-sign (@) is an escape symbol signifying that something that can not be   
+represented as ASCII is following.  The general format is:                      
+        @command[argument]                                                      
+The following are found in the remarks:                                         
+        @+[stuff]       Means that stuff is to be superscripted.                
+                        ie: a@+[1] means a-superscript-1.                       
+        @-[stuff]       Means that stuff is to be subscripted.                  
+                        ie: a@-[1] means a-subscript-1.                         
+        @Greek(letter)  Means that the letter is a greek letter.                
+                        ie: @Greek(a) is an alpha.                              
+                        See the following table for ASCII-greek correspondence. 
+                                                                                
+                Greek     ASCII                                                 
+                letter  equivalent                                              
+                                                                                
+                Alpha       a                                                   
+                Beta        b                                                   
+                Gamma       g                                                   
+                Delta       d                                                   
+                Epsilon     e                                                   
+                Zeta        z                                                   
+                Eta         h                                                   
+                Theta       q                                                   
+                Iota        i                                                   
+                Kappa       k                                                   
+                Lambda      l                                                   
+                Mu          m                                                   
+                Nu          n                                                   
+                Xi          j                                                   
+                Omicron     o                                                   
+                Pi          p                                                   
+                Rho         r                                                   
+                Sigma       s                                                   
+                Tau         t                                                   
+                Upsilon     u                                                   
+                Phi         f                                                   
+                Chi         x                                                   
+                Psi         v                                                   
+ 
+               Omega       w                                                   

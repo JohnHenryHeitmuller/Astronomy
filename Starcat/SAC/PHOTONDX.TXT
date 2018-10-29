@@ -1,0 +1,1430 @@
+PHOTOGRAPHIC INDEX by Jim Lucyk
+
+The accompanying compilation is a list of objects for which photographs have
+been found in books and publications in my possession. I soon realized that to
+include Messier objects would entail a tremendous task and so I decided to
+exclude them as they are rather easily found. The Messier Album by John Mallas
+and Evered Kreimer includes them all. Likewise, many other objects not in the
+Messier catalogue such as the Veil and North American nebulae were also very
+common. Although references for such well known objects were included, I
+stopped entering them after several cases were listed.
+
+Following are a list of sources along with the abbreviated notation used.
+
+ 1) ADSS  | Atlas of Deep Sky Splendors - Hans Vehrenberg (3rd edition 1978)
+ 2) AGN    | Atlas of Galactic Nebulae (2 volumes) - Hans Vehrenberg
+ 3) Astrograph  | The Astrograph (a bi-monthly magazine for astrophotographers)
+ 4) Ast    | Astronomy magazine
+ 5) ASTRONOMY | Highlights in Astronomy - Fred Hoyle (1975)
+ 6) AOST  | Astronomical Objects for Southern Telescopes - E.J. Hartung (1984)
+ 7) BCH    | Burnham's Celestial Handbook (3 Volumes)
+ 8) BG    | A Revised Shapley-Ames Catalog of Bright Galaxies -
+           Allan Sandage and G.A. Tammann (1981)
+ 9) CSPG-2  | A Catalogue of Southern Peculiar Galaxies and Associations,
+            Vol II - Halton Arp & Barry Madore (1987)
+            A selection of photographs south of -22 declination
+10) DSM  | Deep Sky Monthly magazine
+11) DS#  | Deep Sky magazine
+12) FGSP  | A Field Guide to the Stars and Planets - Menzel (1964)
+13) GALAXIES  |Galaxies - Timothy Ferris [The copy referenced was the
+               reprinted 1982 publication (soft cover edition)]
+14) Galaxies  | Galaxies by Paul Hodge (1986)
+15) HbAG  | The Hubble Atlas of Galaxies - Alan Sandage (1961)
+16) Messier Album |The Messier Album - John Mallas & Evered Kreimer
+                  (3rd printing 1980)
+17) OG    | Observer's Guide (A bi-monthly magazine published by Astro Cards)
+18) Sky Cat V2  | Sky Catalogue 2000.0, Vol 2 (1985)
+19) S&T    | Sky and Telescope magazine
+20) UGSP  | Universe Guide to the Stars and Planets -
+            Ian Ridpath & Wil Tirion
+21) WSQJ  | Webb Society Quarterly Journal published by the Webb Society
+
+NGC            References
+
+NGCs 1/2/16/22  | OG 9-10/88 p27 (wide field photo) |
+7      | CSPG-2 p16.3 |
+10      | CSPG-2 p11.6 |
+23      | HbAG p22 | BG p125 |
+25/28/31/37    | CSPG-2 p18.2 | CSPG-2 p18.5 |
+40      | S&T 5/70 p310 | S&T 6/86 p631 | S&T 7/82 p19 | S&T 9/78 p200
+        | S&T 2/88 p151 | S&T 10/69 p227 (sketch) | Ast 2/83 p77
+        | Ast 9/85 p90 | DSM 1/81 p12 |
+45      | HbAG p37 | CSPG-2 p8.19 |
+53      | S&T 4/83 p307 | CSPG-2 p1.17 |
+55      | S&T 2/77 p101 | S&T 11/81 p409 | S&T 5/88 p481 | Ast 10/83 p56
+        | BCH V3 p1735 |
+70      | GALAXIES p147 |
+87/88/89/92    | CSPG-2 p4.1 |
+104      | S&T 2/75 p80 | S&T 3/86 p239 | S&T 4/76 p233 | S&T 4/81 p341
+         | S&T 8/81 p112 | S&T 9/84 p219 | S&T 10/74 p225 | Ast 10/86 p110
+         | BCH V3 p1911 |
+
+128      | HbAG p7 | BCH V3 p1482 |
+129      | DS#8 Fa84 p27 |
+147      | DS#4 Fa83 p14 | DS#8 Fa84 p12 | DS#7 Su84 p23 | DS#24 Fa88 p40
+         | BCH V1 p529 |
+150      | CSPG-2 p1.19 |
+152      | S&T 8/83 p110 |
+157      | HbAG p29 | BCH V1 p645 | BG p101 |
+175      | S&T 5/81 p381 | HbAG p43 | ASTRONOMY p155 | S&T 1/65 p8 |
+185      | DS#8 Fa84 p12 | DS#7 Su84 p23 | DS#24 Fa88 p40 | BCH V1 p148, 528
+         | Galaxies p85, 97 |
+188      | S&T 9/60 p141 | S&T 11/62 p261 | S&T 6/69 p394 | S&T 12/86 p563
+         | BCH V1 p612 | ADSS |
+206      | S&T 12/87 p597 | BCH V1 p138 |
+210      | HbAG p22 | BG p117 |
+225      | DS#8 Fa84 p27 |
+230/32/35a    | CSPG-2 p3.2 |
+238      | CSPG-2 p12.1 |
+246      | S&T 4/70 p221 | S&T 6/75 p402 | S&T 6/86 p632 | Ast 10/84 p78
+         | Ast 10/86 p40 | DS#6 Sp84 p15 | BCH V1 p651 | BCH V2 p1175
+         | ADSS p19 |
+247      | Ast 10/83 p57 | Ast 10/84 p78 | DS#7 Su84 p23 | BCH V1 p648
+         | ADSS p21 | BG p109 |
+253      | S&T 1/81 p23 | S&T 2/80 p115 | S&T 4/79 p359 | S&T 6/75 p403
+         | S&T 7/85 p33 | S&T 9/81 p216 | S&T 9/81 p219 | HbAG p34
+         | ADSS p22 | Ast 4/78 (cover) | Ast 4/85 p8 | Ast 10/83 p55
+         | BCH V3 p1737, 1738 | UGSP p206 | GALAXIES p124, 125 |
+255      | S&T 6/86 p632 |
+274/275      | Ast 2/86 p74 |
+278      | FGSP p133 |
+281      | S&T 12/87 p683 | S&T 12/88 p623 | DS#7 Su84 p24
+         | DS#17 Wi86 p14 | BCH V1 p525 | AGN-1 p8 |
+288      | S&T 4/84 p306 | Ast 11/86 p110 | ADSS p23 |
+289      | CSPG-2 p1.3 |
+300      | S&T 12/76 p412 | HbAG p32 | DS#9 Wi84 p39 | BCH V3 p1738
+         | ADSS p27 | UGSP p224 | CSPG-2 p2.2 | CSPG-2 p11.8 |
+309      | BCH V1 p647 |
+323      | CSPG-2 p17.8 |
+324      | CSPG-2 p8.34 |
+330      | S&T 8/83 p110 |
+337      | S&T 3/69 p149 |
+346 (in SMC)    | BCH V3 p1917 |
+371 (in SMC)    | BCH V3 p1917 |
+378      | CSPG-2 p8.2 |
+381      | ADSS p29 |
+404      | S&T 12/87 p683 | HbAG p6 | DS#22 p33 | Ast 2/83 p84 | BCH V1 p112
+419      | S&T 7/69 p27 |
+439      | CSPG-2 p18.7 |
+454      | S&T 11/81 p420 | CSPG-2 p2.8 |
+456-465 (in SMC)    | BCH V3 p1919 |
+457      | S&T 3/71 p178 | S&T 11/81 p509 | Ast 2/86 p65 | DS#8 Fa84 p22-23
+         | DS#6 Sp84 p25 | DSM 9/80 p13 | BCH V1 p531 | ADSS p31 |
+458 (in SMC)    | S&T 9/70 p135 |
+461      | CSPG-2 p8.33 |
+470      | S&T 3/88 p245 |
+474      | S&T 3/88 p245 | Ast 4/88 p75 |
+488      | HbAG p15 | BCH V1 p93 | BCH V3 p1481 | S&T 1/65 p7 |
+491a     | CSPG-2 p12.6 |
+520      | Astrograph 6-7/88 p88 | BCH V3 p1482 | HbAG p41 | Galaxies p145 |
+
+524      | HbAG p5 |
+526      | CSPG-2 p2.3 |
+544/6    | CSPG-2 p18.1 | CSPG-2 p18.4 |
+554      | CSPG-2 p17.9 |
+559      | DS#8 Fa84 p25 |
+578      | CSPG-2 p8.31 |
+604      | DS#4 Fa83 p6 | DS#11 Su85 p38 | Galaxies p117 |
+613      | S&T 6/88 p607 | S&T 5/88 p481 | CSPG-2 p11.5 |
+615      | BCH V1 p651 | HbAG p22 |
+625      | CSPG-2 p8.5 | CSPG-2 p8.32 |
+633      | CSPG-2 p1.22 |
+637      | DS#8 Fa84 p29 |
+654      | DS#8 Fa84 p29 | BCH V1 p526 | AGN-1 p10 (in photo with vdB 6) |
+659      | DS#8 Fa84 p29 | ADSS p31 |
+663      | DS#8 Fa84 p25 | BCH V1 p526 |
+685      | CSPG-2 p13.6 |
+698      | CSPG-2 p17.7 |
+718      | HbAG p11 |
+745      | CSPG-2 p18.10 |
+750-751      | HbAG p2 |
+752      | OG 9-10/88 p32 | Ast 11/86 p58 | BCH V1 p152 |
+770      | Ast 10/87 p110 |
+772      | S&T 9/83 p206 | Astrograph 10-11/81 p25 | Ast 10/87 p110 |
+801      | S&T 12/86 p585 |
+858      | CSPG-2 p11.2 |
+864      | BG p105 |
+891      | OG 9-10/88 p33 | S&T 1/75 p58 | S&T 2/81 p100 | S&T 6/75 p403
+         | S&T 12/88 p713 | S&T 8/76 p104 | S&T 8/86 p113 | BCH V1 p155
+         | Ast 7/77 p54 | HbAG p25 | FGSP p133 |
+897      | CSPG-2 p8.14 |
+922      | CSPG-2 p7.6 |
+925      | Ast 11/84 p78 | DS#4 Fa83 p18 | DS#16 Fa86 p29 | HbAG p37 |
+957      | S&T 11/84 p480 | ADSS p39 |
+972      | BCH V1 p251 | HbAG p23 |
+979      | CSPG-2 p6.11 |
+986      | CSPG-2 p8.4 |
+1023     | S&T 1/84 p98 | S&T 12/81 p620 | Ast 1/84 p78 | DS#16 Fa86 p28 |
+1027     | ADSS p41 |
+1049     | Ast 11/87 p106 |
+1058     | S&T 6/86 p551 | BG p105 |
+1073     | S&T 1/65 p8 | S&T 1/88 p41 | Ast 10/84 p66 | DS#13 Wi85 p34
+         | BCH V1 p645 | HbAG p49 |
+1084      | HbAG p29 |
+1087      | HbAG p35 | BG p107, 127 |
+1096      | CSPG-2 p8.2 | CSPG-2 p11.6 |
+1097      | S&T 9/83 p209 | DS#13 Wi85 p34 | BCH V2 p904 | ADSS p46
+          | HbAG p46 | UGSP p144 | CSPG-2 p1.3 |
+1156      | BCH V1 p94 | BCH V1 p251 | HbAG p39 | BG p111 | Galaxies p13 |
+1165      | CSPG-2 p8.4 |
+1187      | CSPG-2 p1.19 |
+1199      | S&T 6/78 p484 | Ast 9/78 p14 |
+1201      | HbAG p4 | ASTRONOMY p154 | S&T 1/65 p7 |
+1217      | CSPG-2 p1.21 |
+1230      | CSPG-2 p17.1 |
+1232      | S&T 1/70 p22 | S&T 2/81 p102 | S&T4/83 (cover) | DS#9 Wi84 p23
+          | BCH V2 p892 | HbAG p32 | BG p99 | Galaxies p47 |
+1241/42   | Ast 2/86 p74 |
+1244      | CSPG-2 p13.7 |
+1245      | S&T 1/84 p97 | BCH V3 p1452 |
+
+1255      | CSPG-2 p8.11 |
+1268      | S&T 7/80 p24 |
+1275      | S&T 1/75 p12 | S&T 5/78 p374 | S&T 6/71 p342 | S&T 9/83 p210
+          | Ast 7/83 p11 | BCH V3 p1449, 1450 |
+1288      | S&T 11/86 p454 |
+1300      | S&T 1/65 p8 | S&T 7/83 p11 | S&T 12/86 p668 | Ast 8/83 p84
+          | UGSP p140 | Ast 12/84 p78 | DS#9 Wi84 p19, 20 | BCH V1 p93
+          | BCH V2 p894 | HbAG p45 | Sky Cat V2 pxxx | FGSP p134 |
+1302      | HbAG p9 |
+1313      | BG p109 |
+1316 Fornax A    | S&T 2/81 p109 | S&T 4/79 p359 | S&T 4/81 p302
+                 | BCH V2 p902 | CSPG-2 p22.2 |
+1326a/b   | CSPG-2 p2.14 |
+1332      | Galaxies p14 |
+1334      | S&T 7/81 p6 | S&T 12/86 p584 |
+1350      | CSPG-2 p8.1 |
+1356      | CSPG-2 p1.14 |
+1360      | S&T 12/86 p669 | BCH V2 p904 | GALAXIES p102 | Ast 11/87 p106 |
+1365      | S&T 2/77 p102 | S&T 5/88 p474 | S&T 1/88 p110 | Ast 3/84 p62
+          | BCH V1 p94 | BCH V2 p900 | AOST |
+1369      | S&T 6/86 p632 |
+1385      | CSPG-2 p12.3 |
+1398      | BCH V2 p904 | HbAG p47 |
+1399      | Ast 11/84 p20 | Galaxies p18 |
+1406      | CSPG-2 p16.4 |
+1419      | CSPG-2 p7.12 |
+1433      | CSPG-2 p8.1 | CSPG-2 p11.6 | CSPG-2 p13.3 |
+1437      | BG p103 |
+1448      | S&T 1/84 p94 | S&T 11/88 p491 |
+1460      | CSPG-2 p8.16 |
+1487      | CSPG-2 p15.1 |
+1491      | S&T 9/85 p209 | DS#22 Sp88 p32 | AGN-1 p34 |
+1493      | BG p107 | CSPG-2 p1.19 |
+1499      | S&T 4/83 p359 | S&T 6/77 p489 | S&T 6/78 p483 | S&T 12/88 p711
+          | Ast 1/84 p78 | BCH V3 p1423, 1425 | ADSS p52, 53 | AGN-1 p32 |
+1501      | S&T 6/86 p632 | S&T 10/69 p228 | Ast 1/87 p102 | DSM 8/80 p9
+          | BCH V1 p336 | BCH V2 p1174 |
+1502      | Ast 1/87 p102 | BCH V2 p329 |
+1511      | CSPG-2 p8.31 |
+1512      | UGSP p152 | CSPG-2 p1.3 |
+1514      | S&T 5/70 p301 | S&T 6/86 p632 | S&T 12/69 p379 | DSM 9/80 p9
+          | BCH V3 p1885 | OG 11-12/87 p25 |
+1515      | CSPG-2 p8.31 |
+1528      | BCH V3 p1452 |
+1530      | Galaxies p8 |
+1531-1532 | S&T 6/88 p606 | DS#5 Wi83 p20 | CSPG-2 p1.5 |
+1533      | CSPG-2 p8.19 |
+1535      | S&T 6/86 p632 |
+1543      | CSPG-2 p10.2 |
+1549      | S&T 10/74 p227 | AOST |
+1553      | S&T 10/74 p227 | AOST |
+1555      | BCH V3 p1835 |
+1556      | CSPG-2 p16.3 |
+1559      | S&T 11/84 p478 |
+1566      | S&T 10/74 p227 | AOST | UGSP p212 |
+1567      | CSPG-2 p2.11 |
+1569      | S&T 11/81 p411 | BG p111 |
+1572      | CSPG-2 p12.1 |
+1574      | CSPG-2 p8.6 |
+
+1578      | CSPG-2 p7.6 |
+1579      | AGN-1 p38 |
+1598      | CSPG-2 p7.7 | CSPG-2 p24.5 |
+1600      | Galaxies p4 |
+1616      | CSPG-2 p12.1 |
+1624      | AGN-1 p43 |
+1637      | Astrograph 8-9/80 p10 | HbAG p30 | BG p105 |
+1647      | S&T 11/74 p316 | BCH V3 p1818, 1835 |
+1664      | DS#13 Wi85 p8 |
+1667      | Ast 8/87 p78 |
+1703      | CSPG-2 p8.22 |
+1706      | CSPG-2 p9.7 |
+1746      | BCH V3 p1885 | OG 11-12/87 p28 |
+1763      | S&T 2/61 p74 |
+1765      | CSPG-2 p7.12 |
+1778      | DS#13 Wi85 p9 |
+1783      | S&T 2/61 p74 |
+1788      | AGN-1 p48 |
+1808      | S&T 2/77 p103 | CSPG-2 p8.34 |
+1818      | S&T 2/61 p74 |
+1832      | BCH V2 p1098 | HbAG p21 |
+1844 (in LMC)    | Galaxies p69 |
+1846 (in LMC)    | Galaxies p69 |  S&T 2/61 p74 |
+1851      | Ast 12/87 p110 |
+1853      | CSPG-2 p8.17 |
+1866 (in SMC)    | S&T 2/61 p72 | S&T 7/69 p25 | S&T 9/70 p135 |
+1879      | CSPG-2 p8.16 |
+1883      | DS#13 Wi85 p13 |
+1893      | DS#13 Wi85 p13 |
+1907      | DS#13 Wi85 p8, 12 | ADSS p59 |
+1931      | DS#13 Wi85 p8 | ADSS p59 | AGN-1 p59 |
+1936      | BCH V2 p846 |
+1947      | S&T 5/81 p384 | CSPG-2 p14.4 |
+1956      | CSPG-2 p1.18 |
+1961      | S&T 12/69 p387 |
+1964      | BCH V2 p1100 | HbAG p22 |
+1973-5-7      | S&T 5/81 p463 | DS#5 Wi83 p12 | DS#6 Sp84 p32 | BCH V2 p1336
+              | AGN-1 p68 |
+1978 (in LMC)    | Galaxies p69 | S&T 2/61 p72 |
+1985      | AGN-1 p66 |
+1999      | AGN-1 p73 |
+2004 (in LMC)    | S&T 9/70 p135 |
+2022      | S&T 10/69 p228 | Ast 1/83 p84 | DS#5 Wi83 p13 |
+2023      | S&T 9/85 p210 | Ast 2/84 p84 | S&T 9/87 p254, 255, 256 |
+2024      | S&T 9/87 p254 |
+2070      | S&T 2/84 p135 | S&T 2/77 p99 | S&T 4/87 p373 | AOST
+          | S&T 6/87 p582 | S&T 7/79 p36 | Ast 6/87 p91 | UGSP p258
+          | DS#4 Fa83 p10 | DS#14 Sp86 p37 | BCH V2 p850 |
+2071      | AGN-1 p77 |
+2090      | CSPG-2 p11.9 |
+2101      | CSPG-2 p16.4 |
+2104      | CSPG-2 p8.7 |
+2118      | CSPG-2 p25.1 |
+2129      | OG 11-12/88 p24 |
+2141      | DS#5 Wi83 p13 |
+2144      | CSPG-2 p1.22 |
+2146      | BG p121 | GALAXIES p126 |
+2149      | AGN-1 p82 |
+
+2158      | DS#2 Sp83 p31 | DS#13 Wi85 p11 | DS#6 Sp84 p25 | DSM 1/81 p14
+          | BCH V2 p938 | Messier Album p87 | S&T 3/60 p297 |
+2169      | AGN-1 p88 (on photo with Sh 2-268) |
+2170      | AGN-1 p83 |
+2174      | AGN-1 p86 |
+2174-75   | S&T 4/71 p218 | Ast 2/86 p40 | DS#5 Wi83 p14 | OG 1-2/88 p32 |
+2182 = vdB 72    | AGN-1 p88 |
+2183/85   | AGN-1 p88 |
+2188      | CSPG-2 p16.4 |
+2194      | BCH V2 p1345 | AGN-1 p88 (on photo with Sh 2-268) |
+2195      | AGN-1 p90 |
+2206      | CSPG-2 p1.21 |
+2207 / IC 2163    | GALAXIES p140 |
+2209 (in SMC)    | S&T 9/70 p135 |
+2217      | HbAG p43 | CSPG-2 p10.3 |
+2223      | BG p101 | CSPG-2 p8.6 |
+2237-9/44/46    | S&T 1/81 p25 | S&T 2/85 p181 | S&T 2/76 p141 | S&T 3/80 p265
+                | S&T 4/73 p208 | S&T 12/81 p557 | S&T 3/88 p248-9
+                | Ast 4/86 p60 | Ast 4/82 p16, 17 | AGN-1 p97, 98 |
+                | Ast 6/75 (back cover) | Ast 7/76 p78
+                | DS#6 Sp84 (back cover) |
+2242      | DS#23 Su88 p41 |
+2245      | AGN-1 p96 |
+2247      | AGN-1 p96 |
+2257 (in SMC)    | S&T 9/70 p135 |
+2259      | AGN-1 (on photo p103) |
+2261      | S&T 2/85 p180 | S&T 2/81 p117 | S&T 7/85 p31 | DS#1 Wi82 p6
+          | BCH V2 p1203, 1204 |
+2264      | S&T 2/85 p180 | S&T 2/87 p227 | S&T 12/81 p554 | Ast 2/85 p67
+          | Ast 11/85 p97 | AGN-1 p103, 104 | BCH V2 p1207, 1208, 1211, 1213 |
+2266      | OG 11-12/88 p29 | BCH V2 p942 |
+2275/2300 | GALAXIES p147 |
+2276      | BG p105, 127 |
+2282      | AGN-1 p106 |
+2301      | BCH V2 p1214 |
+2313      | AGN-1 p110 |
+2316      | AGN-1 p111 |
+2327      | S&T 9/85 p210 | DSM 3/81 p5 | ADSS p82, 83 | AGN-1 p112, 115 |
+2335      | ADSS p81 |
+2336      | Ast 6/88 p63 | Ast 9/87 p87 |
+2343      | ADSS p82, 83 |
+2346      | S&T 12/86 p621 | DS#15 Su86 p36 |
+2354      | Ast 2/88 p90 |
+2355      | OG 11-12/88 p31 |
+2359      | S&T 3/80 p195-197 | Ast 6/88 p11, 13 | AGN-1 p119 | S&T 6/88 p675 |
+2360      | BCH V1 p440 |
+2362      | S&T 9/60 p141 | S&T 2/78 p189 | S&T 8/73 p79 | Ast 2/88 p90
+          | BCH V1 p444 | AGN-1 p118 |
+2366      | BCH V1 p336 | BCH V3 p1995 | HbAG p39 | BG p113 |
+2371/72   | S&T 2/86 p219 | S&T 7/82 p19 | Ast 2/84 p78 |
+2383      | Ast 2/88 p90 |
+2392      | S&T 10/69 p229 | Ast 1/78 p45 | Ast 2/84 p78 | Ast 9/74 p23
+          | Ast 10/86 p40 | DS#13 Wi85 p12 | DS#21 Wi87 p26 | DS#6 Sp84 p14
+          | DS#17 Wi86 p26 | BCH V2 p941 | S&T 2/60 p217 |
+2403      | Ast 1/87 p102 | DS#11 Su85 p5 | BCH V1 p331, 332 | ADSS p84, 85
+          | HbAG p36 | BG p107 | Galaxies p11 |
+2409      | AGN-1 p123 |
+2419      | S&T 2/80 p178 | S&T 2/81 p173 | S&T 9/86 p311 | Ast 2/85 p38
+          | DS#10 Sp85 p34, 38 | BCH V2 p1130 |
+2420      | BCH V2 p942 | OG 11-12/88 p33 |
+
+2423      | ADSS p87 |
+2427      | BG p105 |
+2438      | DSM 3/80 p9 | Messier Album p106 |
+2440      | S&T 10/69 p227 (sketch)
+2442 = 2443??    | S&T 5/88 p478 | Ast 5/85 p22 | UGSP p254 |
+2444-5      | WSQJ 7/87 p9 |
+2452, 2453 | S&T 4/70 p221 | DS#17 Wi86 p11 |
+2467      | S&T 8/76 p106 | ADSS p89 | AGN-1 p124 |
+2474-5    | S&T 4/70 p223 | S&T 3/88 p338 |
+2477      | DS#13 Wi85 p18 | DS#17 Wi86 p10 | BCH V3 p1517 |
+2500      | BG p107 |
+2506      | S&T 8/81 p115 | BCH V2 p1214 |
+2516      | BCH V1 p474 |
+2523      | BCH V1 p330 | HbAG p48 | BG p117 | UGSP p88 | S&T 1/65 p8 |
+2525      | HbAG p49 | BG p103 | ASTRONOMY p155 | S&T 1/65 p8 |
+2535/36   | GALAXIES p146 |
+2537 = Mark 86    | S&T 4/85 p375 | S&T 11/81 p409 | S&T 1/88 p25 |
+2539      | BCH V3 p1515 |
+2541      | BG p107 |
+2613      | GALAXIES p97 |
+2623      | DSM 1/82 p12 | BCH V1 p343 | GALAXIES p143 |
+2681      | S&T 5/81 p381 | HbAG p9 | S&T 8/87 p136 |
+2683      | Ast 3/86 p102 | Astrograph 10-11/81 p24 | GALAXIES p111 |
+2685      | DS#5 Wi83 p36 | BCH V3 p2004 | HbAG p7 | GALAXIES p126 |
+2763      | BG p103 |
+2772      | CSPG-2 p 1.9 |
+2775      | HbAG p10 | S&T 4/67 p256 |
+2784      | CSPG-2 p8.5 |
+2811      | HbAG p11 | ASTRONOMY p154 | S&T 1/65 p7 |
+2815      | CSPG-2 p8.23 |
+2835      | CSPG-2 p11.2 |
+2841      | Ast 1/79 p6 | Ast 5/77 p8 | Ast 7/77 p52 | Ast 4/88 p94
+          | BCH V1 p93 | Astrograph 4-5/78 p73 | Astrograph 10-11/78 p25
+          | Astrograph 6-7/81 p91 | BCH V3 p2005 | HbAG p14 | UGSP p246
+          | S&T 11/61 p249 | S&T 8/87 p137 | S&T 1/65 p7 |
+2855      | HbAG p5 | Galaxies
+2859      | Astrograph 8-9/80 p10 | HbAG p42 | S&T 1/65 p8 |
+2865      | CSPG-2 p22.2 |
+2883      | CSPG-2 p14.2 |
+2903      | Astrograph 4-5/83 p78 | Astrograph 6-7/88 p89
+          | S&T 3/80 p266 (sketch by J. Herschel) | BCH V2 p1081
+          | S&T 3/61 p163 | S&T 4/87 p459 | S&T 5/87 p459 | S&T 5/87 p540
+          | S&T 12/86 p565 | OG 3-4/88 | Ast 6/83 p84 | DSM 3/81 p2 & cover
+          | ADSS p98, 99 | HbAG p35 | BG p101 | Ast 12/87 p11 |
+2915      | CSPG-2 p7.12 |
+2950      | HbAG p42 |
+2964      | OG 3-4/88 p15 |
+2968      | OG 3-4/88 p15 |
+2976      | Ast 5/87 p86 | BCH V3 p1994 | ADSS p101 | BG p109 | Ast 4/88 p94 |
+2992/93   | CSPG-2 p24.6 |
+2997      | S&T 8/77 p92 | S&T 9/81 p217 | Ast 10/84 p4-5 | DS#22 Sp88 p45
+          | UGSP p72 | Ast 12/87 (cover) |
+3032      | HbAG p5 |
+3059      | BG p107 |
+3065      | HbAG p5 |
+3077      | S&T 12/80 p476 | Ast 5/87 p66 | BCH V3 p1994 | ADSS p101
+          | HbAG p41 | Galaxies p13 | GALAXIES p108 |
+3079      | Ast 4/88 p95 |
+3081      | HbAG p11 |
+3084      | CSPG-2 p11.3 |
+
+3100 = 3103    | CSPG-2 p24.4 |
+3109      | S&T 3/84 p288 | S&T 8/77 p92 | DS#23 Su88 p27 | BCH V2 p1032
+          | HbAG p39 | BG p111
+3115      | S&T 4/84 p382 | BCH V3 p1796 | HbAG p1 |
+3132      | S&T 3/67 p189 | S&T 8/69 p85 | S&T 4/84 p382 | S&T 9/70 p137
+          | Ast 2/87 p94 | DS#6 Sp84 p14 | DS#17 Wi86 p13 | DSM 5/82 p7
+          | BCH V2 p1175 |
+3137      | CSPG-2 p8.6 |
+3145      | BCH V2 p1032 |
+3147      | BCH V2 p874 |
+3184      | S&T 3/87 p347 | S&T 9/86 p249 | S&T 12/86 p583 | Ast 4/84 p78
+          | BCH V3 p1961 | Ast 12/87 (inside cover) |
+3185      | OG 3-4/88 p16 |
+3187      | OG 3-4/88 p16 | S&T 11/61 p250 | S&T 1/65 p4 |
+3190      | OG 3-4/88 p16 | S&T 11/61 p250 | S&T 1/65 p4 |
+3193      | OG 3-4/88 p16 | S&T 11/61 p250 | S&T 1/65 p4 |
+3195      | BCH V2 p1174 | AOST |
+3201      | AOST |
+3226-27   | Astrograph 6-7/88 p89 | OG 3-4/88 p21 |
+3242      | S&T 3/70 p203 (sketch by J. Herschel) | S&T 3/78 p213
+          | S&T 4/84 p382 | Ast 4/82 p12 | DS#6 Sp84 p15 | DS#23 Su88 p33
+          | DSM 10/81 p11 | BCH V2 p1028 | BCH V2 p1028 | BCH V2 p1174 |
+3250b     | CSPG-2 p7.13 |
+3256      | CSPG-2 p15.2 |
+3261      | CSPG-2 p1.20 |
+3263      | CSPG-2 p7.5 |
+3275      | CSPG-2 p10.8 |
+3281      | CSPG-2 p12.1 |
+3285      | CSPG-2 p8.15 |
+3285a     | CSPG-2 p24.5 |
+3293      | Ast 10/86 p107 | AOST |
+3294      | BG p99, 127 |
+3310      | S&T 11/84 p410 |
+3311      | S&T 12/76 p430 |
+3312      | S&T 12/76 p414 |
+3313      | CSPG-2 p8.28 |
+3318b     | CSPG-2 p23.4 |
+3344      | S&T 10/86 p393 | Astrograph 4-5/83 p74 |
+3347      | BG p117 |
+3372      | Ast 2/86 p102 | BCH V1 p469, 470 | AOST, S&T 4/73 (centerfold)
+          | S&T 4/79 p355 | S&T 4/81 p285 | S&T 4/84 p305 | S&T 6/70 p369
+          | S&T 6/76 p378 | S&T 7/77 p23 | S&T 10/83 p305
+          | Ast 6/75 p12, 13 | Ast 12/79 p70 | ADSS p102, 103 |
+3377      | S&T 5/81 p380 | Galaxies p5 |
+3384      | S&T 4/80 p350 | OG 3-4/88 p25 |
+3389      | S&T 4/80 p350 | OG 3-4/88 p25
+3393      | CSPG-2 p6.11 |
+3395, 3396    | DS#17 Wi86 p15 | BCH V2 p1086 |
+3504      | BCH V2 p1086 |
+3521      | BCH V2 p1082 | S&T 8/87 p138 | OG 3-4/88 p27
+3532      | S&T 4/84 p305 | BCH V1 p474 |
+3533 = 3557A    | CSPG-2 p7.14 |
+3557      | CSPG-2 p8.24 |
+3561      | ASTRONOMY p157 |
+3573      | CSPG-2 p14.1 |
+3576      | Ast 6/88 p6-7 |
+3603      | DS#4 Fa83 p6 | DS#14 Sp86 p38 | DS#11 Su85 p38 |
+3605      | OG 3-4/88 p32 |
+
+3607      | OG 3-4/88 p32 |
+3608      | OG 3-4/88 p32 |
+3628      | OG 3-4/88 p31 |
+3646      | S&T 11/86 p455 | BG p127 |
+3672      | S&T 5/81 p381 |
+3675      | Astrograph 6-7/81 p91 |
+3690      | WSQJ 7/87 p9 |
+3699      | AOST |
+3705      | OG 3-4/88 p34 |
+3717      | CSPG-2 p8.4 | CSPG-2 p13.1 |
+3718      | Ast 4/83 p84 | DS#11 Su85 (back cover) |
+3729      | Ast 4/83 p84 |
+3756      | BG p101 |
+3766      | ADSS p111 | AOST |
+3808      | S&T 11/87 p459 |
+3810      | S&T 4/84 p381 |
+3842      | S&T 3/85 p219 |
+3885      | CSPG-2 p14.1 |
+3923      | S&T 12/86 p584 |
+3928      | S&T 8/81 p117 |
+3938      | Astrograph 4-5/78 p73 |
+4027      | S&T 4/79 p411 |
+4038/39   | S&T 4/79 p410 | S&T 5/85 p475 | Ast 4/85 p78 | DS#9 Wi84 p8
+          | BCH V2 p720-721 | AOST | UGSP p126 | GALAXIES p142 |
+4088      | Astrograph 10-11/77 p26 | Astrograph 6-7/88 p88 | S&T 5/82 p529
+          | HbAG p30 |
+4096      | GALAXIES p113 |
+4105/6    | CSPG-2 p2.2 | CSPG-2 p8.27 |
+4111      | HbAG p6 |
+4145      | S&T 3/88 p293 |
+4150      | HbAG p4 |
+4151-4146 | S&T 4/84 p308 | Ast 6/78 p18 | Ast 7/77 p14 | Ast 7/86 p73
+          | Ast 9/78 p10 | S&T 3/88 p292, 293 | UGSP p285 | GALAXIES p123 |
+4157      | Ast 5/82 p42 |
+4214      | S&T 9/61 p130 | S&T 2/88 p145 | Ast 7/84 p60 | DS#2 Sp83 p12
+          | HbAG p40 |
+4215      | HbAG p6 |
+4216      | Ast 5/82 p43 | BCH V3 p2081 | HbAG p25 |
+4217      | Ast 7/86 p79 |
+4237      | HbAG p20 |
+4244      | S&T 10/86 p393 | Ast 5/82 p45 | BCH V1 p380 | DS#22 Sp88 p13
+          | Astrograph 4-5/81 p71 | HbAG p25 | OG 3-4/87 p13 |
+4248      | DS#22 Sp88 p15 |
+4262      | HbAG 42 |
+4274      | BCH V2 p683 | HbAG p12 |
+4278      | S&T 5/81 p380 | HbAG p1 |
+4293      | HbAG p11 |
+4298      | S&T 1/71 p60 | S&T 10/70 p245 | DS#17 Wi86 p10 |
+4302      | S&T 1/71 p60 | S&T 10/70 p245 | DS#17 Wi86 p10 | GALAXIES p113 |
+4304      | BG p103 |
+4312      | S&T 9/83 p289 |
+4314      | HbAG p44 |
+4319 & Mark 205    | S&T 4/83 p323 | Ast 7/83 p15 | Ast 9/78 p7 | DS#3 Su83 p4
+                   | DS#8 Fa84 p5 | DS#9 Wi84 p9 |
+4361      | S&T 5/66 p310 | S&T 5/87 p571 | S&T 7/69 p16 (drawing)
+          | S&T 8/69 p84 |
+4372      | S&T 10/86 p346 | Sky Cat V2 pxxiii |
+4373      | CSPG-2 p2.7 |
+4378      | HbAG p10 |
+
+4388      | BCH V3 p2081 |
+4394      | HbAG p47 |
+4395/4401 | HbAG p37 | BG p109 |
+4433      | HbAG p23 |
+4435      | BCH V3 p2077 |
+4438      | BCH V3 p2077 | GALAXIES p146 |
+4449      | S&T 12/86 p583 | BCH V1 p380 | HbAG p40 | DS#22 Sp88 p13
+          | Galaxies p47 | OG 3-4/87 p17 | Ast 12/87 p22 |
+4450      | HbAG p13 |
+4457      | HbAG p9 |
+4459      | HbAG p5 |
+4462      | CSPG-2 p8.17 |
+4477      | GALAXIES p106 |
+4485 & 4490    | DS#2 Sp83 p11 | DS#17 Wi86 p13 | DS#22 Sp88 p14 | ADSS p136
+               | OG 3-4/87 p18 |
+4490      | S&T 7/82 p106 | S&T 11/88 p465 | Ast 8/82 p84 |
+4519      | Astrograph 6-7/83 p90 |
+4526      | Ast 3/77 p20 | Astrograph 6-7/83 p90 | HbAG p5
+4535      | Ast 3/77 p21 | Ast 4/86 p94 | Ast 3/77 p21
+          | Astrograph 10-11/77 p27 | Astrograph 6-7/83 p90 |
+4536      | DS#4 Fa83 p34 | DSM 8/81 p8 | S&T 5/81 p389
+4540      | BG p109 |
+4541      | GALAXIES p101 |
+4564      | S&T 10/77 p287 |
+4565      | S&T 1/73 p59 | S&T 3/83 p262 | S&T 8/86 p113 | Ast 1/78 p45 |
+          | Ast 1/84 p14 | Ast 4/78 p25 | Ast 5/82 p42 | Ast 3/88 p75
+          | DS#10 Sp85 p14 | DS#14 Sp86 p12 | BCH V2 p687 | BCH V2 p689
+          | HbAG p25 | Sky Cat V2 pxxxi | UGSP p116 | Galaxies p50
+          | GALAXIES p100 |
+4567-68  Siamese Twins  | S&T 1/65 p10 | S&T 10/77 p287 | Ast 3/77 p22
+                        | BCH V3 p2082 |
+4580      | HbAG p21 |
+4592      | BG p109 |
+4593      | HbAG p48 |
+4603      | Ast 3/77 p18 |
+4612      | HbAG p42 |
+4622      | S&T 7/80 p24 | CSPG-2 p10.10 |
+4627      | S&T 2/79 p191 |
+4631 & 4627    | S&T 2/79 p191 | S&T 8/86 p113 | HbAG p25 | Ast 4/78 p43
+               | Ast 4/82 p54 | Ast 5/85 p78 | BCH V1 p378 | DS#22 Sp88 p13
+               | GALAXIES p138, 139 | OG 3-4/87 p16 |
+4636      | HbAG p1 |
+4643      | HbAG p42 |
+4647-4649 | DS#22 Sp88 p35 | Ast 3/77 p20 |
+4650      | Ast 3/77 p20 | GALAXIES p103 | CSPG-2 p17.12 |
+4650A     | S&T 5/81 p386 | S&T 7/79 p33 |
+4656/57   | S&T 2/79 p191 | Ast 5/85 p78 | DS#2 Sp83 p8 | DS#4 Fa83 p34
+          | DS#22 Sp88 p13 | BCH V1 p379 | HbAG p40 |
+4676      | GALAXIES p147 |
+4684      | HbAG p4 |
+4691      | HbAG p44 |
+4696      | DS#22 Sp88 p29 |
+4697      | HbAG p1 |
+4699      | HbAG p16 |
+4709      | DS#22 Sp88 p29 |
+4710      | HbAG p6 |
+4725      | S&T 11/61 p249 | S&T 6/72 p363 | S&T 11/79 p415 | S&T 12/83 p485
+          | Astrograph 10-11/77 p26 | BCH V2 p692 | HbAG p21 | BG p121, 125 |
+4750      | HbAG p21 |
+
+4753      | HbAG p8 |
+4754      | Astrograph 4-5/78 p72 |
+4755      | BCH V2 p732 | AOST | UGSP p258 |
+4762      | HbAG p8 | S&T 8/86 p113 |
+4793      | HbAG p35 |
+4800      | HbAG p16 | BG p123 |
+4835      | CSPG-2 p8.15 | CSPG-2 p1.23 |
+4852      | ADSS p135 |
+4861      | S&T 4/84 p319 | S&T 1/88 p27 |
+4866      | HbAG p11 |
+4886      | S&T 12/86 p583 |
+4903/05   | CSPG-2 p18.6 |
+4909      | CSPG-2 p10.4 |
+4921      | S&T 12/76 p414 |
+4941      | HbAG p10 |
+4944      | S&T 5/74 p313 |
+4945      | S&T 5/88 p476 | Ast 5/86 p94 | DS#10 Sp85 p22 | BCH V1 p572 | AOST |
+4953      | CSPG-2 p5.2 |
+4980      | CSPG-2 p16.4 |
+5005      | DS#22 Sp88 p13 | BCH V1 p379 | HbAG p13 | BG p121 |
+5033      | OG 3-4/87 p20 |
+5053      | DS#24 Fa88 p13 | DSM 5/80 p15 | BCH V2 p676, 676 |
+5061      | CSPG-2 p22.1 |
+5063      | CSPG-2 p24.6 |
+5078      | CSPG-2 p1.13 |
+5090/91   | CSPG-2 p2.6 |
+5101      | HbAG p42 | CSPG-2 p10.3 |
+5128      | S&T 1/75 p11 | S&T 1/83 p6 | S&T 3/84 p229 | S&T 5/72 p327
+          | S&T 5/81 p383 | S&T 6/79 p530 | S&T 6/80 p500 | S&T 8/86 (cover)
+          | S&T 11/78 p389-391 | AOST | Ast 7/83 p16 | Ast 6/75 p22
+          | Ast 11/84 p14 | BCH V1 p567 | ADSS p144 | HbAG p50 |
+5139      | S&T 3/85 p236 | S&T 3/86 p239 | S&T 5/72 p325 | S&T 8/77 p93
+          | S&T 9/84 p259 | S&T 12/80 p477 | Ast 4/82 p9
+          | DS#10 Sp85 (back cover) | BCH V1 p34 | BCH V1 p563 |
+          | AOST | UGSP p106
+5152      | CSPG-2 p2.6 |
+5188      | CSPG-2 p12.5 |
+5204      | HbAG p37 | BG p111 | WSQJ 7/87 p6 |
+5215      | CSPG-2 p17.5 |
+5216/18   | GALAXIES p146 |
+5221/22/26    | GALAXIES p147 |
+5248      | S&T 6/79 p595 | Ast 5/87 p102 | BCH V1 p312
+          | Astrograph 10-11/77 p27 | HbAG p33 |
+          | BG p101 | S&T 8/87 p136 |
+5253      | S&T 9/72 p158 | DS#10 Sp85 p22 | BCH V1 p514, 570
+5266      |S&T 5/81 p385 | CSPG-2 p14.3 |
+5273      | HbAG p8 |
+5291      | S&T 7/79 p35 |
+5296      | S&T 1/88 p39 |
+5297      | S&T 1/88 p39 |
+5350      | DS#17 Wi86 p15 | OG 3-4/87 p26 |
+5353, 5354    | DS#17 Wi86 p15 | OG 3-4/87 p26 |
+5363, 5364    | DS#17 Wi86 p11 |
+5364      | DS#13 Wi85 (back cover) | BCH V3 p2084 | HbAG p32 | BG p99
+          | GALAXIES p108 |
+5383      | S&T 5/80 p441 (sketch) | S&T 11/82 p413 | HbAG p46
+5394, 5395    | DS#17 Wi86 p13 & (back cover) | BG p125
+              | Astrograph 10-11/81 p24 | OG 3-4/87 p24 |
+5398      | CSPG-2 p8.31 |
+
+5426, 5427    | DS#17 Wi86 p10 | GALAXIES p140 |
+5432      | Ast 11/84 p8 |
+5435      | Ast 11/84 p8 |
+5466      | Ast 5/87 p102 | DS#6 Sp84 p34 | DS#24 Fa88 p13 |
+5544/45   | GALAXIES p146 |
+5556      | CSPG-2 p8.22 |
+5566/60/69    | HbAG p43 | Galaxies p126 | GALAXIES p147 |
+5574-5576    | Galaxies p59 |
+5477      | WSQJ 7/87 p6 |
+5585      | BG p111 | WSQJ 7/87 p6 |
+5614      | BCH V1 p312 | HbAG p9 |
+5676      | BG p103 |
+5694      | BCH V2 p1030 |
+5726      | S&T 6/80 p538 (sketch) |
+5740      | Ast 2/88 p36 |
+5746      | Ast 2/88 p36 |
+5806      | BG p123 |
+5850      | DS#18 Sp87 p6 |
+5866      | S&T 7/73 p13 | S&T 7/80 p82 (sketch) | ADSS p156 | HbAG p6
+          | FGSP p132 |
+5897      | Ast 6/85 p78 | DS#6 Sp84 p34 | BCH V2 p1109 |
+5907      | S&T 1/81 p23 | Ast 2/83 p77 | Ast 4/87 p106 | ADSS p156
+          | Ast 6/78 p52-53 | DS#3 Su83 p17 | BCH V2 p874 | HbAG p25
+          | GALAXIES p111 | Astrograph 6-7/8 p88 |
+5921      | S&T 11/79 p396 | Ast 6/85 p78 | DSM 5/81 p6 | DS#23 Su88 p25 |
+5931      | Astrograph 12-1/1978/9 p35 |
+5932      | Astrograph 12-1/1978/9 p35 |
+5935      | Astrograph 12-1/1978/9 p35 |
+5962      | HbAG p30 |
+5981      | S&T 2/81 p101 |
+5982      | S&T 2/81 p101 |
+5985      | S&T 2/81 p101 | Ast 4/87 p106 | BCH V2 p873 | BG p117 |
+6025      | AOST |
+6027 group    | Ast 10/84 p70 | Ast 11/76 p12 | BCH V3 p1793 | DS#23 Su88 p25
+              | DS#24 Fa88 p7 |
+6077      | AOST |
+6144      | BCH V3 p1665 |
+6164-6165    | S&T 9/86 p218, 219 | S&T 10/69 p227 | Ast 4/85 (cover)
+             | UGSP p184 |
+6166      | S&T 11/84 p398 |
+6181      | HbAG p29 |
+6188      | BCH V1 p240 | S&T 5/62 p245 |
+6207      | S&T 9/82 p292 (also visible IC 4615 | S&T 11/76 p395 (IC 4615)
+          | DS#3 Su83 p16
+6210      | Ast 6/86 p106 | DS#6 Sp84 p15 | DS#24 Fa88 p10, 12
+6231      | BCH V3 p1723, 1727 | ADSS p171 | AOST |
+6240      | S&T 1/88 p26 |
+6242      | BCH V3 p1681 | ADSS p171 |
+6268      | ADSS p171 |
+6281      | BCH V3 p1681 |
+6302      | S&T 7/79 p33 | S&T 10/69 p228 | S&T 11/79 p427 | Ast 4/82 p12
+          | Ast 3/86 p108 | Ast 11/85 p98 | OG 5-6/88 p24 |
+6309      | S&T 8/84 p187 |
+6334      | S&T 3/66 p134, 136 | S&T 1/70 p6 | S&T 8/77 p94 | S&T 5/88 p479
+          | BCH V3 p1728 | ADSS p179 |
+6337      | S&T 10/69 p227 | DS#15 Su86 p13 |
+6357      | ADSS p179 |
+6366      | ADSS p181 |
+6369      | DSM 2/82 p7 | DS#23 Su88 p27 |
+
+6380      | OG 5-6/88 p32 |
+6384      | BCH V2 p1265 | HbAG p20 | DS#23 Su88 p25 |
+6397      | BCH V1 p243 | AOST | UGSP p78 |
+6398      | CSPG-2 p8.3 |
+6404      | S&T 10/74 p226 | ADSS p183 |
+6416      | S&T 10/74 p226 | ADSS p183 |
+6438      | CSPG-2 p2.7 |
+6445      | S&T 8/84 p187 | DS#3 Su83 p10 | DS#15 Su86 p8 | DS#20 Fa87 p10 |
+6451      | S&T 7/69 p58 (drawing by J. Herschel) |
+6503      | S&T 4/70 p235 | Ast 5/88 p99 |
+6520      | S&T 8/86 p130 | Ast 11/84 p11 | DS#3 Su83 p8 | Ast 9/87 p50 |
+6543      | S&T 6/79 p601 | S&T 7/69 p13 (drawing) | S&T 7/85 p89
+          | S&T 11/69 p309 | Ast 9/74 p26 | DS#6 Sp84 p13 | BCH V2 p1174
+          | S&T 10/87 p440 |
+6559      | AGN-2 p28, 29, 30 |
+6563      | DS#15 Su86 p12 |
+6589, 6590    | Ast 10/84 (cover) | DS#11 Su85 p20 |
+6595 = IC 4700    | AGN-2 p38 (photo includes IC 1283/1284) |
+6603      | S&T 10/80 p338 | BCH V3 p1605 | Messier Album p70, 71 |
+6624      | S&T 5/79 p447 |
+6633      | BCH V2 p1265 | DS#23 Su88 p25 |
+6643      | BCH V2 p874 | HbAG p35 | BG p103 |
+6645      | BCH V3 p1595 |
+6664      | BCH V3 p1757 |
+6669      | BG p127 |
+6684      | CSPG-2 p12.4 |
+6684a      | CSPG-2 p20.5 |
+6704      | DS#23 Su88 p27 |
+6709      | BCH V1 p230 |
+6712      | BCH V3 p1758 | DS#23 Su88 p27 |
+6723      | S&T 9/83 p277 | AOST |
+6725      | CSPG-2 p8.20 |
+6726-27-29    | S&T 8/62 p69 | S&T 9/83 p277 | Ast 7/86 p94 | BCH V2 p696 |
+6744      | S&T 7/80 p24 | Ast 1/84 p22 | Ast 12/79 p9
+          | DS#12 Fa85 (back cover) | Ast 7/87 p94 | BCH V3 p1357
+          | UGSP p194 | GALAXIES p109 |
+6751      | DS#3 Su83 p22 | DS#15 Su86 p17 | DS#20 Fa87 p12 |
+6752      | BCH V3 p1356 | AOST |
+6753      | BG p117 |
+6758      | CSPG-2 p17.18 | CSPG-2 p17.24 |
+6769/6770/6771    | Sky Cat V2 pxxxiii | CSPG-2 p3.1 |
+6772      | DS#3 Su83 p23 | DSM 2/82 p8 | DS#20 Fa87 p12 |
+6778      | S&T 4/70 p221 | DS#3 Su83 p22 | DS#15 Su86 p8 |
+6781      | S&T 8/84 p187 | Ast 2/79 p19 | Ast 8/86 p86 | DS#3 Su83 p23
+          | DS#6 Sp84 p10 | Ast 7/87 p86 | BCH V1 p231 | BCH V2 p1174
+          | DS#20 Fa87 p10 | S&T 9/87 p239 |
+6788      | CSPG-2 p1.23 |
+6791      | S&T 3/71 p142 | Ast 7/85 p78 | BCH V2 p1177 |
+6802      | S&T 9/86 p317 |
+6804      | S&T 9/82 p292 | S&T 9/84 p282 | Ast 8/86 p87 | DS#3 Su83 p22
+          | DS#20 Fa87 p12 |
+6811      | S&T 10/86 p427 | Astrograph 8-9/81 p4 |
+6813      | AGN-2 p58 |
+6814      | BCH V1 p231 | HbAG p20 |
+6618      | DS#3 Su83 p10 | DSM 8/80 p12 |
+6819      | S&T 9/82 p292 | S&T 12/80 p476 | BCH V3 p1617
+          | DS#22 Sp88 p44-45 | ADSS p209 | BG p113 | FGSP p135 |
+6820      | AGN-2 p59, 61, 62 |
+6822 Barnard's Galaxy  | S&T 8/67 p120 |
+6823      | DS#11 Su85 p9 | DSM 9/80 p14 | DS#23 Su88 p41 |
+
+6826      | S&T 9/80 p257 | DS#12 Fa85 p14 | DS#6 Sp84 p7 | DS#20 Fa87 p12 |
+6830      | ADSS p207, 213 |
+6845      | CSPG-2 p4.2 |
+6851b      | CSPG-2 p12.6 |
+6855      | CSPG-2 p6.10 |
+6857      | AGN-2 p71 |
+6860      | CSPG-2 p23.3 |
+6866      | BCH V2 p797 | OG 9-10/87 p11 |
+6872      | S&T 8/81 p116 | CSPG-2 p1.1 | CSPG-2 p23.3 |
+6888      | Ast 11/79 p83 | DS#6 Sp84 p25 | DS#7 Su84 p25 | S&T 5/88 p557
+          | DSM 8/80 p5 | ADSS p217 | OG 9-10/87 | AGN-2 p77, 78 |
+6891      | S&T 9/83 p277 |
+6893      | CSPG-2 p12.5 |
+6894      | DS#7 Su84 p9 |
+6902      | CSPG-2 p8.7 |
+6902a     | CSPG-2 p15.9 |
+6905      | S&T 9/83 p277 | S&T 10/69 p227 | DS#11 Su85 p9
+          | DS#15 Su86 (inside front cover) & p8 | DS#20 Fa87 p12
+          | DSM 2/82 p9 | Ast 9/87 p102 |
+6909      | CSPG-2 p8.14 |
+6910      | OG 9-10/87 p24 |
+6923      | CSPG-2 p1.12 |
+6934      | DS#24 Fa88 p17 |
+6937      | CSPG-2 p11.1 |
+6939      | S&T 1/88 p115 | Ast 9/85 p90 | BCH V1 p620 | HUAT p270
+          | DS#20 Fa87 p23 |
+6940      | DS#11 Su85 p9 |
+6942      | CSPG-2 p8.16 |
+6946      | S&T 1/77 p13 | S&T 1/81 p21 | S&T 12/69 p392 | S&T 12/83 p549
+          | S&T 1/88 p115 | Ast 7/83 p82 | DS#3 Su83 p16
+          | DS#7 Su84 (back cover) | BCH V1 p617 | Galaxies p9 |
+6947      | CSPG-2 p1.23 |
+6951      | BCH V1 p618 | HbAG p46 |
+6960, 6992    | S&T 2/81 p101 | S&T 9/74 p148 | Ast 1/78 p45 | S&T 2/77 p110
+              | S&T 2/79 p187 | S&T 3/83 p262 |
+6984      | CSPG-2 p1.22 |
+7000      | S&T 4/78 p298 | S&T 4/80 p281 (Gulf of Mexico) | S&T 6/73 p359
+          | S&T 6/81 p495 | S&T 6/84 p589 | S&T 9/78 p207 | S&T 11/76 p395
+          | S&T 12/81 p555 | S&T 4/88 p366 | Ast 4/86 p63 | Ast 6/83 p77
+          | Ast 7/76 (cover) | Ast 11/76 p50 | DS#3 Su83 p17
+          | ADSS (cover), p222, 223 | OG 9-10/87 p4 & cover
+          | AGN-2 p109, 110 |
+7006      | BCH V2 p832 | Ast 9/87 p102 |
+7008      | DS#7 Su84 p8 |
+7009      | S&T 2/60 p217 | S&T 6/69 p351 | S&T 7/69 p17 | S&T 8/79 p163
+          | S&T 9/84 p282 | Ast 9/86 p106 | DS#12 Fa85 p13 | DS#6 Sp84 p10
+          | DS#15 Su86 (inside front cover) | DS#15 Su86 p9 | DS#15 Su86 p24
+          | BCH V1 p191 | BCH V2 p1174 |
+7020      | CSPG-2 p6.11 |
+7023      | S&T 9/85 p210 | Ast 4/82 p103 | DS#7 Su84 p27 | BCH V1 p620
+          | DS#20 Fa87 p22 | AGN-2 p113 |
+7026      | S&T 5/70 p301 | S&T 10/69 p227 |
+7027      | S&T 7/69 p17 | DS#20 Fa87 p12 |
+7038      | CSPG-2 p11.7 | CSPG-2 p11.9 |
+7044      | AGN-2 p118 (in photo with Sh 2-119) |
+7048      | DSM 9/80 p9 |
+7049      | CSPG-2 p17.22 |
+7062      | DS#7 Su84 p9 | OG 9-10/87 p29 |
+
+7070      | CSPG-2 p8.22 |
+7070a?      | CSPG-2 p14.3 |
+7086      | OG 9-10/87 p28 |
+7097      | CSPG-2 p8.8 |
+7106      | CSPG-2 p8.14 |
+7119a+b      | CSPG-2 p1.7 |
+7124      | CSPG-2 p10.8 |
+7128      | OG 9-10/87 p28 |
+7129      | AGN-2 p126 |
+7135      | CSPG-2 p7.2 |
+7139      | S&T 10/69 p227 |
+7142      | S&T 10/74 p265 |
+7168      | CSPG-2 p7.14 |
+7172      | CSPG-2 p14.2 |
+7187      | CSPG-2 p6.10 |
+7205      | BG p123 |
+7214      | CSPG-2 p1.6 | CSPG-2 p17.3 |
+7217      | S&T 1/79 p107 | BCH V3 p1393 | HbAG p15 | BG p123 |
+7221      | CSPG-2 p11.10 |
+7225      | CSPG-2 p14.1 |
+7232-33   | S&T 6/88 p608 | CSPG-2 p24.1 |
+7243      | DS#1 Wi82 p18 |
+7252 "Four Petal Daisy"  | S&T 6/87 p570 | CSPG-2 p15.1 |
+7284/5    | CSPG-2 p2.8 |
+7293      | S&T 5/82 p449 | S&T 6/75 p402 | S&T 6/84 p581 | S&T 6/86 p632
+          | S&T 7/69 p12 | S&T 10/68 p270 | S&T 10/69 p273 | S&T 10/83 p367
+          | S&T 11/69 p308 | S&T 12/77 p460 | S&T 12/79 p509
+          | Ast 9/74 p24-25 | Ast 11/79 p81 | DS#6 Sp84 p17
+          | BCH V1 p193, 195 |
+7309      | S&T 12/69 p385 |
+7314      | HbAG p30 | CSPG-2 p8.6 |
+7331      | S&T 10/82 p395 | S&T 12/79 p505 | Ast 4/82 p53 | Ast 5/77 p16
+          | Ast 7/76 p88 | Ast 7/77 p54 | DS#3 Su83 p18 | BCH V3 p1386
+          | HbAG p17 | S&T 10/87 p441 |
+7332      | HbAG p7 | OG 9-10/88 p21 |
+7339      | OG 9-10/88 p21 |
+7354      | S&T 6/86 p632 |
+7361 = IC 5237    | CSPG-2 p8.22 |
+7380      | AGN-2 p142 |
+7392      | BCH V1 p193 | HbAG p20 |
+7417 group    | CSPG-2 p18.8 |
+7421      | CSPG-2 p12.1 |
+7457      | S&T 5/81 p380 | HbAG p4 |
+7469      | S&T 5/78 p374 |
+7479      | S&T 1/77 p13 | S&T 1/79 p107 | S&T 9/85 p236 | S&T 10/83 p367
+          | Ast 8/83 p84 | DSM 5/81 p5 | BCH V3 p1392 | OG 9-10/88 p23
+          | Astrograph 6-7/88 p89 |
+7510      | DS#6 Sp84 p25 | BCH V1 p619 |
+7538      | ADSS p237 | AGN-2  p151, 152, 153 |
+7573      | CSPG-2 p8.14 |
+7582      | AOST | CSPG-2 p17.4 | CSPG-2 p18.6 |
+7590      | AOST |
+7599      | AOST |
+7603      | S&T 4/83 p307 | Ast 9/78 p13 | ASTRONOMY p157 |
+7606      | S&T 2/81 p100 | S&T 6/88 p586 | DS#12 Fa85 p11 |
+7616      | S&T 12/69 p387 |
+7632      | CSPG-2 p8.18 |
+7635      | S&T 7/61 p7 | S&T 5/81 p463 | S&T 12/88 p712 | Ast 11/79 p79
+          | DS#7 Su84 p29 | DS#23 Su88 p19 | BCH V1 p522 | ADSS p237
+          | Ast 7/76 p77 | Astrograph 6-7/88 p86,87 | AGN-2 p153 |
+
+7637      | CSPG-2 p1.11 |
+7640      | HbAG p49 |
+7662      | S&T 6/86 p631 | S&T 11/81 p509 | Ast 4/85 p78 | DS#6 Sp84 p13 |
+          | DS#15 Su86 (inside front cover) | DS#20 Fa87 p10 (sketch)
+          | BCH V1 p158 |
+7673      | S&T 4/83 p325 |
+7721      | S&T 3/69 p148 |
+7734      | CSPG-2 p2.12 |
+7741      | S&T 2/81 p102 | HbAG p49 | OG 9-10/88 p26 | Astrograph 8-9/80 p10 |
+7743      | HbAG p43 |
+7752/53      | S&T 12/69 p386 | DS#12 Fa85 p24 | GALAXIES p146 |
+7755      | CSPG-2 p1.3 |
+7762      | ADSS p11 |
+7764a     | CSPG-2 p3.3 |
+7769      | BG p123 |
+7772      | BCH V3 p1393 |
+7788      | DS#8 Fa84 p29 | DS#10 Sp85 p2 |
+7789      | S&T 11/81 p509 | S&T 12/79 p601 | Ast 1/79 p48 | Ast 5/85 p60
+          | DS#8 Fa84 p27 | BCH V1 p532 |
+7790      | DS#10 Sp85 p2 |
+7793      | S&T 11/81 p408 | BG p111 |
+7814      | BCH V3 p1391 | Ast 11/85 p106 |
+7822      | Ast 11/85 p49 | DS#17 Wi86 p14 | ADSS p11 | AGN-1 p1 & 2 |
+
+IC Objects
+IC 10      | S&T 3/72 p158 | S&T 5/74 p313 |
+IC 59      | Ast 6/88 p73 | DS#7 Su84 p24 | BCH V1 p491 | AGN-1 p9 |
+IC 63      | Ast 6/88 p73 | DS#7 Su84 p24 | BCH V1 p491 | AGN-1 p9 |
+IC 289      | S&T 7/82 p19 |
+IC 342      | DS#6 Sp84 p31 | BCH V1 p335 | DS#20 Fa87 p21 |
+IC 348      | AGN-1 p28 |
+IC 405      | S&T 6/77 p490 | DS#6 Sp84 p32 | BCH V1 p286, 289
+            | AGN-1 p51, 52, 54 | Sky Cat V2 pxxvi |
+IC 410      | DS#6 Sp84 p32 | ADSS p59 | AGN-1 p54, 55 |
+IC 417      | AGN-1 p54 ,60 |
+IC 420      | AGN-1 p65 |
+IC 423      | AGN-1 p65 |
+IC 424      | AGN-1 p65 |
+IC 426      | AGN-1 p66 |
+IC 429      | AGN-1 p69 |
+IC 430      | AGN-1 p69 |
+IC 431 = vdB 50    | AGN-1 p68 |
+IC 432 = vdB 51    | AGN-1 p68 |
+IC 434      | S&T 9/87 p254 |
+IC 435      | AGN-1 p76 |
+IC 443      | S&T 11/74 p297 | Ast 2/84 p78 | Ast 5/74 p51 | AGN-1 p91
+            | DS#6 Sp84 p33 | BCH V1 p513 | BCH V2 p944 | ADSS p72, 73
+            | OG 11-12/88 p26 & cover |
+IC 444      | ADSS p73 | AGN-1 p94 |
+IC 446      | AGN-1 p96 |
+IC 448      | AGN-1 p95 |
+IC 466      | AGN-1 p116 |
+IC 696      | DS#17 Wi86 p24 |
+IC 698      | DS#17 Wi86 p23 |
+IC 699      | DS#17 Wi86 p25 |
+IC 749      | BG p127 |
+IC 764      | CSPG-2 p10.8 |
+IC 883      | WSQJ 7/87 p11 |
+
+IC 1283/4    | DS#11 Su85 p21 | AGN-2 p38 |
+IC 1287 = vdB 124  | AGN -2 p46 |
+IC 1295      | DS#23 Su88 p27 |
+IC 1296      | S&T 8/87 p219 |
+IC 1311, 1318 Gamma Cyg Neb. | ADSS p217 | OG 9-10/87 p12 |
+IC 1396      | S&T 8/79 p129 | Ast 4/86 p100 | Ast 9/78 p25 | Ast 11/85 p50
+             | Ast 12/86 p41 | DS#7 Su84 p29 | DS#24 Fa88 p20 | ADSS p227
+             | DS#19 Su87 p20 | AGN-2 p111, 119, 123, 124 |
+IC 1434      | DS#20 Fa87 p21 |
+IC 1459 = IC 5265  | CSPG-2 p2.5 | CSPG-2 p14.2 |
+IC 1470      | DS#10 Sp85 p39 | DSM 2/82 p6 | AGN-2 p148 |
+IC 1505      | GALAXIES p147 |
+IC 1555      | CSPG-2 p8.32 |
+IC 1561 + IC 1562  | CSPG-2 p8.13 |
+IC 1605      | CSPG-2 p8.18 |
+IC 1613      | BCH V1 p648 | HbAG p40 | BG p115 | Galaxies p92
+IC 1616      | CSPG-2 p11.10 |
+IC 1619      | S&T 11/87 p459 |
+IC 1650      | CSPG-2 p10.9 |
+IC 1657      | CSPG-2 p8.13 |
+IC 1747      | S&T 5/70 p301 |
+IC 1795      | S&T 1/70 p6 | ADSS p41 | AGN-1 p15, 16 |
+IC 1805 & IC 1848  | Ast 11/85 p51 | DS#7 Su84 p24 | DS#17 Wi86 p17
+                   | ADSS p41 | AGN-1 p15, 17 | Astrograph 4-5/88 p68,69 |
+IC 1805 & IC 1795  | S&T 1/70 p4 (red-light POSS print) | AGN-1 p15, 17 |
+IC 1811      | CSPG-2 p2.4 |
+IC 1816      | CSPG-2 p11.1 |
+IC 1830 = IC 1826  | CSPG-2 p12.5 |
+IC 1848      | AGN-1 p18 |
+IC 1860      | CSPG-2 p19.2 |
+IC 1895      | CSPG-2 p1.13 |
+IC 1908      | CSPG-2 p2.8 | CSPG-2 p8.20 |
+IC 1985      | AGN-1 p28 |
+IC 1993      | CSPG-2 p6.11 |
+IC 2006      | CSPG-2 p10.2 |
+IC 2035      | CSPG-2 p13.7 |
+IC 2067      | AGN-1 p40 |
+IC 2068      | CSPG-2 p6.9 |
+IC 2087      | AGN-1 p43 |
+IC 2118      | DS#6 Sp84 p31 | AGN-1 p47 | Ast 6/88 p72 |
+IC 2122      | CSPG-2 p8.31 |
+IC 2126      | DS#17 Wi86 p21 |
+IC 2135 = IC 2136  | CSPG-2 p8.33 |
+IC 2152      | CSPG-2 p8.16 |
+IC 2153      | CSPG-2 p15.4 |
+IC 2156      | S&T 2/84 p192 |
+IC 2157      | S&T 2/84 p192 |
+IC 2162      | AGN-1 p89 |
+IC 2163 / N 2207    | GALAXIES p140 |
+IC 2164      | CSPG-2 p6.4 |
+IC 2169      | AGN-1 p96 |
+IC 2177 & Stromlo 2  | S&T 7/79 p21 | DS#5 Wi83 p27 | DSM 10/80 p5
+                     | ADSS p82, 83 | AGN-1 p113 |
+IC 2200/a    | CSPG-2 p8.20 |
+IC 2233      | S&T 11/73 p287 |
+IC 2448      | CSPG-2 p25.1 |
+IC 2537      | CSPG-2 p8.13 |
+IC 2539      | CSPG-2 p8.12 |
+IC 2548      | CSPG-2 p11.7 |
+
+IC 2556      | CSPG-2 p8.22 |
+IC 2574      | BCH V3 p1995 |
+IC 2580      | DS#17 Wi86 p25 |
+IC 2853      | DS#17 Wi86 p24 |
+IC 2857      | DS#17 Wi86 p24 |
+IC 2872      | ADSS p111 |
+IC 2913      | CSPG-2 p8.4 |
+IC 2944      | S&T 4/78 p296 | ADSS p111 | DS#22 p7 |
+IC 2948      | S&T 4/78 p296 | ADSS p111 | DS#22 p7 | Ast 5/88 p100 |
+IC 3010      | CSPG-2 p6.11 |
+IC 3290      | CSPG-2 p2.7 |
+IC 3370      | CSPG-2 p7.1 |
+IC 3568      | DS#15 Su86 p24 |
+IC 3639      | CSPG-2 p24.1 |
+IC 3813      | CSPG-2 p6.9 |
+IC 4248      | CSPG-2 p6.12 |
+IC 4296      | CSPG-2 p8.27 |
+IC 4320      | CSPG-2 p14.4 |
+IC 4329      | DS#14 Sp86 p22 |
+IC 4350      | CSPG-2 p6.5 |
+IC 4370      | S&T 5/81 p385 |
+IC 4406      | Ast 6/87 p103 | BCH V2 p1175 |
+IC 4448      | CSPG-2 p6.5 |
+IC 4468      | CSPG-2 p1.12 |
+IC 4518      | CSPG-2 p7.5 |
+IC 4553      | S&T 4/87 p374 | S&T 1/88 p26 |
+IC 4591      | AGN-2 p6 |
+IC 4592 = vdB 100  | AGN-2 p4
+IC 4604 (part of Rho Oph Neb) | DS#7 Su84 p25  AGN-2 p9, 10 |
+IC 4603/4604/4605  | AGN-2 p9, 10 |
+IC 4628      | ADSS p171 | S&T 11/87 p461 |
+IC 4687/89    | CSPG-2 p2.13 |
+IC 4704/5/12    | CSPG-2 p14.4 |
+IC 4720/21    | CSPG-2 p7.5 |
+IC 4722      | CSPG-2 p10.9 |
+IC 4756      | BCH V3 p1781 |
+IC 4757      | CSPG-2 p14.1 |
+IC 4799      | CSPG-2 p11.4 |
+IC 4831      | CSPG-2 p17.7 |
+IC 4839      | CSPG-2 p2.16 |
+IC 4852      | CSPG-2 p10.10 |
+IC 4857/8    | CSPG-2 p1.12 |
+IC 4869      | CSPG-2 p20.8 |
+IC 4886      | CSPG-2 p10.13 |
+IC 4901      | CSPG-2 p8.3 | CSPG-2 p9.8 |
+IC 4938      | CSPG-2 p8.18 | CSPG-2 p12.1 |
+IC 4954/4955    | AGN-2 p75 |
+IC 4964      | CSPG-2 p8.22 |
+IC 4965      | CSPG-2 p17.24 |
+IC 4970      | CSPG-2 p1.1 | CSPG-2 p23.3 |
+IC 4983      | CSPG-2 p11.7 |
+IC 4996      | DS#23 Su88 p40 |
+IC 5053      | CSPG-2 p2.5 | CSPG-2 p2.16 |
+IC 5063      | CSPG-2 p14.1 |
+IC 5067 + 5068 + 5070 = Pelican Nebula | S&T 4/78 p298 | S&T 6/81 p495
+                                       | Ast 5/84 p85 | AGN-2 p109 |
+IC 5068      | AGN-2 p104 |
+IC 5076 = NGC 6991  | DS#7 Su84 p15 | AGN-2 p106 |
+IC 5105a      | CSPG-2 p1.12 |
+
+IC 5146 (Cocoon Neb)  | S&T 8/83 p179 | DS#7 Su84 p13 | ADSS p229
+                      | S&T 12/85 p627 | S&T 2/88 p145  Ast 3/87 p111
+                      | OG 9-10/87 p30 | AGN-2 p128 |
+IC 5148-50    | S&T 6/86 p632 |
+IC 5154      | CSPG-2 p13.3 |
+IC 5173      | CSPG-2 p16.1 |
+IC 5174-75    | S&T 12/81 p546 |
+IC 5179 = IC 5183/84  | CSPG-2 p16.4 |
+IC 5227      | CSPG-2 p1.13 |
+IC 5250      | CSPG-2 p2.1 |
+IC 5289      | CSPG-2 p6.12 |
+IC 5328/28a    | CSPG-2 p1.7 |
+IC 5335      | CSPG-2 p14.4 |
+IC 5353      | CSPG-2 p19.2 |
+IC 5364      | CSPG-2 p2.10 |
+
+Other Photos
+MCG +01-48-001    | AGN-2 p50 |
+MCG +06-45-001    | AGN-2 p85 |
+UGC 2885      | S&T 12/86 p585 |
+UGC 3939      | S&T 8/87 p131 |
+UGC 5101      | S&T 12/87 p577 |
+UGC 6614      | S&T 8/87 p131 | Ast 10/87 p90 |
+UGC 6697      | S&T 2/85 p110 |
+UGC 11326    | AGN-2 p50 |
+AM 0213-2833    | S&T 4/83 p308 |
+AM 0328-222    | S&T 4/83 p309 |
+AM 2006-295    | S&T 4/83 p309 |
+AM 2054-2210    | S&T 4/83 p308 |
+AM-4 Star Cluster  | S&T 9/82 p226 |
+Anon galaxy in Hor  at 03h57m -46³ (1950)  | S&T2/77 p100  |
+Anon galaxy at 00h05m.6 -34³51' (1950) | S&T 2/77 p191 |
+Anon 0151-497    S&T 5/81 p384 |
+Abell 3      | S&T 7/70 p27 |
+Abell 21      | S&T 7/70 p25 | OG 11-12/88 p31 |
+Abell 41      | S&T 3/84 p230 | DS#6 Sp84 p20 |
+Abell 46      | S&T 8/80 p106 |
+Abell 48      | S&T 7/70 p27 |
+Abell 55      | S&T 7/70 p27 |
+Abell 63      | S&T 10/76 p261 |
+Abell 79      | S&T 7/70 p27 |
+Abell 85      | S&T 7/70 p26 |
+Abell 154    | S&T 1/88 p20 |
+Abell 370    | S&T 10/88 p358
+Abell 400    | S&T 1/88 p20 |
+Abell 426    | S&T 1/88 p20 |
+Abell 667    | S&T 1/88 p22 |
+Abell 1097    | S&T 1/88 p21 |
+Abell 1185    | S&T 1/88 p20 |
+Abell 1275    | S&T 1/88 p21 |
+Abell 1367    | DS#10 Sp85 p10 |
+Abell 1371    | S&T 1/88 p21 |
+Abell 1501    | S&T 1/88 p21 |
+Abell 1656    | DS#10 Sp85 p8 |
+Abell 1663    | S&T 1/88 p21 |
+Abell 2019    | S&T 1/88 p21 |
+Abell 2151    | S&T 1/88 p20 |
+Abell 2199    | S&T 1/88 p17 |
+Abell 2218    | S&T 10/88 p358
+
+B 33 / IC 434 & Zeta Orionis area | S&T2/69 p121 | S&T 2/80 (cover)
+              |  4/81 p287 | S&T 5/81 p463 | S&T 6/75 p404 |
+              | S&T 6/75 p404 | S&T 6/77 p487 | S&T 11/81 p416
+              | Ast 3/82 p16, 17 | Ast 3/87 p113 | BCH V2 p1329 |
+Barnard 7    | S&T 8/62 p67 | S&T 8/63 p79 | S&T 10/61 p199 |
+Barnard 63    | DS#19 Su87 p20
+Barnard 64    | S&T 7/79 p98 | DS#19 Su87 p20 |
+Barnard 68    | S&T 4/81 p289
+Barnard 72    | S&T 4/81 p289 | Ast 1/84 p18 | DS#8 Fa84 p34 | BCH V2 p1269
+              | DS#19 p20 |
+Barnard 78 (Pipe Nebula)  | BCH V2 p1266, 1270 |
+Barnard 86    | S&T 8/86 p130 | Ast 11/84 p11 | DS#3 Su83 p8 | BCH V3 p1643
+              | Ast 9/87 p50 |
+Barnard 87 (Parrot's Head Neb) | Ast 1/84 p16 | DS#19 p23 | Ast 9/87 p46 |
+Barnard 92    | Ast 2/87 p100 | S&T 7/87 p33 | BCH V3 p1605 | Ast 9/87 p50
+              | AGN-2 p34 |
+Barnard 93    | AGN-2 p34 (Sharpless 41 complex in M24 starcloud with B92)
+              | AGN-2 p34 |
+Barnard 95    | AGN-2 p40 (in field with Sh 54) |
+Barnard 133    | BCH V1 p234 |
+Barnard 142, 143    | Ast 1/84 p16 | Ast 8/86 p86 | Ast 12/86 p41
+                    | DS#7 Su84 p25 | BCH V1 p232 | DS#19 Su87 p20 |
+Barnard 143    | Ast 9/87 p46 | S&T 7/61 p16, 17 |
+Barnard 161    | DS#19 Su87 p20
+Barnard 162    | DS#19 Su87 p20 |
+Barnard 163    | DS#19 Su87 p20 |
+Barnard 172    | Ast 9/87 p49 |
+Barnard 292    | DS#19 Su87 p23 |
+Barnard 295    | DS#19 Su87 p23 |
+Barnard 300    | DS#19 Su87 p23 |
+Barnard 305    | DS#19 Su87 p23 |
+Barnard 365    | DS#19 Su87 p20 |
+Barnard 367    | DS#19 Su87 p20 |
+Barnard's Loop    | S&T 2/84 p193 | S&T 2/79 p200
+                  | Ast 11/83 p78 AGN-1 p57, 78 |
+Barnard's Loop - brightest part | AGN-1 p78 |
+Berkeley 11    | AGN-1 p36 (in photo with Sh 2-213 |
+Cartwheel Galaxy = MCG-06-02-022a | Ast 12/88 p93 |
+Ced 130      | ADSS p161 |
+Cepheus Nebula    | Ast 6/88 p74 |
+Coal Sack    | Ast 5/85 p35 | Ast 9/78 p28 | Ast 7/87 p60 | Sky Cat V2 pxxvii
+             | BCH V2 p734 | OG 11-12/87 p18 |
+Collinder 436    | S&T 9/72 p198 |
+Copeland's Septet  | DS#2 Sp83 p30 |
+DEM 137 in LMC    | S&T 9/81 p203 |
+DEM 165 in LMC    | S&T 9/81 p203 |
+DEM 208 in LMC    | S&T 9/81 p203 |
+DEM 231 in LMC    | S&T 9/81 p203 |
+Dolidze 25    | AGN-1 p106 (on photo with Sh 2-284) |
+Dwarf, 1023 Group, I  | HbAG p40 |
+Dwarf, 1023 Group, III  | HbAG p40 |
+Egg Nebula    | AGN-2 p110 |
+FG Sagittae    | S&T 3/70 p166 | S&T 7/74 p19 | BCH V3 p1543 |
+Globular Cluster in Reticulum  | S&T 4/76 p246 (04h35m.4 -58³56' (1950) |
+Globule CG 22       | S&T 7/81 p7 |
+Globules in Gum Nebula | S&T 2/83 p131 |
+Globule in Coal Sack | S&T 4/81 p289 |
+Globule in Vela     | S&T 4/81 p291 | Ast 1/84 p10-11 |
+Globule ESO 210-6A  | S&T 3/84 p227 |
+
+Globule in Puppis   | S&T 5/88 p477 |
+Great Galactic Dark Horse | Ast 12/86 p39 | Ast 9/87 p49 |
+Gum Nebula          | S&T 11/76 p32 | Ast 1/84 p19 | Ast 11/85 p95
+                    | S&T 4/78 p297 | S&T 4/81 p292 |
+                    | S&T 4/84 (cover) | S&T 8/71 p68 |
+Gum Nebula Mosaic   | S&T 2/75 p94-95 | S&T 8/71 p67 |
+Harvard 7           | ADSS p135 |
+Harvard 12          | ADSS p171 |
+Harvard 16          | BCH V3 p1679 |
+Harvard 18a-c       | ADSS p89 | S&T 8/86 p106 |
+Harvard 19          | ADSS p189 | S&T 8/76 p106 |
+Harvard 20          | ADSS p211 |
+Harvard 21          | DS#8 Fa84 p29 | DS#10 Sp85 p2 |
+Henize N66 & N76 (SMC) | DS#11 Su85 p39 |
+Henize N70 (LMC)    | DS#11 Su85 p38 |
+Henize 2-207        | DS#15 Su86 p9 |
+Hoag's Object       | S&T 8/86 p126 | S&T 1/88 p13 |
+Holmberg I          | S&T 3/85 p217 | BG p115 |
+Holmberg II         | S&T 3/85 p217 | BG p113 | Galaxies p135 |
+Holmberg IX         | BG p115 |
+IRAS 08572 +3915    | S&T 12/87 p577 |
+IRAS 22491 -1808    | S&T 12/87 p577 |
+J 900               | S&T 12/69 p379 (sketch from photo) |
+Jones I             | S&T 3/88 p338 |
+K 1-27              | CSPG-2 p25.1 |
+Karachentsev 25     | S&T 7/77 p29 |
+Klemola 25 galaxy group | S&T 2/85 p107 |
+Kron 3 (gc in SMC)  | S&T 2/77 p100 | S&T 9/70 p134 |
+Maffei 1            | S&T 3/72 p158 | DS#24 Fa88 p33 |
+Malin 1             | S&T 8/87 p123 |
+Melotte 15          | ADSS p41 |
+Menzel 3            | DS#15 Su86 p10 |
+Messier 40 Field    | S&T 8/66 p83 |
+Milky Way Mosaic (Cyg-Sco)  | Ast 9/87 p100-101 |
+Milky Way Mosaic (Aql-Cen)  | AGN-2 p1 |
+Milky Way Center            | S&T 2/88 p154, 155 |
+Milky Way in Cyg, Vul & Sge | AGN-2 p60 |
+Milky Way in Cyg & Cep      | AGN-2 p111 |
+Milky Way field surrounding Gamma Cygni | AGN-2 p89 |
+Milky Way in Scorpius       | AGN-2 p15 |
+Central regions of the Milky Way | Ast 7/76 p73 | Ast 8/85 p19 | Ast 10/76 p42
+                                 | Ast 12/79 p67 | DS#3 Su83 (cover)
+                                 | Ast 7/87 (cover) |
+Minkowski 1-79              | S&T 6/86 p632 |
+M 1-92 = CRL 2688 = Egg Neb | S&T 1/75 p21 |
+Minkowski 2-9               | DS#15 Su86 p10 |
+Minkowski 3-39              | CSPG-2 p25.1 |
+Nebula in CMa           | S&T 11/87 p465 |
+Leo A                   | S&T 3/85 p217 | BG p115 |
+Leo I                   | S&T 3/80 p265 | S&T 3/85 p216 | S&T 4/80 p288
+                        | S&T 12/86 p584 | S&T 2/88 p146 | DS#4 Fa83 p14
+                        | Galaxies p102 |
+Leo II               | S&T 3/85 p216 |
+Large Magellanic Cloud  | S&T 1/74 p10 | S&T 1/75 p10 | S&T 3/86 p239
+                        | S&T 4/81 p293 | S&T 4/84 p304 |
+                        | S&T 7/69 p23 | S&T 12/81 p539 | S&T 7/88 p11
+                        | Ast 7/85 p19 | Ast 9/78 p20 |
+                        | Ast 12/76 p6-7 | DS#4 Fa83 p10 | ADSS p60, 61
+                        | HbAG p38 |
+
+N 70 an H II region in LMC      | S&T 7/82 p22 |
+Ring Nebulosity in LMC          | BCH V2 p849 |
+N 49 - supernova remnant in LMC | S&T 10/88 p345 |
+PK 26 +1.0              | AGN-2 p48 |
+PK 70 +1.1 = K 3-50     | AGN-2 p71 |
+PK 151 +2.1 = Sh 2-208  | AGN-1 p37 |
+PK 215 +11.1            | AGN-1 p125 |
+PK 286 +11.1            | S&T 12/77 p459 |
+PK 258-15.1             | S&T 12/77 p459 |
+PK 310 +24.1 = Lo 8     | CSPG-2 p25.1 |
+Pellett 550             | DS#11 Su85 p38 |
+Rho Ophiuchi Neb complex = IC 4603, 4604, 4605, 4606 & Ced 130
+      | S&T 4/79 (cover) | S&T 4/81 p287 | S&T 6/82 p575 | S&T 7/70 p36
+      | S&T 7/74 p11 | S&T 10/86 p335 | Ast 1/84 (cover) | Ast 11/79 p23
+      | BCH V3 p1669 |
+RCW 48                  | S&T 10/74 p225 |
+RCW 132 = Sharpless 12  | AGN-2 p17 |
+Scutum Star Cloud       | DS#20 Fa87 p15 |
+Shakhbazian I           | S&T 11/73 p305 |
+Shapley 1               | Ast 6/87 p102 | BCH V2 p1175 | UGSP p114 |
+S 2-9        | AGN-2 p7, 8 |
+Sh 2-13      | AGN-2 p16 |
+Sh 2-16      | AGN-2 p19 (includes oc Cr 347) |
+Sh 2-26/28 (region between northern part of M20 and M8 - includes oc Bo 14)
+             | AGN-2 p24 |
+Sh 2-35      | AGN-2 p35 |
+Sh 2-46      | AGN-2 p23 |
+Sh 2-53      | AGN-2 p35 |
+Sh 2-54      | AGN-2 p39, 40 |
+Sh 2-55      | AGN-2 p47 |
+Sh 2-64      | AGN-2 p47 |
+Sh 2-71      | DS#15 Su86 p11 |
+Sh 2-82      | DS#11 Su85 p21 | S&T 6/88 p605
+Sh 2-84      | AGN-2 p57, 66 |
+Sh 2-88      | AGN-2 p65 |
+Sh 2-90      | AGN-2 p63 |
+Sh 2-101     | AGN-2 p70 |
+Sh 2-104     | AGN-2 p82 |
+Sh 2-108 (Gamma Cygni Nebulosity) | BCH V2 p756 | AGN-2 p88, 91 |
+Sh 2-112     | AGN-2 p98 |
+Sh 2-115     | AGN-2 p99 |
+Sh 2-119     | AGN-2 p118 |
+Sh 2-129     | AGN-2 p117 |
+Sh 2-132     | AGN-2 p134 |
+Sh 2-155     | AGN-2 p144 |
+Sh 2-157 + 157a    | AGN-2 p150 |
+Sh 2-188     | AGN-1 p11 |
+Sh 2-201 = IC 1871 ?  | AGN-1 p20 |
+Sh 2-205     | AGN-1 p30 |
+Sh 2-231     | AGN-1 p69 |
+Sh 2-233  *  | AGN-1 p65 |* 2-231 in Uranometria & Sky Cat. 2000 V2) |
+Sh 2-234     | AGN-1 p59 |
+Sh 2-235     | AGN-1 p70 |
+
+Sh 2-241     | AGN-1 p82 |
+Sh 2-247     | AGN-1 p83 |
+Sh 2-261     | DS#17 Wi86 p21 | AGN-1 p85 |
+Sh 2-264     | AGN-1 p62, 63 |
+Sh 2-278     | AGN-1 p56 |
+
+Sh 2-297 = vdB 94 = Ced 90 | AGN-1 p114 (also on photo p115) |
+Sh 2-301     | AGN-1 p117 |
+Sh 2-307     | AGN-1 p122 |
+Small Magellanic Cloud  | S&T 2/87 p131 | S&T 3/86 p239 | S&T 4/84 p317
+             | S&T 4/87 p373 | S&T 7/69 p23 | Ast 12/76 p8 | BCH V3 p1914
+             | BG p113 |
+Stephan's Quintet       | S&T 11/73 p289 | S&T 9/88 p318 | Ast 10/83 p56
+                        | DS#5 Wi83 p5 | DS#9 Wi84 (back cover)
+                        | DS#16 Fa86 (back cover) | BCH V3 p1390
+                        | GALAXIES p141 |
+S Nebula      | DS#6 Sp84 p24 | Ast 12/87 p87 |
+S106      | S&T 4/80 p285 | S&T 8/83 p94 |
+S147 (Simeis 147)  | S&T 10/62 p191 | S&T 1/81 p83
+                   | S&T 1/85 p83 (often mistakenly called Shajn 147)
+                   | S&T 7/86 p35 | S&T 11/88 p464 | BCH V1 p513
+                   | BCH V2 p808 | BCH V3 p1887 | AGN-1 p71 |
+SS 433      | DS#10 Sp85 p4 | DS#9 Wi84 p13 | DS#15 Su86 p7
+Stock 2      | DS#23 Su88 p35 |
+Stock 8      | ADSS p59 |
+Tarantula nebula    | S&T 7/88 p32 |
+Trumpler 5    | AGN-1 (on photo p103) |
+Trumpler 24    | DS#10 Sp85 p39 |
+V1057 Cygni    | S&T 7/70 p71 |
+vdB 1      | AGN-1 p3 |
+vdB 8      | AGN-1 p17 |
+vdB 14 + vdB 15    | AGN-1 p25 |
+vdB 16      | AGN-1 p26 |
+vdB 24      | AGN-1 p26 |
+vdB 26      | AGN-1 p35 |
+vdB 29      | AGN-1 p45 |
+vdB 31      | AGN-1 p45 |
+vdB 37      | AGN-1 p48 |
+vdB 38      | AGN-1 p53 |
+vdB 68      | AGN-1 p83 |
+vdB 69      | AGN-1 p83 |
+vdB 75 = IC 444?    | AGN-1 p93 |
+vdB 80      | AGN-1 p95 |
+vdB 93      | AGN-1 p115 (on photo with NGC 2327) |
+vdB 96      | AGN-1 p120 |
+vdB 97      | AGN-1 p122 |
+vdB 98      | AGN-1 p125 |
+vdB 101      | AGN-2 p4 ( = IC 4601 in Uranometria #336)  
+AGN-2 p6 |
+vdB 102-103    | AGN-2 p4, 6 |
+vdB 111      | AGN-2 p13 |
+vdB 126      | S&T 6/88 p604 | AGN-2 p55 |
+vdB 128      | AGN-2 p72 |
+vdB 130      | AGN-2 p80 |
+vdB 131/132 = N 6914a/14b | AGN-2 p90 |
+vdB 133      | AGN-2 p93, 95 |
+vdB 140      | AGN-2 p117 |
+vdB 143      | AGN-2 p122 |
+vdB 145      | AGN-2 p126 |
+vdB 152      | AGN-2 p132 |
+Veil nebula = NGCs 6960, 6974, 6979, 6992 + 6995 | S&T 2/77 p112
+             | S&T 8/79 p195 | S&T 9/80 p255 | S&T 10/84 p376
+             | S&T 11/79 p414 | Ast 4/82 p18 | BCH V2 p800, 802, 803, 804, 809
+             | ADSS p219 | AGN-2 p105 |
+Veil Neb (central)  | S&T 11/74 p276 | BCH V2 p806 |
+
+Vela nebulosity          | S&T 4/87 p217 | S&T 7/79 p35 |
+Vela supernova remnant   | S&T 5/88 p480 |
+VV 172 chain             | S&T 10/68 p231 | Ast 9/78 p14 | Ast 10/84 p69 |
+19W32 (planetary nebula) | S&T 9/83 p217 |
+30 Doradus Nebula        | S&T 4/73 p211 | S&T 5/87 p470 | Ast 10/82 p15
+                         | Galaxies p78 |
+61 Cygni area            | S&T 2/75 p97 (POSS) |
+AG Carinae planetary     | S&T 12/77 p459 |
+NGC / IC / Anon object in M33 | S&T 10/86 p424 |
+Magellanic clouds, Eta Carina & Southern Cross | S&T 2/86 p127 |
+Unknown Galaxy Group in Leo | Ast 4/84 p9 |
+WLM       | BG p113 |
+II Zw 23       | Ast 7/85 p60 |
+II Zw 2105.2 +0340   | S&T 12/69 p385 |
+And I                    | S&T 1/72 p12 |
+Cassiopeia A             | BCH V1 p517 |
+Carina dwarf             | S&T 4/80 p291 | S&T 6/84 p515 | S&T 8/77 p106
+                         | GALAXIES p107 |
+Eastern Cassiopeia       | DS#8 Fa84 p24 |
+Western Cassiopeia       | DS#8 Fa84 p26 |
+Centaurus Galaxy Cluster | DS#22 p23, 25, 28-29
+Coma Berenices Star Cluster | S&T 9/70 p144 | Ast 6/75 p73 | BCH V2 p669 |
+Coma Galaxy Cluster  | S&T 1/79 p13 | S&T 3/83 p211 | S&T 5/80 p367
+                     | S&T 4/69 p227 (central part) | S&T 5/74 p311
+                     | S&T 7/73 p13 | S&T 7/85 p22 | S&T 11/84 p399
+                     | S&T 1/88 p17 | Ast 3/74 p10 |
+Corona Borealis Galaxy Cluster | S&T 3/69 p153 | BCH V2 p715 |
+Fornax A       | S&T 2/81 p108 |
+Fornax dwarf     | S&T 4/80 p287, 289 | S&T 10/74 p229 | DS#15 Su86 p38 |
+Fornax System     | BCH V2 p902 | Galaxies p100 |
+Fornax Cluster     | S&T 1/88 p109 |
+Hercules Galaxy Cluster   | S&T 1/65 p9 | S&T 5/80 p368 | Ast 8/77 p51
+                          | Ast 11/84 p12-13 | BCH V2 p996 |
+Hydra I Galaxy Cluster    | S&T 12/76 p430 |
+Central Lacerta           | DS#1 Wi82 p20 |
+Northern Lacerta          | DS#1 Wi82 p19 |
+Orion & surrounding nebulosity  | S&T 7/81 p7 | S&T 9/72 p201 | S&T 12/69 p406
+                          | AGN-1 p67 |
+Pavo Galaxy Cluster       | Ast 7/77 p50 |
+Perseus Galaxy Cluster    | Ast 10/87 p16 |
+Pegasus Dwarf     | BG p115 |
+Puppis Region     | DS#2 Sp83 p19 |
+Sagittarius Star Cloudd   | S&T 2/81 p175 | BCH V3 p1639 |
+Sculptor Dwarf     | S&T 8/71 p119 | Galaxies p99 |
+Sextans A     | S&T 3/85 p217 | BG p115 |
+Sextans B     | S&T 3/85 p216 | BG p113 |
+Sextans System     | HbAG p39 | GALAXIES p108 |
+Virgo Galaxy Cluster   | S&T 6/82 p550 | S&T 1/88 p16 | Ast 11/79 p19
+                       | DS#3 Su83 p31 | BCH V3 p2077 |
+                       

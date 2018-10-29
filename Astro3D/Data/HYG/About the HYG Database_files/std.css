@@ -1,0 +1,30 @@
+#menuarea {
+	BORDER-RIGHT: #333333 2px solid; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: 10px; MARGIN-RIGHT: 20px; BORDER-BOTTOM: #333333 2px solid; HEIGHT: auto; BACKGROUND-COLOR: #222222
+}
+#contentarea {
+	PADDING-LEFT: 10px; FONT-SIZE: 10pt; MARGIN-LEFT: 180px; WIDTH: auto; HEIGHT: auto
+}
+H1 {
+	FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-ALIGN: center
+}
+H2 {
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+H3 {
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+H4 {
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.sectionhead {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+.sectionlink {
+	FONT-SIZE: 8pt; COLOR: #99ffff; TEXT-DECORATION: none
+}
+A {
+	COLOR: #336699; TEXT-DECORATION: none
+}

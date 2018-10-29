@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0046)http://www.astronexus.com/general/data/hyg.php -->
+<HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>About the HYG Database</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2900.2604" name=GENERATOR><LINK 
+href="About the HYG Database_files/body.css" type=text/css 
+rel=stylesheet></HEAD>
+<BODY>
+<DIV id=menuarea><BR><A 
+href="http://www.astronexus.com/general/data/index.php"><IMG alt=* 
+src="About the HYG Database_files/bdip.gif"></A><BR><BR><SPAN 
+class=sectionhead>General</SPAN><BR><A class=sectionlink 
+href="http://www.astronexus.com/general/interests.php">Personal 
+Interests</A><BR><A class=sectionlink 
+href="http://www.astronexus.com/general/clubinfo.php">Groups &amp; 
+Organizations</A><BR><A class=sectionlink 
+href="http://www.astronexus.com/general/nsp.php">Nebraska Star Party</A><BR><A 
+class=sectionlink href="http://www.astronexus.com/general/data/hyg.php">Stellar 
+Data</A><BR><A class=sectionlink 
+href="http://www.astronexus.com/general/astrogeek.php">Astrogeeks!</A><BR><A 
+class=sectionlink 
+href="http://www.astronexus.com/general/miscellany.php">Miscellany</A><BR><BR><A 
+class=sectionlink href="http://www.astronexus.com/index.php">The Astronomy 
+Nexus</A> </DIV>
+<DIV id=contentarea>
+<H2 align=center>The HYG Database v1.1</H2>
+<P><EM>Update (12 Feb. 2004):</EM> Several variants are now available with 
+different magnitude cutoffs. See below for more information.</P>
+<P>The HYG database (v1.1) is a compilation of interesting (to me, anyway) 
+stellar data from a variety of catalogs. It is useful for background information 
+on all sorts of data: star names, positions, brightnesses, distances, and 
+spectrum information.</P>
+<H3>Downloads</H3>
+<P>Choose the version of the database that best serves your needs:</P>
+<UL>
+  <LI><A href="http://www.astronexus.com/general/data/hyg.csv.zip">HYG to 
+  7.5:</A> Database containing all stars brighter than magnitude +7.5, or closer 
+  than 50 parsecs. This is the same as the "Version 1.0" database that has been 
+  on this site before. (31858 stars) 
+  <LI><A href="http://www.astronexus.com/general/data/hyg80.csv.gz">HYG to 
+  8.0:</A> Database containing all stars brighter than magnitude +8.0, or closer 
+  than 50 parsecs. (46786 stars) 
+  <LI><A href="http://www.astronexus.com/general/data/hyg85.csv.gz">HYG to 
+  8.5:</A> Database containing all stars brighter than magnitude +8.5, or closer 
+  than 50 parsecs. (66392 stars) 
+  <LI><A href="http://www.astronexus.com/general/data/hygfull.csv.gz">Full 
+  database:</A> Database containing all stars brighter than magnitude +9.0, or 
+  closer than 50 parsecs.(87476 stars) </LI></UL>
+<H3>About the HYG Database</H3>
+<P>The database is a subset of the data in three major catalogs: the Hipparcos 
+Catalog,the Yale Bright Star Catalog (5th Edition), and the Gliese Catalog of 
+Nearby Stars (3rd Edition). Each of these catalogs contains information useful 
+to amateur astronomers:</P>
+<UL>
+  <LI>The Hipparcos catalog is the largest collection of high-accuracy stellar 
+  positional data, particularly parallaxes, which makes it useful as a starting 
+  point for stellar distance data. 
+  <LI>The Yale Bright Star Catalog contains basic data on essentially all 
+  naked-eye stars, including much information (such as the traditional Bayer 
+  Greek letters and Flamsteed numbers) missing from many other catalogs 
+  <LI>The Gliese catalog is the most comprehensive catalog of nearby stars 
+  (those within 75 light years of the Sun). It contains many fainter stars not 
+  found in Hipparcos. </LI></UL>
+<P>The name of the database comes from the three catalogs comprising its data: 
+<EM>H</EM>ipparcos, <EM>Y</EM>ale, and <EM>G</EM>liese.</P>
+<P>All told, this database contains ALL stars that are either brighter than a 
+cetain magnitude cutoff (magnitude +7.5 to +9.0) or within 50 parsecs (about 160 
+light years) from the Sun.</P>
+<P>The database is a comma separated values (CSV) file that can be imported into 
+most database and spreadsheet programs. On this web site it is stored as a Zip 
+file or a GZ file, which most popular unzippers can open.</P>
+<P>Be aware that many spreadsheet programs (Excel, for example) have a cutoff of 
+64K (65,536) lines of input from a CSV or similar file. If you plan to use a 
+spreadsheet program to play with the data, you may have an easier time with the 
+two smaller databases (7.5 and 8.0 magnitude cutoffs).</P>
+<H3>Fields in the Database</H3>
+<OL>
+  <LI><STRONG>StarID:</STRONG> The database primary key from a larger "master 
+  database" of stars. 
+  <LI><STRONG>HD:</STRONG> The star's ID in the Henry Draper catalog, if known. 
+  <LI><STRONG>HR:</STRONG> The star's ID in the Harvard Revised catalog, which 
+  is the same as its number in the Yale Bright Star Catalog. 
+  <LI><STRONG>Gliese:</STRONG> The star's ID in the third edition of the Gliese 
+  Catalog of Nearby Stars. 
+  <LI><STRONG>BayerFlamsteed:</STRONG> The Bayer / Flamsteed designation, from 
+  the Fifth Edition of the Yale Bright Star Catalog. This is a combination of 
+  the two designations. The Flamsteed number, if present, is given first; then a 
+  three-letter abbreviation for the Bayer Greek letter; the Bayer superscript 
+  number, if present; and finally, the three-letter constellation abbreviation. 
+  Thus Alpha Andromedae has the field value "21Alp And", and Kappa<SUP>1</SUP> 
+  Sculptoris (no Flamsteed number) has "Kap1Scl". 
+  <LI><STRONG>RA, Dec:</STRONG> The star's right ascension and declination, for 
+  epoch 2000.0. Stars present only in the Gliese Catalog, which uses 1950.0 
+  coordinates, have had these coordinates precessed to 2000. 
+  <LI><STRONG>ProperName:</STRONG> A common name for the star, such as 
+  "Barnard's Star" or "Sirius". I have taken these names primarily from the 
+  Hipparcos project's web site, which lists representative names for the 150 
+  brightest stars and many of the 150 closest stars. I have added a few names to 
+  this list. Most of the additions are designations from catalogs mostly now 
+  forgotten (e.g., Lalande, Groombridge, and Gould ["G."]) except for certain 
+  nearby stars which are still best known by these designations. 
+  <LI><STRONG>Distance:</STRONG> The star's distance in parsecs, the most common 
+  unit in astrometry. To convert parsecs to light years, multiply by 3.262. A 
+  value of 10000000 indicates missing or dubious (e.g., negative) parallax data 
+  in Hipparcos. 
+  <LI><STRONG>Mag:</STRONG> The star's apparent visual magnitude. 
+  <LI><STRONG>AbsMag:</STRONG> The star's absolute visual magnitude (its 
+  apparent magnitude from a distance of 10 parsecs). 
+  <LI><STRONG>Spectrum:</STRONG> The star's spectral type, if known. 
+  <LI><STRONG>ColorIndex:</STRONG> The star's color index (blue magnitude - 
+  visual magnitude), where known. </LI></OL>
+<H3>Techie Database Details</H3>
+<H4>Database Construction</H4>
+<P>I came up with this database while creating the <A 
+href="http://www.astronexus.com/general/3duniv/index.html" target=_parent>3D 
+Universe</A> web site. I needed a reference that would let me search for groups 
+of stars by magnitude or distance, while giving me more information than was 
+contained in any one catalog.</P>
+<P>I started with the Hipparcos data. The Hipparcos data set represents by far 
+the most comprehensive collection of stellar distance and brightness data in 
+existence, except for very low-luminosity stars. Essentially all naked-eye stars 
+(in fact, most stars down to about apparent magnitude +9) are represented in the 
+Hipparcos catalog.</P>
+<P>The Hipparcos catalog contains over 100,000 stars and to help keep things 
+more manageable, I first prepared a subset, both of the stars and of the fields 
+in the data set, of around 75,000 of the brightest stars in the catalog.</P>
+<P>I next consulted the Gliese catalog to fill in gaps in the Hipparcos catalog, 
+and to add various Gliese data to the catalog. In particular, the Gliese catalog 
+ID is a common reference for nearby stars, and the Gliese catalog contains 
+radial velocity data, which Hipparcos lacks. Additionally, though Hipparcos 
+distances are generally superior to Gliese data, the Hipparcos catalog missed 
+many nearby stars that were below its magnitude cutoff.</P>
+<P>To cross-reference stars, I used the Henry Draper catalog number, whenever 
+present, to add Gliese data to the Hipparcos catalog. Many of the faintest stars 
+lacked this catalog number, so I compared the positions and brightnesses of 
+Gliese stars to those in Hipparcos, and if they matched to within a certain 
+tolerance, I assigned the appropriate Gliese data to the Hipparcos star. Stars 
+that failed both references were then added to the end of the Hipparcos 
+list.</P>
+<P>I also converted Hipparcos apparent magnitudes to Gliese values for all 
+components of known multiple stars in the latter catalog. Again, the Hipparcos 
+magnitude measurements are often superior, but the Hipparcos catalog treats 
+multiple stars inconsistently. In particular, it breaks some out as separate 
+stars (e.g., Alpha Centauri) but merges others (such as Capella, 70 Ophiuchi, 
+and many others). By contrast the Gliese catalog breaks all known multiple 
+stars, excluding those too close to be separated optically, into their 
+components, and gives each one a magnitude.</P>
+<P>I then calculated absolute magnitudes for all stars, added those to the 
+database, and added about 250 proper names. Then, again using Henry Draper as a 
+cross reference, I added data from the Yale Bright Star Catalog: HR numbers, 
+radial velocities (if not already added from Gliese), and the Bayer and 
+Flamsteed designations.</P>
+<P>These steps resulted in the full database. To make the various subsets, I 
+took the resulting database (now containing about 80000 stars and over 25 fields 
+in each data record) and extracted subsetw of the data.</P>
+<H4>Database Quality Issues</H4>
+<P>With over 80,000 stars to worry about, I generally couldn't go in and edit 
+suspect records by hand. Consequently, there are some issues that serious users 
+may want to be aware of:</P>
+<UL>
+  <LI>The spectral types, in general, come from the Hipparcos catalog. A few 
+  stars -- those found <EM>only</EM> in Gliese, have a spectral type from that 
+  catalog. The spectral types from Hipparcos have not been closely vetted and I 
+  have already found some probable errors. For example, the spectral type of 36 
+  Ophiuchi B (a double star that was merged in Hipparcos) is given as K2 III 
+  (giant), when its luminosity clearly indicates K2 V (main sequence). Also, the 
+  star HIP 84720 (Gliese 666 A) is listed as M0 V, whereas its luminosity and 
+  color index are more consistent with a late G-type star (about G8 V). M0 V 
+  appears to be the spectral type of Gliese 666 B, a companion to this star. Use 
+  the spectral types with caution. 
+  <LI>There may be errors in the Henry Draper numbers in one or more catalogs, 
+  leading to false cross-references. 
+  <LI>There may be errors in the matching of Gliese stars to Hipparcos stars by 
+  position and magnitude. In general, this is likely to be an issue only for 
+  multiple stars with highly uncertain magnitudes in both catalogs, as the 
+  position constraints were fairly severe (stars had to have positions matching 
+  to +/- 0.15 degrees, less than the radius of the full Moon). I have not seen 
+  any apparent errors on scanning the database thus far, but this is one area 
+  that could be a problem. </LI></UL>
+<P>In short, though I have done what I can, I can't warrant the database to be 
+error-proof. If you need to launch probes to all the stars in the database, you 
+might want to give it a more thorough going-over before doing so :-)</P>
+<H4>More techie stuff</H4>
+<P>I have created a short Perl script that will read the database as is (no need 
+to import it into another program), run a SQL query on it, and then save the 
+query results to an HTML page for viewing. It uses Microsoft's Open Database 
+Connectivity (ODBC) drivers and so, right now, only works on Windows platforms 
+(95/98/NT). The script is very much beta; it also requires the Perl executable, 
+a basic knowledge of SQL, and enough general geekiness to edit a Perl script 
+without killing it. I will E-mail it to anyone who is interested, and will post 
+a copy of it here if interest is high enough.</P>
+<P>If none of that makes any sense, just pop the CSV file into your favorite 
+database or spreadsheet program, and ignore the previous paragraph.</P>
+<H4>Other Issues</H4>
+<P>The data in this database are subject to change. I may add or delete stuff as 
+I feel like. If there are any really large changes, I will post copies to this 
+site.</P>
+<P><!-- Creative Commons License --><A 
+href="http://creativecommons.org/licenses/by-nc-sa/2.0/"><IMG 
+alt="Creative Commons License" src="About the HYG Database_files/somerights.gif" 
+border=0></A><BR><BR>This work is licensed under a <A 
+href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons 
+License</A>. In general, you're free to use this data for any personal use, so 
+long as proper credit is given for the database when it's used in a derivative 
+work (e.g., your own Web site, or a program that uses the database), and you get 
+my permission before including the database in any commercial product or 
+service. <!-- /Creative Commons License --></P>
+<P align=center>David Nash<BR><A 
+href="http://www.astronexus.com/scripts/sendmail.php"><IMG alt="Send Me Mail" 
+src="About the HYG Database_files/sig1.png"></A> </P></DIV></BODY></HTML>

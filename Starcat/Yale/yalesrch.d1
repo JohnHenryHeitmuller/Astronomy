@@ -1,0 +1,449 @@
+
+
+
+
+
+
+                                  YALESRCH.DOC
+                                 IN SUPPORT OF
+                     YALESRCH.BAS VERSION 1.01 JUNE 9, 1989
+                                        
+                                       BY 
+                                JOSEPH M. FEDOCK
+                                  P.O. BOX 631
+                                   PAOLI, PA
+                                   19301-0631
+                                        
+                       COPYRIGHT 1989 BY JOSEPH M. FEDOCK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              YALESRCH.DOC Page 1
+
+
+
+
+
+I wrote the Basic program YALESRCH.BAS to help me find and use information 
+contained in the Yale Bright Star Catalog, 4th Edition, Wayne H. Warren Jr., 
+May 1982, as adapted for use on the PC by Bruce L Gotwols and Ray Sterner, 
+December 1986.  These files are available on many astronomy related bulletin 
+board systems and are named as follows: 
+
+YALE1DAT.TXT
+YALE2DAT.TXT
+YALE3DAT.TXT
+YALE4DAT.TXT
+YALE5DAT.TXT
+YALE6DAT.TXT
+YALE1REM.TXT
+YALE2REM.TXT
+YALE3REM.TXT
+YALE4REM.TXT
+YALE5REM.TXT
+YALE6REM.TXT
+YALESRCE.DOC
+
+The specific names of the files that you find on your system may be slightly 
+different but they should be similar.  Also, it is likely that the files are on 
+your BBS in various compressed forms with appropriate variations in the names 
+and groupings of the files.  
+
+To use this program you will need all of the above named files and you will 
+have to read the documentation for the Bright Star Catalogue, 4th Edition, as 
+contained in YALESRCE.DOC.  You will not be able to use this program 
+successfully unless you are somewhat familiar with the Bright Star Catalogue. 
+
+This version (Version 1.0 of YALESRCH.BAS) is a listing in plain ASCII format 
+of a Basic routine that should run (perhaps with small changes to some of the 
+commands) on almost any machine that can run Basic.  There are no machine 
+specific commands in this program.  The program was written as plain ASCII text 
+on a Convergent Technologies machine running under CTOS and then transferred to 
+a PC clone for debugging and then uploaded onto Scooters Scientific BBS in 
+Philadephia, PA.  The program is rather straight forward, somewhat primitive, 
+and does not contain much in the way of error trapping or user friendly 
+features.  Many runs of the program will end with error messages such as "end 
+of data" and the like.  This is normal and does not hamper the useability of 
+the program.  If you are familiar with and can use and understand the Bright 
+Star Catalogue and can reasonably operate your machine you should be able to 
+use this program without much difficulty.  
+
+If you have specific suggestions for improving the program (that is, specific 
+Basic commands that you feel should be added or changed), or have found errors 
+in the program please contact me at the address given.  You may modify this 
+program for your own use in anyway desired as long as you keep the original 
+copyright, authorship, and restriction statements contained in lines 001 
+through 008 of the program.  If you make a significant change to the program 
+and feel that it greatly enhances its useability, you may upload and pass on 
+your modified program provided you abide by the spirit and the letter of the 
+restrictions in lines 001 through 008, keep lines 001 through 008 intact and 
+unchanged in your modified program, add appropriate REM statements showing your 
+
+
+
+
+                              YALESRCH.DOC Page 2
+
+
+
+
+
+name, date, and briefly summarizing your changes, change the name of the 
+program as appropriate, and send me a copy of your modified program (either on 
+PC readable floppy, or as printout of the entire program) to the address given 
+above. 
+
+YALESRCH.BAS allows you to search the Yale Bright Star Catalogue data files 
+(that is, files YALE?DAT.TXT) for entries selected by the following 
+characteristics:
+
+HR Number in a continuous range (e.g. 4500 to 4600) 
+    (Bytes 1 thru 4 in each 212 byte record) 
+Constellation (3 Letter Abbreviation) one constellation per run (e.g. VIR) 
+    (Bytes 12 thru 14)
+Flamsteed Number in a range and Constellation one per run (e.g. 02 to 05 VIR)
+    (Bytes 5 thru 7 and 12 thru 14)
+Visual Magnitude in a continuous range (e.g. 4.00 to 6.00) 
+    (Bytes 109 thru 113)
+Color (B-V magnitude increment) in a continuous range (e.g. -0.1 to 0.5) 
+    (Bytes 116 thru 120)
+Parallax (inverse of parsecs) in a continuous range (e.g. 0.005 to 0.015) 
+    (Bytes 170 thru 174)
+
+After finding entries by using the above criteria and saving the entries in a 
+file, the program allows you to list and print to a file by HR number the 
+entries that contain additional information in the related remarks file (e.g. 
+YALE1REM.TXT).  You can then use this list (of HR numbers for stars that 
+contain comments in the remarks file) to extract the related comments into 
+another file.  
+
+This program was designed to extract all information about a star in the Data 
+and Remarks Bright Star Catalogue files and either write this information to a 
+file or print it out (write to LPT1).  It does not format, reposition, or label 
+any of the information.  This was done intentionally.  I hate programs that 
+limit your data output to a small subset of available data.  I like to see all 
+the data in front of me when I go looking in the Catalogue for information.  
+Consequently what you get in your file or as a printout on your printer is all 
+the selected data in the Bright Star Catalogue files exactly as it is stored in 
+these files for the selected stars.  This output is not in a very readable 
+format.  However, it does present much useful information in a very efficient 
+manner.  
+
+To help me remember the position of the information contained in the catalogue 
+data file listings, I developed a head which I copy to the top of all pages I 
+print out.  This head consists of three lines, one directly on top of the 
+other.  These lines are shown below.  You may wish to use this same mnemonic 
+string.  If so, copy it from this document and insert it at the head of the 
+data output files that you generate using this program or use an appropriate 
+routine (not supplied) added to the program that inserts it at the start of 
+your output files.  If you copy it from this document, be advised that all 3 
+lines are longer than 80 bytes in length and are consequently line wrapped in 
+this document.  Line one starts with "    |F|" and ends with "2000        |".  
+Line two starts with "|HR||  NAME  |" and ends with "|NO   *".  Line three 
+starts with "                               ||" and ends with "||   |".  Spaces 
+are very important in this heading.  Don't delete any arbitrarily.  They are 
+
+
+
+
+                              YALESRCH.DOC Page 3
+
+
+
+
+
+there to hold position.  As an aid in separating the lines, I have inserted an 
+"at" (@) symbol at the beginnings and ends of each of the 3 lines in the 
+mnemonic heading.  Copy the complete heading into a separate file.  Then delete 
+all carriage return/line feeds that occur in between each pair of beginning and 
+end "at" symbols.  Just keep the one carriage return/line feed after the second 
+and fourth "at" symbols.  Then delete the "at" symbols themselves.  
+
+If you plan to print out the listings be advised that most printers will not 
+print a continuous line of 212 bytes of information without wrapping around to 
+a new line at the end of the page.  This usually does not produce a very 
+satisfactory printed output.  Consequently, you will have to become creative 
+and invent your own machine (PC and printer) specific method of printing the 
+data entries to make it appear in a readable fashion.  
+
+                       MNEMONIC HEADING STRINGS (3 lines)
+
+@    |F||BY||C|                                      |      1900        | |      
+2000        |@
+@|HR||  NAME  | | DM # | |HD #| IR|DBL |MS |  VAR  | RA  '   "  -DE  '  " RA  '   
+"  -DE  '  " |G LG| |G LA| |V M|C |B-V| |U-B| |R-I|C |                  | |Y 
+RA| |Y DE|C|PAR| |RV||CM| |RO|C |DM|C|SEP"| |ID|NO   *@
+@                               ||      ||           || || |  | | | || || || || 
+|  | | | || ||                    |                  |                                   
+|                   |     |           ||   |@
+
+
+                               USING THE PROGRAM 
+
+To start the program, load it while you are running Basic on your machine 
+usually by typing <LOAD "YALESRCH.BAS"> and then typing <RUN>.  Make sure your 
+path is set to the correct directory (usually the one containing the Yale 
+Catalogue files or a related data directory).  First you will be asked to 
+choose what criteria you want to use to select your data.  Use any choice 
+between 1 and 6.  Notice that there is no choice for selection by right 
+ascension or declination.  The data files are ordered by right ascension so I 
+saw no particular use in providing that function now.  Besides, I have to leave 
+some justification for version 2.0.  After entering your choice, simply follow 
+the prompts for needed input.  
+
+The prompt "NAME OF FILE TO SEARCH" means you have to enter the Catalogue data 
+file (e.g. YALE1DAT.TXT) that you want to search through.  (You may want to 
+concatenate all 6 data and all 6 remarks files into two large files, one for 
+the data and one for the remarks.  If you do, be prepared to spend a long time 
+searching through them. Generally, I find it easier to keep the data and 
+remarks files in 6 separate files and simply learn the beginning and ending 
+entries in each file.)  The name of the file to search may also be any OUTPUT 
+file that you generated previously with the program.  
+
+At the prompt "OUTPUT CHOICE", enter 1 if you want the output to go directly to 
+a printer (the port you define as LPT1).  It may be a serial or parallel port.  
+If it is a serial port, you may attach a null modem cable to this port and 
+output directly to another computer system.  Enter 2 if you want to save the 
+output in a file instead.  Notice there is no choice for output to your screen.  
+Again, another one of my quirks.  I hate programs that only output to a screen.  
+
+
+
+
+                              YALESRCH.DOC Page 4
+
+
+
+
+
+After all what do they want you to do with the data?  Copy it all down with a 
+pencil?  
+
+The prompt "OUTPUT FILE NAME" means you have to enter the name of the file you 
+want your output to go to.  If you want to select by two or more criteria, you 
+can use this output file from the first run as an input file for a second run, 
+this time using the output file from the first run as the "NAME OF FILE TO 
+SEARCH" entry.  This capability greatly enhances the useability of the program.  
+It allows you to combine any of the search criteria listed above by simply 
+taking the output from one search run and using it as a source file to be 
+searched during the next run.  If you do this, it is important that you order 
+the searches in a logical fashion.  For example, if you want to find all the 
+stars with Flamsteed numbers in the Virgo constellation that are brighter than 
+magnitude 5.0 and are redder than a color (B-V) of 0.5, you would first search 
+for all Flamsteed numbers in Virgo (choice 2) and then use that output file as 
+your "NAME OF FILE TO SEARCH" file and run again making choice 4 (brightness).  
+You would then finish up by using that last output file as your file to search 
+and run yet a third time making choice 5 (color).  It makes little sense to 
+search for brightness or color first since so many of the stars in any of the 
+Yale Catalogue data files would match the search criteria.  
+
+If you made choice 1 (HR Number), at the next prompt enter up to four digits 
+for the lowest HR number.  This is the HR number that the selection will start 
+from.  At the following prompt enter up to four digits for the highest HR 
+number.  This is the number at which the selection will stop.  If you want to 
+select just one star with a specific HR number, enter that number twice, once 
+for the minimum value and then again for the maximum value.  As the program 
+runs you will see all the HR numbers being searched.  When your selected HR 
+numbers are reached you will see the HR numbers printed twice to the screen.  
+After the selection is completed the program will stop gracefully.  
+
+If you made choice 2 (Constellation), at the next prompt enter three capital 
+letters for the Constellation in which you want to select all stars with a 
+Flamsteed number assigned.  These three letters must be the standard 3 letter 
+abbreviation for the Constellation.  For example, Ursa Major is UMA, Virgo is 
+VIR, Sagittarius is SGR, and so on.  As the program runs you will see the HR 
+numbers for the selected stars on the screen.  
+
+If you made choice 3 (Flamsteed Number & Constellation), at the next prompt 
+enter three capital letters for the Constellation the Flamsteed numbered stars 
+are in.  At the next prompt, enter the lower limit Flamsteed number, up to 
+three digits long.  At the final prompt, enter the higher limit Flamsteed 
+number.  For example, to search for stars with Flamsteed numbers between 2 and 
+5 in the constellation Virgo, make the following entries: <VIR> <ENTER>, <002> 
+<ENTER>, and <005> <ENTER>.  This will find stars 2, 3, 4, and 5 VIR.  As the 
+program runs you will see the Flamsteed numbers of all stars in Virgo appear on 
+the screen.  Any Flamsteed number will be followed by the HR number of the star 
+if that star is within the specified range and is selected by the program. 
+
+If you made choice 4 (Visual Magnitude), at the next prompt enter the lower 
+limit first.  This is the brightest star you want to locate during the search.  
+At the following prompt enter the higher limit.  This is the dimmest star you 
+want to locate.  For the few stars with a negative visual magnitude (that is, 
+stars brighter than 0 magnitude), precede the digits with a negative sign (-).  
+
+
+
+
+                              YALESRCH.DOC Page 5
+
+
+
+
+
+Enter up to three digits in the following format: n.nn.  Always enter a digit 
+for the first number (the unit position), even if that number is 0.  You may 
+leave the decimal point and trailing 0 digits out if you wish.  For example, to 
+find all stars dimmer than magnitude 4 but brighter than magnitude 6.75 make 
+the following entries: <4> <ENTER>, <6.75> <ENTER>.  As the program runs you 
+will see the visual magnitudes of all entries being searched followed by the HR 
+number if that entry is selected.  
+
+If you made choice 5 (Color), at the next prompt enter the B-V value for the 
+bluest star (the star with the lowest B-V value).  For negative values precede 
+the digits with a minus sign (-).  At the following prompt enter the B-V value 
+for the reddest star (the star with the highest B-V value).  Enter up to three 
+digits in the following format: n.nn.  For example, to find all stars redder 
+than -.1 but bluer than .4 make the following entries: <-0.1> <ENTER>, <0.4> 
+<ENTER>.  As the program runs you will see the B-V values of all entries being 
+searched followed by the HR number if that entry is selected.  
+
+If you made choice 6 (Parallax), at the next prompt enter the value for the 
+lowest parallax (that is the parallax for the farthest star) first.  At the 
+following prompt enter the value for the largest parallax (closest star).  
+Remember that all parallaxes are positive numbers and 0 indicates that there is 
+no parallax given for that particular entry (i.e., 0 parallax does not mean an 
+infinite distance).  Also remember that parallax is the inverse of the distance 
+in parsecs and that there are 3.26 light years in a parsec. For the parallax 
+values, enter up to four digits in the following format: n.nnn.  For example, 
+to find all stars closer than a parallax of .005 but farther than a parallax of 
+.015 make the following entries: <0.005> <ENTER>, <0.015> <ENTER>.  As the 
+program runs you will see the parallax values of all entries being searched 
+followed by the HR number if that entry is selected.  
+
+Choices 7 and 8 are used together to extract the comments from the related 
+remarks file in the Catalogue.  Use it as follows.  Assume you made all three 
+runs to select all the stars with Flamsteed numbers in the Virgo constellation 
+that are brighter than magnitude 5.0 and are redder than a color (B-V) of 0.5 
+(as given in the example above), and your final output file is called 
+RUN3.OUT".  Virgo is found in file YALE4DAT.TXT and that is indeed the file you 
+used for the first of the three runs you made to select the entries you are 
+interrested in. The related remarks file is called YALE4REM.TXT.  Do the 
+following: At the first prompt, make choice 7 to output an HR list for all the 
+stars in your selected group that have comments.  Do this by typing <7> 
+<ENTER>.  At the "NAME OF FILE TO SEARCH" prompt type <RUN3.OUT> <ENTER>.  You 
+will have to include subdirectories or even disk letters if that output file is 
+not in the directory that your path is set to.  At the following prompt, make 
+your OUTPUT CHOICE a file by typing <2> <ENTER>.  At the "OUTPUT FILE NAME" 
+prompt type <HRLIST.OUT> <ENTER>.  Of course, your output file name can be 
+anything.  HRLIST.OUT is only used here as an example.  As the program runs you 
+will see the HR numbers of your selected entries that have additional 
+information in the remarks file.  When the program end, you want to run yet a 
+fifth time, this time to capture the related comments.  Do this as follows. 
+Type <RUN> <ENTER>.  At the "SEARCH BY" prompt type <8> <ENTER>.  This choice 
+finds the comments you are interrested in.  At the "NAME OF FILE TO SEARCH" 
+prompt type <YALE4REM.TXT> <ENTER>.  This file contains the related remarks 
+information for the selected stars.  If you enter 2 at the "OUTPUT CHOICE" 
+prompt, at the "OUTPUT FILE NAME" prompt type <COMMENT.OUT> <ENTER>.  This file 
+
+
+
+
+                              YALESRCH.DOC Page 6
+
+
+
+
+
+name is only an example.  You can use any name.  At the prompt "HR LIST FILE TO 
+MATCH" enter the name of the output file you generated when you ran 7 above, 
+that is, type <HRLIST.OUT> <ENTER>.  As the program runs you will see a 
+presentation on your screen that looks significantly different from all the 
+others you have seen up to this point.  You will see two HR numbers separated 
+by a dash (-) or a 0 and an HR number separated by a dash.  The first HR number 
+is the entry being looked at in the remarks file.  A zero here means that the 
+record being examined is a continuation of the previous comment and applies to 
+the same star.  The second HR number is the next star in your HRLIST.OUT file 
+that you want to find the remarks for.  When the two HR numbers match, an 
+output is generated.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              YALESRCH.DOC Page 7

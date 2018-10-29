@@ -1,0 +1,50 @@
+--------------------Configuration: smimport - Win32 Release--------------------
+Begining build with project "C:\Dev\Astro3D\smimport.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/smimport.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"Release/smimport.res" /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Release/smimport.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /incremental:no /pdb:"Release/smimport.pdb" /machine:I386 /out:"Release/smimport.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"Release/smimport.res" /d "NDEBUG" "C:\Dev\Astro3D\smimport.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSP91C6.TMP" with contents </nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/smimport.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Dev\Astro3D\MainFrm.cpp"
+"C:\Dev\Astro3D\smimport.cpp"
+"C:\Dev\Astro3D\smimportDoc.cpp"
+"C:\Dev\Astro3D\smimportView.cpp"
+"C:\Dev\Astro3D\SMRecordset.cpp"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP91C6.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSP91C7.TMP" with contents </nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/smimport.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Dev\Astro3D\StdAfx.cpp"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP91C7.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSP91C8.TMP" with contents </nologo /subsystem:windows /incremental:no /pdb:"Release/smimport.pdb" /machine:I386 /out:"Release/smimport.exe" 
+.\Release\MainFrm.obj
+.\Release\smimport.obj
+.\Release\smimportDoc.obj
+.\Release\smimportView.obj
+.\Release\SMRecordset.obj
+.\Release\StdAfx.obj
+.\Release\smimport.res>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP91C8.TMP" 
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+smimport.cpp
+smimportDoc.cpp
+smimportView.cpp
+SMRecordset.cpp
+Generating Code...
+Linking...
+
+
+
+smimport.exe - 0 error(s), 0 warning(s)

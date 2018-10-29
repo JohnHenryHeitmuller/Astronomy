@@ -1,0 +1,125 @@
+/*	YaleSrch.c
+
+	This program searches the Yale Bright Star Catalog
+
+	By:  JRD	91/01/01	ver 1.0
+
+*/
+
+#include	<stdio.h>
+#include        <string.h>
+#include	"yale_bsc.h"
+
+#define MAXFILENAME	64
+#define	YALEBSC		"YALE.TXT"
+#define YALEDEF		"YALE_BSC.DEFAULTS"
+
+#define NO_ERROR	0
+
+/* Function Definitions */
+int read_defaults(char *datafilename, int *search_field_list);
+void display_menu(int *search_field_list);
+void get_choice(int *select_field, int *search_field_list);
+void find(int select_field, FILE **datafile);
+void display(bsc_entry *buf, int field);
+
+main()
+{
+	FILE *datafile;
+	char datafilename[MAXFILENAME];
+	int search_field_list[NUM_FIELDS];
+	int select_field;
+
+	if(read_defaults(datafilename,search_field_list) != NO_ERROR)
+		exit();
+
+	datafile = fopen(datafilename,"r");		/* Open datafile */
+
+	display_menu(search_field_list);		/* Display menu */
+	get_choice(&select_field,search_field_list);	/* Get selection */
+	find(select_field,&datafile);
+
+	fclose(datafile);
+}
+
+int read_defaults(char *datafilename, int *search_field_list)
+{
+	FILE *defaults;
+	int default_fields[] = {BSC_NAME,BSC_DM,BS_NUM,-1};
+	int count;
+
+	if((defaults = fopen(YALEDEF,"r")) == NULL) {
+		strcpy(datafilename,YALEBSC);
+		for(count=0;default_fields[count] != -1;count++)
+			search_field_list[count] = default_fields[count];
+	} else {
+		fgets(datafilename,MAXFILENAME-1,defaults);
+		for(count=0;!feof(defaults);count++)
+			fscanf("%d",&search_field_list[count]);
+	}
+	search_field_list[count] = -1;
+	return(NO_ERROR);
+}
+
+void display_menu(int *search_field_list)
+{
+	int count;
+
+	for(count = 0;search_field_list[count] != -1;count++)
+		printf("%d)  %s\n",count,data_format[search_field_list[count]].field_name);
+}
+
+void get_choice(int *select_field, int *search_field_list)
+{
+	printf("Enter choice:  ");
+	scanf("%d",select_field);
+
+	*select_field = search_field_list[*select_field];
+}
+
+void find(int select_field, FILE **fp)
+{
+	bsc_entry buf;
+	char search[64],work[64];
+	int i,start,stop;
+
+	printf("Search for:  ");
+	scanf("%s",search);
+
+	while(!feof(*fp)) {
+		fgets(&buf,sizeof(bsc_entry),*fp);
+		start = data_format[select_field].start -1;
+		stop = start+(data_format[select_field].size);
+		for(i=start;i <= stop;i++) work[i-start] = *(((char *)(&buf)) + i);
+
+		if(strstr(work,search) != NULL) {
+			putchar('\n');
+			display(&buf,BS_NUM);
+			display(&buf,BSC_NAME);
+			display(&buf,BSC_DM);
+			display(&buf,BSC_RA_1900);
+			display(&buf,BSC_DEC_1900);
+			display(&buf,BSC_RA_2000);
+			display(&buf,BSC_DEC_2000);
+			display(&buf,NU_SUB_ALPHA);
+			display(&buf,MU_SUB_DELTA);
+			display(&buf,PARALLAX_TYPE);
+			display(&buf,PARALLAX);
+			display(&buf,MAGNITUDE);
+			display(&buf,MAG_CODE);
+		}
+	}
+} 
+				
+void display(bsc_entry *buf, int field)
+{
+	int count,last;
+
+	printf("%s:  ",data_format[field].field_name);
+
+	/* Calculate index of last character */
+	last = data_format[field].start+(data_format[field].size - 1);
+	for(count = data_format[field].start - 1; count <= last; count++)
+		putchar(*((int *)(((char *)buf) + count)));
+	putchar('\n');
+}

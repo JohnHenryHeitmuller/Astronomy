@@ -1,0 +1,233 @@
+ 
+         SACREP Version 6.0  -  The Quick Overview 
+                   by A.J. Crayon and Dan Ward 
+                          May 24, 1993
+
+ SACREP.EXE  is  a  report  generator program that can  be  used  against  the 
+ SAC60.DBF  file.   This  program  is designed as  a  quick  way  to  generate 
+ observing lists from the SAC60 database for those who are not conversant with 
+ database programs.  It can also be used to extract smaller files for use with 
+ database managers, word processing programs, text editors or even spreadsheet 
+ programs.   Version 6.0 replaces all earlier versions. 
+
+ Nine  files are included within SACREP.ZIP.  This file, SACREP.TXT,  provides 
+ some background and simple instructions.  The files SAC1REP.FRM, SAC2REP.FRM,  
+ SAC3REP.FRM, SAC4REP.FRM and SAC5REP.FRM are report format files.  SACBLK.DBF 
+ is an empty datafile to provide the correct format for converting SAC60  text 
+ files  into  the  DBF format needed by SACREP.  The SACPARMS.DBF  file  is  a 
+ parameter  file telling the program where to find the data files.   The  main 
+ program is SACREP.EXE. 
+
+ SAC  6.0  is  distributed with files in a ZIPed status.   If  you  used  the 
+ INSTALL.BAT program, it unZips the SAC60B through SAC60E into 24 separate 
+ ASCII files named SAC60-00.ASC through SAC60-23.ASC, which correspond to 
+ hours of right ascension.
+ 
+                The Main Menu
+
+ Execute  the program by entering SACREP.  This will bring up the  main  menu, 
+ which  has  nine  menu options. The first option produces  reports  based  on 
+ Constellations.    The  second option generates reports based on a  range  of 
+ coordinates.   Option three creates a database extract for  a  Constellation.  
+ Option  four  creates a database extract based on Coordinates.   Option  five 
+ will  append  previously extracted small data files into a larger  file.  The 
+ sixth  option  will  create or update the constellation index  file  for  the 
+ database.  Option Seven will display the database entry for a single  option.  
+ Option  Eight updates the program parameters.  Option Nine will  convert  the 
+ SAC60.TXT  file  to  the DBF file format needed for all  the  other  options.  
+ Option zero is an Exit.  
+
+ If  you  have never used SACREP before, the first time you  use  SACREP,  the 
+ SAC60 data files need to be converted to a DBF file.  This is  Option 9
+ 9 from the main menu of SACREP.  Once you have converted the data, you could 
+ delete the SAC60-??.ASC files, but you probably want to maintain your 
+ original set of ZIP files in case you need them in the future.
+
+ The  program  is shipped with SAC60.DBF as the database default  and  assumes 
+ that  the files are in a subdirectory called C:\SAC60.  If you  have  already 
+ installed an earlier version of SACREP, double check menu option 8 to see  if 
+ your  path and database filename are correct.  
+
+               Producing Reports
+
+ 1.   To run an observing list based on a Constellation, the user is  prompted 
+ to enter the standard  three  letter  abbreviation   for   the   desired 
+ constellation.  (See the SACDOC.TXT FILE for a list of those abbreviations.)  
+ The program is not upper/lower case sensitive.
+
+  Next,  enter a range of magnitudes for brightest  magnitude,  then  dimmest 
+ magnitude.  The  programs expect a range from -1 to 99.9  magnitude.   (Some 
+ objects  do  not have magnitudes - dark nebulae.  These are  listed  in  the 
+ database  with a value of 79.9.   All other  objects have a "normal" catalog 
+ magnitude rating.  A few objects with unknown magnitudes are listed 
+ with 99.9 for their magnitude.  
+
+ Next,  indicate whether to route the report to a disk file (d) or  a  printer 
+ (p),  with  the printer as a default.  The disk file will be  an  ASCII  file 
+ complete with page headings, etc.  The next choice is to choose a  particular 
+ type of object for the observing list, such as GALXY for galaxies, DRKNB  for 
+ Dark   Nebula,  etc.   See  the  SAC60  note  file  for  the  full  list   of 
+ abbreviations.  The default option, ALL__ will provide a complete listing  of 
+ all object types that meet the other selection criteria.
+
+ There  are 5 report formats to choose from.  Report type 1 has an 80 column 
+ format,  Format 2 is 128 columns; format 3 runs 160 columns, format  4 needs 
+ 185 and format 5 runs 245 columns.  The first three contain only some of the 
+ database  fields,  while the last three options contain all of  the database 
+ fields.   Except for forms 1 and 5, the reports may fold the longest fields.  
+  
+ The program pauses for a printer check.  To keep it simple, I did not create 
+ a printer table, so you need to make sure that the printer is already set for 
+ the desired typefont.  If you send the report to a disk file, a filename must 
+ be entered.  If no file extension is provided, the program will automatically 
+ append  the  extension  of '.txt'.  The filename should not be one that is 
+ currently in use. 
+
+  The last choice is to hit enter to process the report or enter 0 to  return 
+ to the main menu.  
+
+  2.  Main Menu Option Two provides reports on a range of coordinates, object 
+ types  and magnitudes.  The program expects whole numbers between 0  and  24, 
+ for right ascension.  It expects whole numbers between -90 and 90  inclusive 
+ for declination.  The other choices follow the same format as described  for 
+ the Constellation report option.  Be sure to enter your desired  ranges,  as 
+ the default values will give you everything!
+
+ 3. & 4.   Database  extracts  allow you to  extract  all  of the  database 
+ information fields, based on the same type of selection criteria used by  the 
+ two report generator options.   If the database is used by someone who  never 
+ observes  objects  fainter  than 13th magnitude, and  never  lower  than  -40 
+ degrees  declination, those criteria could be used to create a  much  smaller 
+ version of the SAC60 database.  That database would then be much faster  than 
+ using  the full blown version.   The Database extracts for  Coordinates  uses 
+ the same selection criteria as the Coordinate report generators - except  the 
+ output goes to a file whose name you must supply. 
+ 
+ The  text  file  version has all fields delimited  with  double  quotes  and 
+ separated by commas.  This type of file can be read by most database programs 
+ and  can  be imported into most spreadsheet software.  The DBF  extract  file 
+ version, is in a standard dBASE file format.  
+
+  5.   Main Menu Option Five can be used to append files with the same  format 
+ into the other DBF files.  This is an easy way to create a variety of smaller 
+ observing   databases.   For  example,  the  user  could  create   individual 
+ constellation extracts, then append each file to have a new combined database 
+ such  as seasonal databases based on the available constellations.   We  have 
+ two warnings.  FIRST, the program will append one file to another.  So if you 
+ create  a database based on coordinates, then append a constellation  extract 
+ of  an  constellation  within  those same coordinates,  you  would  now  have 
+ duplicates  of some objects.  SECOND, if you plan to use the extracts to  run 
+ reports, be sure to run the INDEXING option, described below.
+
+  6.   Option  Six  from the main menu will creates  index  files  to  provide 
+ reports  and  extracts  sorted  by Constellations, RA,  Object  name  or  the 
+ othernames  fields.   If you decide to use database extracts instead  of  the 
+ main database, you will need to index those new databases with this option.
+
+  7.   Main Menu Option 7 will provide a listing of the data for a  particular 
+ object.  You can enter the Name or Other Name of an object.  For example, NGC 
+ 1068  is also known as M 77. Be sure to use the name format as used in the 
+ SACDOC.TXT documentation file.  This program is looking for an exact match.
+ "BERK58" will not locate "Berk 58."  Upper/lower case does not matter, but 
+ spacing is critical.   
+
+ The Messier Objects were loaded into the Other name field as five characters. 
+ M 101 is an 'M' followed by a blank space, then '101' M  33 is an 'M' followed 
+ by two blank spaces, then '33'  and M   1 is an 'M' followed by three blank 
+ spaces followed by '1'.  This maintains the ASCII sort order.
+
+ You can continue  to  browse  forward in the database from any point by
+ entering an F, move backwards in the database by entering a B, or use Q  
+ to return to the main menu.   This browse  forward and backwards makes it 
+ easy to scan through a catalog.  For example, you can scan through the 
+ entire Messier catalog by searching on "M" or "M   1" and going Forward.
+
+ 8.   From the Main Menu, option 8 will allow you to  modify  the  program  
+ parameters.   Entering  an  8 takes you to a  screen  showing  your  current 
+ program settings.  The first choice displays your current drive:\path.  Enter 
+ the new drive:\path if needed; or hit enter to leave it alone.
+  
+ The  next line shows the current database filename.  Enter a  new name,   if  
+ needed, or hit enter to leave it as it is.  The  last  line prompts  you  for 
+ the  display  options.   There  are  two color   and  one  black  and  white 
+ alternative.   As  this  program only displays text,  there  are  no  special 
+ graphics considerations.
+
+ 9.   Option 9 is used to convert the distribution database text files to the 
+ DBF  format.  If you are using a hard disk, INSTALL.BAT will  have  extracted 
+ the four text files into 24 data files, SAC60-00 through SAC60-23.  Option 9 
+ checks your parameters, converts the ASCII files to SAC60.DBF and then 
+ indexes it.
+                    
+                    How Do I Stop It?
+ If  you happen to hit the wrong key and start a report you do not want,  you 
+ can cancel out an in-progress action by holding down the ALT key and hitting 
+ the  letter C.  Alt-C is the standard cancel processing command  for Clipper 
+ compiled  programs.  If you are cancelling a printer report, this would  not 
+ clear  anything you may have already sent into a printer buffer  or spooler.  
+ Obviously,  you  can  also power down your computer to stop  a  process,  
+ but Alt-C is cleaner.
+
+               For More Report Options
+
+ SACREP will NOT meet all conceivable needs.  There are many good database 
+ programs on the market.  Most will be able to use or convert the SAC60-?? 
+ files or the SAC60.DBF files to a format they can use. 
+
+               IF You Just HAVE to Know More 
+
+ The  SACREP  programs  were written in dBASE III  plus,  and  compiled  
+ using Clipper.  SACREP.EXE is hereby placed in the Public Domain and may 
+ be  freely distributed  as  is,  provided  no fees are charged.   However,  
+ it must be distributed with all files intact. 
+
+ The  programmers assume NO responsibility or liability for the program's  
+ use or misuse.  It is offered solely as a goodwill gesture to help support  
+ those whose astronomical skills exceed their computer programming skills! 
+
+ You can leave a message for Dan Ward on the AstroForum in CompuServe 
+ (id 72040,3357), where he usually checks in at least once a week. 
+
+                   
+                   Database Trivia 
+
+ We hereby express my sincere thanks to the entire Saguaro Astronomy Club 
+ Database Project team, who gave us advance extracts of SAC60 to help  
+ develop this  program.   Their  dedicated efforts have provided astronomers  
+ with a fantastic  observing  database!  Our limited efforts to prepare 
+ this  report generator  program  and install program are a mere 
+ drop in the  bucket,  when compared with their work! 
+
+ Nearly all of the original SAC Deep Sky database team members belong to the 
+ Saguaro Astronomy Club (SAC) in the Metro Phoenix area of Arizona, hence the 
+ name  of the  database.   (A  Saguaro is the large variety of  cactus  often  
+ seen  in Western movies and quite common around Phoenix.   Saguaros are 
+ massive plants with large upturned arms, and are only found in Arizona 
+ and Mexico.) 
+
+ A.J. Crayon wrote SPROGS, a series of dBASE programs for the original release 
+ of SAC 4.0.  Dan Ward wrote SACREP 4.0. which was also released with SAC 4.0.  
+ We  combined  forces to create SACREP 5.0, which was a blend of the  best  of 
+ both.   We fixed a minor upper/lower case problem with SACREP  5.1.   
+
+ SACREP  5.2a fixed a minor glitch by updating a filename in the new  version.  
+ SACREP 5.2b  was used as a test version by Dan Ward to figure out why some 
+ of the things that worked so well in dBASE did not translate into  his  
+ Clipper version.   Version 5.2c was a rewrite of version 5.2 and added 
+ faster report generation, the addition of a separate parameters screen, more 
+ formats for the printout reports, and improved individual object searches.  
+ 
+ Version 6.0 is an update for the revision of the SAC deepsky database.  It 
+ also converts the Othernames and Object indexes to upper case so option 7 
+ is no longer case sensitive.  Due to changes in some field sizes, the 
+ elimination of one field and the addition of a new field, SACREP 6.0 
+ is not compatible with earlier versions of the database. 
+ 
+ dBASE and dBASE III+ were registered trademarks of ASHTON-TATE.  CLIPPER is  
+ a registered  trademark  of Nantucket Corporation.  We hereby  recognize  
+ their ownership  to  said  terms throughout this document,  and  also  
+ respectfully kowtow in their directions for making our lives easier via 
+ the introduction of those stated products!  
+
+     A.J. Crayon and Dan Ward   - May 24, 1993 
+

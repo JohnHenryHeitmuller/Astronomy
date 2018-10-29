@@ -1,0 +1,20 @@
+From sstrazdu@sedona.intel.com Sat Jan 22 14:51:27 1994
+Date: Sat, 18 Dec 93 14:18:13 MST
+From: Stephen Strazdus <sstrazdu@sedona.intel.com>
+To: chris@chrism.demon.co.uk
+Cc: ftpadmin@bozo.lpl.arizona.edu
+Newsgroups: sci.astro
+Subject: Re: SAC Database source?
+
+In article <756126861snz@chrism.demon.co.uk> you write:
+>Does anyone know of any on-line source from which I could get the
+>Saguaro Astonomy Club (SAC) deep-sky object database? I currently have
+>version 5.2, but I believe that a more recent version has now been
+>released. Any source - Internet, BBS, or whatever would be fine.
+
+I've uploaded version 6.0 to seds.lpl.arizona.edu:/incoming/sacdsb60.zip
+Let me know if there are any problems.
+
+Steve
+-- 
+Steve Strazdus    sstrazdu@sedona.intel.com

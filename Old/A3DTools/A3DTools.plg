@@ -1,0 +1,17 @@
+--------------------Configuration: A3DTools - Win32 Debug--------------------
+Begining build with project "D:\Dev\A3DTools\A3DTools.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_USRDLL" /Fp"Debug/A3DTools.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"Debug/A3DTools.res" /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/A3DTools.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/A3DTools.pdb" /debug /machine:I386 /def:".\A3DTools.def" /out:"Debug/A3DTools.dll" /implib:"Debug/A3DTools.lib" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+
+
+
+A3DTools.dll - 0 error(s), 0 warning(s)

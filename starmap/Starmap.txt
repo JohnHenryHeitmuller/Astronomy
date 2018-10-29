@@ -1,0 +1,30 @@
+Tables are fixed, or at least relatively so.
+Arrays are dynamic.
+
+
+mfcaddon.lib
+/*  Generaly useful objects
+*/
+3dobject.h
+class CPoint3D : public CObject
+class CLine3D : public CObject
+class CRect3D : public CObject
+class CBox3D : public CObject
+
+
+yalebsc.h
+/*  Yale Bright Star Catalog
+*/
+
+struct SRawRecYBSCData
+class CRawRecYBSCData : public SRawRecYBSCData, public CRawRec
+{
+   void CvtToMapData( CMapDataEntry* mde );
+}
+
+struct SRawRecYBSCNote
+class CRawRecYBSCNote : public SRawRecYBSCNote, public CRawRec
+{
+   void CvtToMapNote( CMapNoteEntry* mne );
+}
+

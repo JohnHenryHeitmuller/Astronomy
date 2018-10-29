@@ -1,0 +1,176 @@
+The following is a brief explanation of current problems in and shortcomings 
+of SKY2000, version 2.0. The user should recognize that these problems exist 
+and should use the data accordingly. We are working on these things and plan 
+to eventually have all the major problems solved, although we realize that the
+catalog will never be "perfect". We group the following material by topic; 
+i.e., by type of information, which is essentially the order of the format.
+
+1. Identifications
+   a. HD numbers are not complete for stars of the second extension 
+      (HD272151 - HD359083) 
+   b. Identification discrepancies involving BD supplemental stars 
+      (stars with lower case "a" and "b" designations) may still be 
+      present. A thorough review of all supplemental stars is planned. 
+   c. Component identifications are not complete for multiple systems. Since 
+      the WDS does not assign components for two-star systems, we need to do 
+      this independently. (The WDS contains pairs of stars in a record, so it 
+      is not necessary to assign component identifiers unless there are more 
+      than two stars in a system.) We must also check for consistency in the 
+      way that we have assigned components. 
+   d. A further complication for the assignment of components stems from the 
+      fact that we have only one components field when it would be preferable 
+      to have separate fields for astrometric and photometric data. Thus, in 
+      cases where positions and proper motions represent, say, only the 
+      primary, while the photometry represents a blend, we must choose to put 
+      either A or AB into the components identifier field following the WDS 
+      number. This is usually chosen according to the astrometry, but we have 
+      not been entirely consistent. 
+   e. There are stars having WDS data for double and multiple stars, but with 
+      no WDS identifiers. These are being isolated, analyzed, and corrected at 
+      the present time.
+   f. Variable-star names are not complete. We do not know why, but some 
+      problem in a past version of the catalog, probably in the software, 
+      caused some of the information in the GCVS to be missed. We have 
+      discovered this to be mainly the names of variables. 
+
+2. Astrometric Data 
+   a. The Tycho Reference Catalogue (TRC) has not yet been incorporated into 
+      SKY2000. Since the Tycho subsets of ACT and the TRC are somewhat 
+      different, there are quite a few thousand stars for which we now 
+      include Tycho data that can be replaced with the considerably better 
+      TRC positions and (especially) proper motions. Users who need the 
+      highest accuracy proper motions and find Tycho data in SKY2000 should 
+      check the TRC and use TRC data when they exist. A few TRC data (source 
+      80) have been used in Version 2.0 during problem solving, but full 
+      processing is planned. 
+   b. Parallaxes from HIP are as good as or better than the best ground-based 
+      data (Gatewood 1998, AJ, 116, 1501), but the short baseline and lower 
+      accuracy methods of Tycho make its results much less reliable. Where 
+      Tycho parallaxes exist in the Yale Parallax Catalogue (van Altena, Lee, 
+      and Hoffleit 1995), we suggest using the latter. 
+
+3. Photometric Data 
+   a. Magnitude and color data in the photoelectric fields from sources 94 and
+      95 are problematical and should not be trusted. They were expected to be 
+      replaced with source 20 data and were not, which indicates some kind of 
+      problem such as misidentification, discrepant data, etc. We intend to 
+      look at these cases and replace or confirm the quality of the data, then
+      change the source(s). 
+   b. The Bright Star Catalogue (BSC) was a high-priority source for certain 
+      data in SKY2000, but was not intended to be a higher priority source 
+      than 20 (Mermilliod's UBV catalog). Unfortunately, the BSC data were put 
+      into SKY2000 with assigned errors (there are no errors in the BSC), which
+      is not considered acceptable for data evaluation. We intend to extract 
+      UBV data from source 20 for the BSC stars, but as an interim step, we 
+      have replaced the BSC data with Tycho BV photometry. Since the latter 
+      have a rather short time scale, the errors are often artificially low. 
+      We also lost U-B data with Tycho, so we intend to process source 20 
+      again to retrieve high-quality ground-based data for the bright stars. 
+   c. Another problem with the Tycho photometry is that blended flags ("b") 
+      have not been assigned because that information is not available in TYC. 
+      We are in the process of adding flags to SKY2000 data when it can be 
+      determined that Tycho observed more than one component, but it is not 
+      always easy to identify those cases because we can only compare TYC V 
+      data with visual magnitudes for the components given in the WDS. 
+   d. Photometric data from source 27 (the Russian WBVR catalog) were assigned 
+      errors because there were no errors given in the Northern Hemisphere 
+      Catalog of Red Magnitudes (Warren 1994). However, the original WBVR 
+      catalog (Kornilov et al. 1991) does have error estimates based on 
+      numbers of observations that can be used in SKY2000. For source 27 BVR 
+      data, users are encouraged to look at the original catalog for error 
+      estimates. 
+   e. We intend to replace all RI data on the Johnson system with Cousins 
+      system data, since the latter is a superior system. Users should 
+      substitute Cousins data for the KY2000 Johnson data when they exist. 
+   f. Large numbers of ptv and ptg data are missing from SKY2000. These are 
+      useful for consistency checks for photoelectric data, even though they 
+      are often blends for close companion stars. We intend to reprocess some 
+      of the original source catalogs (e.g., SAO) to put these data back into 
+      SKY2000 (they were removed earlier when a few errors in the original SAO
+      were found, even though those had been corrected in source 29). 
+
+4. Spectroscopic Data 
+   a. Many stars that currently have MK types do not presently have their types
+      in the catalog. This is because many of the types that were in the old 
+      SKYMAP catalog have been removed because of unreliability. The uncertain 
+      information came from not knowing for sure if the MK types had been 
+      "derived" from one-dimensional spectral types and color data. The vulgar 
+      practice of deriving MK types has been discontinued and we want no such 
+      types in the SKY2000 catalog. Although most of the types from SKYMAP 
+      were legitimate, the original sources had been lost anyway, so we plan to
+      replace all of those data with newly ingested MK data. 
+   b. MK types with sources in the nineties should be used with great caution 
+      because the original sources are not identified in SKY2000. This is not 
+      what was intended when SKYMAP spectral types were transferred to the new 
+      catalog. Unfortunately, the SKYMAP source replaced the originals when 
+      the MK types were transferred, so we must return to the original sources
+      to re-retrieve the types. Perhaps this is all for the best because many 
+      more types are now available and errors in the original sources have 
+      sometimes been corrected. It also allows us to consider all the available
+      types for each star, although choosing among those available is often too 
+      daunting a task to perform on large numbers of objects. A helpful source 
+      is the Selected MK types catalog of M. Jaschek (1978), but the age and 
+      frequent uncertainties of the types chosen are often a problem. 
+   c. The MK types for carbon stars are not all on a consistent classification 
+      system and must be checked for accuracy. It has even been found that 
+      some MK types for C stars are completely missing from SKY2000, even 
+      though they sometimes appear in the MK catalogs that were used as the 
+      original sources for SKYMAP. 
+
+5. Radial Velocities 
+      The only radial-velocity data in SKY2000 had originally come from Wilson
+     (1953), with a few data from the BSC. The Hipparcos mission added a lot of
+      new data not in the catalog. When we created the equinox and epoch 
+      J2000.0 version of the HIP for SKY2000 usage, we transferred RV data 
+      from the Hipparcos Input Catalogue (HIC) to our version to make it 
+      easier to ingest new RV data into SKY2000. When the HIP J2000.0 was 
+      subsequently processed, the radial velocities went into SKY2000 as coming
+      from source 66 (HIP) instead of 33 (HIC). This has already been fixed in
+      our latest proprietary version, but is still present in version 2.0.
+
+      New RV catalogs have been published by Barbier-Brossat and Petit. These 
+      will be processed and ingested into SKY2000. In the meantime, users 
+      should consult other catalogs if there is no RV in SKY2000. 
+
+6. Double and Multiple Stars 
+   a. As mentioned under item 1, component identifications are far from 
+      complete in Version 2.0 of SKY2000, and there are double stars in the WDS
+      whose identifiers are missing from the WDS field. 
+   b. Orbital data for visual binaries having published orbits are not yet 
+      included in SKY2000. Actually, we have room only for periods of orbital 
+      pairs at the present time. If we wish to predict what a spacecraft star 
+      tracker will see at any epoch, ephemerides must be computed. This 
+      requires orbital elements, which we may include in a future version of 
+      SKY2000. We intend, however, to include period data before that so that 
+      users can at least have a handle on the motions of orbital pairs. 
+   c. A thorough analysis of bright, orbiting pairs should probably be 
+      undertaken because these can cause significant problems for star 
+      trackers when they are incorrect. Although we have found and corrected 
+      many of the problems, without a complete review (mostly by machine), we 
+      can be quite sure that some problems remain. We do know of 
+      inconsistencies for close pairs that are both in the main HIP and in the
+      components catalogs. These are subarcsecond pairs that have blended 
+      photometry and the position of only one component from HIPc (because 
+      that was the highest priority source). Thus, the photometric data are 
+      inconsistent with the astrometric information. For those cases, the 
+      blended position from HIP (coded * in duplicity column) should have been
+      used. An example of this situation is HR 266 (SKY2000 
+      J005646.97+602146.0), which we have treated manually to use the blended 
+      position and motions. 
+
+7. Variable Stars 
+    a. As discussed earlier, variable-star names are missing for many GCVS 
+       stars. This situation will be corrected by reprocessing the latest 
+       edition of the GCVS. 
+    b. Some data from the NSV have been put into SKY2000 for the wrong stars, 
+       probably as a result of some software bug in the distant past. This is 
+       not the case for a large percentage of stars, but some have been 
+       detected. 
+    c. As a result of the GCVS and NSV catalogs being higher priority sources 
+       than the UBV catalog (source 20) and because the former were processed 
+       later, V magnitudes from the GCVS and NSV replaced those given in 
+       source 20. For stars that are variable, this procedure is invalid 
+       because the magnitudes and colors come from different sources and were 
+       observed at different times (epochs). To fix this problem, V magnitudes
+       from the same sources as the colors should be put back into SKY2000 and
+       then the U and B magnitudes recomputed. 

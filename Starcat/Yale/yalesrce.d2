@@ -1,0 +1,1288 @@
+
+
+
+
+
+                DOCUMENTATION FOR THE MACHINE-READABLE VERSION
+
+                                 OF THE
+
+                     BRIGHT STAR CATALOGUE, 4TH EDITION
+
+
+
+
+                             Wayne H. Warren Jr.
+
+
+
+
+
+
+                                 May 1982
+
+
+
+
+        Adapted for use on the PC by Bruce L. Gotwols and Ray Sterner
+
+                                 Dec 1986
+
+
+                                 PROLOGUE
+
+   The text that follows this Prologue was copied almost verbatim from
+   publication NSSDC/WDC-A-R&S 82-18, by Wayne H. Warren, Jr., May 1982. This
+   publication was issued by the National Space Science Data Center/ World
+   Data Center A for Rockets and Satellites, National Aeronautics and Space
+   Administration, Goddard Space Flight Center, Greenbelt Maryland 20771.
+   Aside from correcting a few minor typos (and undoubtedly creating a few
+   new ones!), and spelling out the Greek alphabet due to its absence in the
+   ASCII character set, the only differences between this and the original is
+   the addition of this Prologue, reformatting of the listings at the end of
+   the document to allow easier printing on 80 column printers, and the
+   addition of several comments pertinent to this distribution for Personal
+   Computers. These additional comments have been prefaced by the unique
+   signature:
+                        **PC VERSION:
+
+   which will allow them to be found easily with a word processor or program
+   editor.
+
+   As many users of PC's may not be familar with the Fortran format
+   specifications that are mentioned in Table 1, we offer the following
+   informal translation:
+
+        Fortran    Description                              Example
+        Format
+
+         In        Integer number of up to n places          I2   26
+         An        Printable string with n characters        A4   Hello
+        NA1        N A1 characters in a row.                4A1   Hello
+         NX        N blank characters                        1X   (1 space)
+        Fn.m       Decimal number with m places after the   F4.1  -23.2
+                   decimal, and n places overall (including
+                   possible sign and decimal point)
+
+   The following pages describe the YALE BRIGHT STAR CATALOGUE, 4th EDITION
+   as distributed by the National Space Data Center on 9 track tape. The
+   specific tape received by us used EBCDIC characters which required
+   translation into ASCII form for convenient use on PC's. We ran into a few
+   unusual problems and had to customize our translation procedure slightly.
+   The reading of the tape and translation into printable ASCII characters
+   was done on a Digital Equipment Corporation VAX 11/750 computer, running
+   a high level language known as IDL (Interactive Data Language). The
+   translation from EBCDIC to ASCII provided by IDL uses a VAX system utility
+   routine. For some reason the codes on the Data Center's tape which were
+   meant to correspond to left and right square brackets "[]" did not
+   properly translate into ASCII square brackets. Also, in byte 185 of the
+   remarks file, the EBCDIC character for the "<=" symbol could not be
+   translated as there is no corresponding ASCII symbol. Finally, there
+   were some extraneous carriage returns in the remarks which we converted to
+   spaces. Our modification of the VAX EBCDIC to ASCII translation table can
+   be summarized as follows (codes are base 10):
+
+
+   Table A - Customized EBCDIC to ASCII translation table applied
+             to the YALE BRIGHT STAR CATALOGUE, 4th EDITION
+
+   EBCDIC   ASCII   COMMENTS
+    code    char
+
+    140      ^      Convert the unprintable "<=" to ^
+    173      [      "[" doesn't convert right; customize so it will
+    189      ]      "]" doesn't convert right; customize so it will
+     13    space    The last, and (in one case) next to last bytes in the
+                    remarks are ocassionally extraneous carriage returns (13).
+                    This translation converts all of these CR's into spaces.
+                    No other CR's were discovered on the tape.
+
+   Additional general comments pertaining to the PC version of the catalogue
+   may be found in the file YALEREAD.ME
+
+
+                            SECTION 1 - INTRODUCTION
+
+  The fourth edition of The BRIGHT STAR CATALOGUE (Hoffleit 1982) is an updated
+  and improved version of the previous edition published in 1964 by the same
+  author.  In addition to the large number of newly determined fundamental data,
+  such as photoelectric magnitudes, MK spectral types, parallaxed, and radial
+  velocites, the new version contains new data and information not included in
+  the third edition.  Valuable information, such as the identification of IR
+  sources, U-B and R-I colors, radial velocity comments (indication and
+  identification of spectroscopic and occulation binaries), and projected
+  rotational velocities, is included for the first time in the fourth addition,
+  while the equatorial coordinates for equinoxes 1900 and 2000 are recorded to
+  greater precision (0.1s in right ascension, 1" in declination).  The remarks
+  section of the catalogue has been expanded and improved to contain many
+  details concerning variability, spectral characteristics, duplicity, and group
+  membership, and the remarks have been segregated by category to improve
+  information retrieval and readability.  The catalogue in general contains data
+  compiled through 1979; however, some information and variable-star
+  designations found through 1981 are included in the remarks and many variable-
+  star names have subsequently been transferred to the data file (see section
+  4).
+
+  This document describes the machine-readable version of The BRIGHT STAR
+  CATALOGUE, 4th edition, as distrbuted by the Astronomical Data Center.  It is
+  intended to enable users to read and process the data without the common
+  problems and guesswork often associated with such a task.  For further details
+  on the compilation of the data and statistics of the catalogue, the source
+  refernce should be consulted.  This document should be distributed with any
+  machine-readable version of the catalogue.
+
+
+  SOURCE REFERENCE
+
+  Hoffleit, D. (with the collaboration of Jaschek, C.) 1982, The BRIGHT STAR
+  CATALOGUE, 4th revised edition (New Haven:  Yale University Observatory).
+
+
+
+                            SECTION 2 - TAPE CONTENTS
+
+
+  A byte-by-byte description of the contents of the machine-readable BRIGHT STAR
+  CATALOGUE, 4th Edition is given in Table 1, while Tables 3 and 4 describe the
+  files associated with the remarks.  A suggested FORTRAN format specification
+  for reading each datum is given in Table 1 and can be modified depending upon
+  usage; however, caution is advised when substituting format specifications,
+  since some data fields contain character data and others are blank when data
+  are absent.  Particular care is required for color-index data, which can have
+  valid 0.00 values, but whose fields are blank when data are absent. It is
+  safest to read such fields with A (character) format specifications or to
+  buffer entire records in and check for blank fields before proceeding with
+  internal conversion  to binary  numbers.  Alternate format specifications are
+  given in parentheses.
+
+  Table 1. Tape Contents. The BRIGHT STAR CATALOGUE, 4th Edition, Data File
+
+  =============================================================================
+               Suggested
+  Byte(s)  Units  Format          Description
+  _____________________________________________________________________________
+
+  1-  4    ---   I4             BS = HR number.
+
+  5- 14    ---   A10 (10A1)     Name, generally the Bayer and/or
+                                Flamsteed designation taken from the 3rd
+                                edition (Hoffleit 1964). This data field
+                                is divided uniformly, however, so that
+                                certain designations can be processed
+                                individually by computer. An itemized
+                                description of the name field follows:
+
+  5-  7    ---   I3             Flamsteed number if one exists; otherwise
+                                blank.
+
+  8-  9    ---   I2             Coded Bayer designation (01 = alpha, 02 =
+                                beta,..., 24 = omega); otherwise blank.
+
+ 10- 11    ---   I2             Superscript number for bayer designation
+                                Example:  HR 5845 22 tau^7 SER is coded:
+                                        2219 7 SER
+
+                                Note: There are exceptions to the
+                                uniformly coded name field which occur for
+                                blank records in the file. See Table 2
+                                for a list of the records and their Name
+                                field contents.
+
+ 12- 14    ---   A3             Constellation abbreviation.
+
+     15    ---   1X             Blank
+
+
+
+
+
+=============================================================================
+               Suggested
+Byte(s)  Units  Format          Description
+_____________________________________________________________________________
+
+ 16- 23    ---   A8             Durchmusterung (DM) number (BD north of -23 ,
+                                CD from -23 to -52 , CPD south of -52).
+
+     16    ---   A1             Sign of DM number.
+
+ 17- 18    ---   A2 (I2)        DM zone.
+
+ 19- 23    ---   A5  (I5)       DM number.
+
+     24    ---   1X             Blank
+
+ 25- 30    ---   I6             Henty Draper Catalogue number
+
+     31    ---   1X             Blank
+
+     32    ---   A1             Infrared source flag (I if IR source;
+                                otherwise blank).
+
+     33    ---   A1             Reference for IR source when I id present
+                                in byte 32 (blank if from NASA Merged
+                                Infrared Catalogue, Schmitz et al.  1978);
+                                ' if from Engels et al. 1982).  Colon (:)
+                                if uncertain identification.
+
+ 34- 39    ---   A6 (6A1)       Double or multiple stars (except
+                                spectroscopic and eclipsing) :
+                                Number ADS  (Aitken 1934)
+                                W    Worley (1978) update of the IDS
+                                     (Jeffers et al. 1963).  Letters in
+                                     bytes 40-41 following a W indicate which
+                                     component(s) the HR number represents
+                                I    Innes (1927) southern double stars
+                                R    Rossiter (1955)
+                                C    Couteau (1978)
+                                D    Duplicity discovered by occulatation
+                                S    Duplicity discovered by spedkle
+                                     interferomerry
+                                A    Astrometric binary
+
+                                The field is uniform on the tape (see Section
+                                4, remark 9) with the catalogue code in byte
+                                34, ADS numbers in bytes 35-39 and components
+                                in bytes 40-41.  Additional remarks on
+                                duplicity may by found if an asterisk occurs
+                                in the notes column (byte 212).
+
+
+
+
+=============================================================================
+               Suggested
+Byte(s)  Units  Format          Description
+_____________________________________________________________________________
+
+ 40- 41    ---   A2             Multiple-star components for systems for
+                                which HR number represents only certain
+                                components of the system.
+
+     42    ---   1X             Blank
+
+ 43- 51    ---   A9 (9A1)       Variable star designations:  (a) constella-
+                                tion designations from the General Catalogue
+                                of Variable Stars (Kukarkin et al. 1969-70),
+                                the Supplements 1-3 (kukarkin et al. 1971,
+                                1974, 1976), and the 62nd through 66th
+                                Namelists (kukarkin et al.1976; Kholopov
+                                et al. 1978, 1979, 1981); (b) Numbers (alone)
+                                from the Catalogue of Stars Suspected of
+                                Variability Kurkarkin et al. 1951, 1965);
+                                (c) VAR and VAR? for unnamed variables as of
+                                June 1981 and suspected unconfirmed variables
+                                not included in the general catalogues. Can
+                                apply to the HR number and/or a close
+                                companion.
+
+     52    ---   1X             Blank
+
+ 53- 54   hours  I2             Right ascension (alpha) for 1900.
+
+     55    ---   1X             Blank
+
+ 56- 57    min   I2             Alpha
+     58    ---   1X             Blank
+ 59- 62    sec   F4.1           Alpha
+     63    ---   1X             Blank
+
+     64    ---   A1             Sign of declination (delta) for 1900.
+ 65- 66    deg   I2             Delta
+     67    ---   1X             Blank
+ 68- 69    min   I2             Delta
+     70    ---   1X             Blank
+ 71- 72    sec   I2             Delta
+     73    ---   1X             Blank
+
+ 74- 75  hours   I2             Right ascension (alpha) for 2000.
+     76    ---   1X             Blank
+ 77- 78    min   I2             Alpha
+     79    ---   1X             Blank
+ 80- 83    sec   F4.1           Alpha
+
+     84    ---   1X             Blank
+
+
+
+=============================================================================
+               Suggested
+Byte(s)  Units  Format          Description
+_____________________________________________________________________________
+
+     85    ---   A1             Sign of declination (delta) for 2000.
+ 86- 87    deg   I2             Delta
+     88    ---   1X             Blank
+ 89- 90    min   I2             Delta
+     91    ---   1X             Blank
+ 92- 93    sec   I2             Delta
+
+     94    ---   1X             Blank
+
+ 95-100    deg   F6.2           Galactic longitude II.
+
+    101    ---   1X             Blank
+
+102-107    deg   F6.2           Galactic latitude II.
+
+    108    ---   1X             Blank
+
+109-113    mag   F5.2           Visual magnitude (see byte 114). Some
+                                magnitudes of variable stars and double stars
+                                are reported to 0.1 mag only, in which case
+                                byte 113 is blank.
+
+    114    ---   A1             Visual magnitude code: blank = V on UBV
+                                (Johnson) system; R = HR magnitudes reduced
+                                to the UBV system; H = original HR magnitude.
+
+    115    ---   1X             Blank
+
+116-120    mag   F5.2           B - V on Johnson system; otherwise blank.
+
+    121    ---   1X             Blank
+
+122-126    mag   F5.2           U - B on Johnson system; otherwise blank.
+
+    127    ---   1X             Blank
+
+128-132    mag   F5.2           R - I on system indicated by the code in byte
+                                133; otherwise blank.
+
+    133    ---   A1             Code for R - I system; blank -- on Johnson
+                                system; E -- mainly from Eggen, on Kron
+                                system; C -- from Cousins; close to Kron
+                                system (the Johnson and Kron filters have
+                                different effective wavelengths and may not
+                                be used interchangeably).
+
+    134    ---   1X             Blank
+
+
+
+
+=============================================================================
+               Suggested
+Byte(s)  Units  Format          Description
+_____________________________________________________________________________
+
+135-154    ---   20A1 (5A4)     Spectral type. If the complete modern
+                                determination is too long for the data field,
+                                it is given in the remarks file and the last
+                                character in the spectral-type field is an
+                                asterisk (*). Mt. Wilson luminosity classes
+                                are given in lower case letters in bytes
+                                135-136. The "W" in Wolf-Rayet types is in
+                                byte 137, but in general the temperature
+                                class (O, B, A, ... S, C) is in byte 137 and
+                                can be selected using only that byte.
+                                Characters normally appearing as lower case
+                                in standard notation (e.g. p, e, Si, Mn, Hg,
+                                Iab) are coded in lower case on the tape.
+                                Where Greek letters appear in a spectral
+                                type, the coding used in the Name field (see
+                                bytes 8 - 9) is employed, but the number is
+                                surrounded by <>, e.g. delta Del = <04>Del.
+                                 (Greek delta symbol-----^ )
+
+    155    ---   1X             Blank
+
+156-161     "    F6.3           Annual proper motion, nu sub alpha, in right
+                                ascension. Sign always in byte 156.
+
+    162    ---   1X             Blank
+
+163-168     "    F6.3           Annula proper motion, mu sub delta, in
+                                declination. Sign always in byte 163.
+
+    169    ---   A1             "D" if following parallax is dynamical rather
+                                than trigonometric; otherwise blank.
+
+170-174     "    F5.3           Trigonometric parallax unless a "D" is coded
+                                in byte 170 for pi sub trig , and for pi sub
+                                dyn. Blank for no data.
+
+    175    ---   1X             Blank
+
+176-179   km/s   I4             Radial velocity or blank (see codes in
+                                following field).
+
+
+
+=============================================================================
+               Suggested
+Byte(s)  Units  Format          Description
+_____________________________________________________________________________
+
+180-183    ---   A4 (4A1)       Radial-velocity comments: V, V? - variable
+                                or suspected variable radial velocity; SB,
+                                SB1, SB2 - spectroscopic binaries, single
+                                or double lined spectra; O - orbital data
+                                available.
+
+    184    ---   1X             Blank
+
+    185    ---   A1             Projected rotational velocity (v*sin(i))
+                                descriptive character. "<" - less than;
+                                "<=" less than or equal to character
+                                (hexadecimal character code 8C).
+                                **PC VERSION: Since there is no printable
+                                "<="character in the ASCII character set,
+                                the unprintable 8C character has been changed
+                                to a " ^ ". Hopefully the pointed shape of
+                                this character will remind you of the "<="
+                                character. This occurs only in column 185.
+
+186-188   km/s   I3             v*sin(i)
+
+    189    ---   A1             Colon (:) for uncertain v*sin(i).
+
+    190    ---   1X             Blank
+
+191-194    mag   F4.1           Delta m; magnitude difference between two
+                                components of a double, or between the two
+                                brightest components of a multiple system.
+
+    195    ---   1X             Reserved for colon (:) to indicate delta m
+                                uncertainty (none occurs however).
+
+196-201     "    F6.1           Separation of the same two components referred
+                                to in bytes 191-194.
+
+    202    ---   1X             Blank
+
+203-206    ---   4A1 (A4)       Identification of the components represented
+                                in bytes 191-194 and 197-201. An "O" in byte
+                                204 indicates an occultation binary.
+
+207-208    ---   I2 (A2)        Numbers of components assigned to a multiple
+                                system.
+
+209-211    ---   3X             Blank
+
+    212    ---   A1             An asterisk (*) indicates a note in the
+                                remarks file. Otherwise blank.
+
+
+
+
+  There are forteen records in the data file which are blank except for HR
+  number, Name, and sometimes variable-star designations. These records
+  represent objects included in the first edition of the catalogue and omitted
+  in subsequent editions. (The records are retained in order to preserve the
+  numbering of the first catalogue.) They are listed below so that the
+  programmer can see what their fields contain, since they must be considered
+  if one is attempting to decode the Flamsteed and Bayer designations. The
+  names below begin in byte 6.
+
+  Table 2. Tape Contents. The BRIGHT STAR CATALOGUE, 4th Edition, Data File,
+           Blank Records
+  ___________________________________________________________________________
+
+   HR      Name       Variable Designation
+  ___________________________________________________________________________
+
+    92    NOVA 1572        B CAS
+    95    47    TUC
+   182    M 31  AND
+  1057    NOVA 1901       GK PER
+  1841    NOVA 1891        T AUR
+  2472    NOVA 1903       DM GEM
+  2496    NGC  2281
+  3515    M 67
+  3671    NGC  2808
+  6309    NOVA 1848    V 841 OPH
+  6515    NOVA 1604    V 843 OPH
+  7189    NOVA 1899    V1016 SGR
+  7539    NOVA 1670       CK VUL
+  8296    NOVA 1876        Q CYG
+
+  ___________________________________________________________________________
+
+
+
+  The second file of the catalogue contains a description of the remarks file,
+  including the notation and abbreviations employed.
+
+  Table 3. Tape Contents. The BRIGHT STAR CATALOGUE, 4th Edition, Remarks
+           Description File.
+  ____________________________________________________________________________
+
+  Bytes   Description
+  ____________________________________________________________________________
+
+  1-80  Free text in upper and lower case characters.
+  ____________________________________________________________________________
+
+
+
+
+  Table 4. Tape Contents. The BRIGHT STAR CATALOGUE, 4t Edition.
+           Remarks File.
+
+  ____________________________________________________________________________
+          Suggested
+  Byte(s)   Format   Description
+  ___________________________________________________________________________
+  1-  5     I5      BS = HR number.
+
+  6-  7     2X      Blank
+
+  8- 11     A4      Remark category abbreviation [upper case character(s)
+                    starting in byte 8]: N - Star Names; C - Colors;
+                    S - Spectra; VAR - Variability; SB - Spectroscopic
+                    binaries; RV - Radial and /or rotational velocities;
+                    D - Double and multiple stars; DYN - Dynamical parallaxes;
+                    R - Stellar radii or diameters; P - Polarization;
+                    G - Group membership; M - Miscellaneous. The category
+                    abbreviation is always followed by a colon (:).
+
+     12     1X      Blank
+
+ 13-132   30A4      Remarks in free text form.
+ ___________________________________________________________________________
+
+
+  For printing only, the note can, of course, be read with a format
+  specification of 132A1 or 33A4. Note that the remarks are in upper and lower
+  case characters so that an extended chain printer is recommended. If an
+  extended chain printer is available, it may be desirable to decode the Greek
+  letters, subscripts and superscripts, in which case the Remarks Description
+  File (2) should be consulted for decoding information.
+
+
+
+
+                        SECTION 3 - TAPE CHARACTERISTICS
+
+  The information in Table 5 is sufficient for a user to describe the indigenous
+  characteristics of the BRIGHT STAR CATALOGUE, 4t edition, to a computer. Not
+  included is information easily varied from installation to installation,
+  such as block size (physical record length), blocking factor (number of
+  logical records per physical record), total number of blocks, tape density,
+  number of tracks, and internal coding (EBDDIC, ASCII, etc.). These parameters
+  should always be transmitted if secondary copies of the catalogue are
+  supplied to other users or installations. Parameters for the three files
+  are sparated by commas.
+
+  Table 5. Tape Characteristics. The BRIGHT STAR CATALOGUE, 4th Edition.
+  ________________________________________________________________________
+
+  NUMBER OF FILES................................              3
+
+  LOGICAL RECORD LENGTH (BYTES) .................   212, 80,  132
+
+  RECORD FORMAT .................................              FB*
+
+  TOTAL NUMBER OF LOGICAL RECORDS ...............  9110,  56, 7959
+
+  __________________________________________________________________________
+  * Fixed block length (last block may be short)
+
+  **PC VERSION: The above comments on tape characteristics apply to the version
+  of the catalogue as distributed by the Astronomical Data Center. The PC
+  version of the catalogue has been broken into multiple smaller files and
+  stored in so-called archive format to facilitate transmission over the
+  telephone lines. In order to recover printable files from the archived files,
+  program ARCE or ARC (available from most electronic bulletin boards) must be
+  run on each file with the extension ARC. A summary of all files in the PC
+  version is given below. For further information on the PC version see the
+  file YALEREAD.ME.
+
+
+        Table 6- Files present in the PC distribution of the
+                  YALE BRIGHT STAR CATALOGUE, 4th EDITION.
+
+          Name      Bytes        Name       Bytes      Name        Bytes
+        YALE1.ARC  103046     YALEREM1.ARC  43086    YALERDES.ARC   1121
+        YALE2.ARC  102196     YALEREM2.ARC  41443    YALEDOC.ARC   22000+
+        YALE3.ARC  101650     YALEREM3.ARC  29699    YALEREAD.ME    8000+
+        YALE4.ARC  104198     YALEREM4.ARC  37042
+        YALE5.ARC  103909     YALEREM5.ARC  36453
+        YALE6.ARC  112434     YALEREM6.ARC  37067
+        + Approximate length
+
+
+        Table 7 - Files present in the PC version of the YALE BRIGHT
+                  STAR CATALOGUE, 4th EDITION, after de-archiving.
+
+                              Rec
+            Name       Bytes  Len*  Star Numbers  Comments
+           YALE1.TXT  321000  212     1 - 1500     Data
+           YALE2.TXT  321000  212  1501 - 3000      "
+           YALE3.TXT  321000  212  3001 - 4500      "
+           YALE4.TXT  321000  212  4501 - 6000      "
+           YALE5.TXT  321000  212  6001 - 7500      "
+           YALE6.TXT  344540  212  7501 - 9110      "
+        YALEREM1.TXT  200196  132     1 - 1500    Remarks (not all stars
+        YALEREM2.TXT  188940  132  1501 - 3000       "     have a remark;
+        YALEREM3.TXT  148204  132  3001 - 4500       "     many remarks are
+        YALEREM4.TXT  176880  132  4501 - 6000       "     longer than 1
+        YALEREM5.TXT  176746  132  6001 - 7500       "     record)
+        YALEREM6.TXT  175540  132  7501 - 9110       "
+        YALERDES.TXT    4592   80  Not applicable  Remarks description
+         YALEDOC.TXT   56000+ VAR  Not applicable  Overall documentation
+        YALEREAD.ME     8000+ VAR  Not applicable  A brief overview
+
+        * Does not include the CR and LF characters for each line
+        + Approximate length
+
+
+
+                             SECTION 4
+   REMARKS, MODIFICATIONS, ACKNOWLEDGEMENTS, AND REFERENCES
+
+  A magnetic tape of the BRIGHT STAR CATALOGUE, 4th edition data file was
+  received from Dr. E. Dorrit Hoffleit of Yale University Observatory on 10
+  March 1982. An additional magnetic tape containing four files (tape
+  description, remarks file description, remarks file, amd supplementary remarks
+  file) was requested and received on 22 April 1982.  As received, the data were
+  contained on 18 tape files comprising left- and right-hand pages for groups of
+  1000 stars.  The following modifications were made to the data and remarks
+  files.
+
+  1.   The 18 files on the original tape were processed through a program to
+  combine them into a single data file of 9110 logical records.  Redundant HR
+  numbers of the right-hand-page files were removed.
+
+  2.   The character "D", signifying a dynamical parallax, occurred in byte 170
+  (within the parallax data field).  Since this would cause problems for a
+  numerical format specification, these characters were moved to byte 169
+  (orginally not used) and a "+" sign was placed into byte 170 to match the
+  trigonometric values normally in the data field.
+
+  3.   The descriptive character "<=" for projected rotational velocity (byte
+  185), available on printers but not on terminals, was present as a colon (:)
+  in the original records (the < sign occurred in its correct form, however).
+  The colon was changed to hexadecimal character 8c which will print as a "<="
+  sign on extended chain printers.  Installations not having the "<=" character
+  will need to detect the 8c code and convert it to another character if it is
+  to be printed.
+   **PC VERSION: Since there is no printable "<=" character in the ASCII
+  character set, the unprintable 8C character has been changed to a " ^ ".
+  Hopefully, the pointed shape will remind you of the "<=" character.
+  This occurs only in byte 185 so it can be easily detected and changed if
+  desired.
+
+  4.   A full spectral type of 21 characters was present for HR 8667.  Since the
+  allowed data field could not accommodate the type, it was shifted to the left,
+  thereby misaligning the temperature class.  The spectral type was therefore
+  shortened, an asterisk (*) was appended in the normal fashion, and the full
+  type was moved to the remarks file.
+
+  5.   Also, the component separation for HR 1175 (1480") did not fit into the
+  allotted field in the original format, so it was present in bytes 198-201 as a
+  shifted number having no decimal point.  Since byte 196 was never used, the
+  number was rewritten as 1480. in bytes 196-201, which is now the designated
+  field for separation data.
+
+  6.   Since the tape description file for the remarks applied only to the
+  original tape, it has been omitted from the catalogue.
+
+  7.   As received, the remarks records had a problem whenever byte 132 (the
+  last byte of a logical record) contained a non-blank character, in that an
+  indeterminate character had been inserted into byte 1 of the following record
+  and all successive bytes of that record were shifted to the right.  Since this
+  was apparently done by the DEC computer at Yale when the tape was prepared,
+  every occurrence of the indeterminate character was removed and the records
+  shifted to align with the remaining remarks records.
+
+
+
+
+
+
+  8.   The supplementary remarks file in the original tape had been prepared
+  because additions and corrections were found after the remarks file had gone
+  to press.  For brevity and ease of processing, the supplementary remarks were
+  merged into the main remarks file by performing the corrections noted and
+  adding additional remarks to their appropriate location in the main remarks
+  file.
+
+  9.   The double-star field (bytes 35-41) were not uniform in all cases: (a)
+  numbers and letters occupied the same bytes; (b) the letter codes for
+  catalogue sources and components were not always in the same positions; and
+  (c) some numbers were shifted in the data field.  The double-star field was
+  reviewed for all catalogue entries and edited to make the data uniform.  The
+  catalogue code (W, A, S, etc.) was moved to byte 34 (originally blank) so that
+  no number/letter overlap now occurs.
+
+  10.   Following a suggestion by Dr. Hoffleit, variable-star designations which
+  had been added to the supplementary remarks after the data file had been
+  completed were transferred to the variable-star fields of the main catalogue
+  and removed from the remarks.
+
+
+  ACKNOWLEDGEMENTS
+
+  Appreciation is expressed to Dr. E. Dorrit Hoffleit and Mr. A. Partan for
+  preparing and sending the magnetic tapes of the data and remarks file, and to
+  Dr. Hoffleit for communicating additional corrections to the data dile and for
+  reviewing this document.
+
+  REFERENCES
+
+  Couteau, P. 1978, Circ. Inf. No 75 (Meudon:  IAU Commission des
+  Etoiles Doubles)
+
+  Engels, D., Sherwood, W. A., Wamsteker, W. and Schultz, G. V. 1981, Astron.
+  Astrophys. Suppl. 45, 5.
+
+  Hoffleit, D. (with the collaboration of Jaschek, C.) 1982, The BRIGHT STAR
+  CATALOGUE, 4th revised edition (New Haven:  Yale University Observatory).
+
+  Innes, R, T. A. 1927, Southern Double Star Catalogue, -19 to -90,
+  (Johannesburg: Union Observatory).
+
+  Jeffers, H. M.m van den Bos, W. H. and Greeby, F. M, 1963, Index Catalogue of
+  Visual Double Stars , Publ. Lick Obs. 21.
+
+  Kholopv, P. N., Kukarkina, N. P. and Perova, N. B. 1978, 63rd Name-List of
+  Variable Stars, Inf. Bull. Variable Stars, No. 1414.
+
+  Kholopv, P. N., Kukarkina, N. P. and Perova, N. B,. 1979, 64th Name-List of
+  Variable Stars, Inf. Bull. Variable Stars, No. 1581.
+
+
+
+
+
+
+
+  Kholopov, P. N., Samus', N. N., Kukarkina, N. P., Medvedeva, G. I. and Perova,
+  N. B. 1981, 65th Name-List of Variable Stars, Inf. Bull. Variable Stars, No.
+  1921.
+
+  Kholopov, P. N., Samus', N. N., Kukarkina, N. P., Medvedeva, G. I. and Perova,
+  N. B. 1981, 66th Name-List of Variable Stars, Inf. Bull. Variable Stars, No.
+  2042.
+
+  Kukarkin, B. V., Parenago, P. P., Efremov, Yu. N. and Kholopov, P. N. 1951,
+  catalogue of Stars suspected of Variability (Moscow:  Publishing House of the
+  Academy of Sciences of the U.S.S.R.).
+
+  Kukarkin, B. V., Kholopov, P. N., Efremov, Yu. N., Kukarkina, N. P.,
+  Kurochkin, N. E., Medvedeva, G. I., Perova, N. B., Pskovsky, Yu. P.,
+  fedorovich, V. P. and Frolov, M. S. 1971, First Supplement to the Third
+  Edition of the General Catalogue of Variable Stars (Moscow:  Publishing House
+  of the Academy of Sciences of the U.S.S.R.).
+
+  Kubarkin, B. V., Kholopov, P. N., Pskovsky, Yu. P., Efremov, Yu. N.,
+  Kubarkina, N. P., Kurochkin, N. E., Medvedeva, G. I., Perova, N. B.,
+  Fedorovich, V. P. and Frolov, M. S. 1969-70, General Catalogue of Variable
+  Stars, 3rd edition (Moscow: Publishing House of the Academy of Sciences of the
+  U.S.S.R.).
+
+  Rossiter, R. A. 1955, Catalogue of Southern Double Stars, Publ. Obs. Univ.
+  Michigan 9.
+
+  Schmitz, M., Brown, L. W., Mead, J. M. and Nagy, T. A. 1978, Merged Infrared
+  Catalogue, NASA TM-79683.
+
+
+                           SECTION 5 - SAMPLE LISTING
+
+  The sample listings given on the following pages present logical data records
+  from each file just as they are recorded on the tape.  Groups of records from
+  the beginning and end of each file are illustrated.  The beginning of each
+  record and bytes within the record are indicated by the column heading across
+  the top of each page (digits read vertically).  Since files 1and 3 contain
+  more than 115 bytes per record, the remaining bytes (116-212 in file 1, 116-
+  132 in file 3) are printed in a second row.
+
+
+
+                  LISTING OF RECORDS FROM YALE1.TXT
+              Record length: 212 bytes (plus CR and LF)
+
+Column          111111111122222222223333333333444444444455555555556666666666777
+Index  123456789012345678901234567890123456789012345678901234567890123456789012
+
+Record
+    1     1           +44 4550      3       46              0  0  1.1 +44 40 22
+    2     2           - 1 4525      6                      23 59 56.2 - 1  3 30
+    3     3 33    PSC - 6 6357     28 I D        VAR?       0  0 13.0 - 6 16  1
+    4     4 86    PEG +12 5063     87                       0  0 33.8 +12 50 23
+    5     5           +57 2865    123       61              0  1  1.8 +57 52 45
+    6     6           -4914337    142   W                   0  1  8.4 -49 37 51
+    7     7 10    CAS +63 2107    144                       0  1 14.4 +63 38 22
+    8     8           +28 4704    166       69   VAR?       0  1 25.2 +28 28 11
+    9     9           -23    4    203                       0  1 43.0 -23 39 47
+   10    10           -18 6428    256                       0  2 11.8 -17 56 39
+   11    11           - 3    2    315                       0  2 36.7 - 3  6 20
+   12    12           -23   13    319       89   102308     0  2 40.3 -23  3 52
+
+Column                            1111111111111111111111111111111111111111111111
+Index  7777777888888888899999999990000000000111111111122222222223333333333444444
+       3456789012345678901234567890123456789012345678901234567890123456789012345
+Record
+    1    0  5  9.8 +45 13 45 114.44 -16.88  6.70                       A1Vn
+    2    0  5  3.7 - 0 30 12  98.33 -61.14  6.29  +1.10 +1.02         gG9
+    3    0  5 20.1 - 5 42 27  93.75 -65.93  4.61  +1.04 +0.89 +0.54    K1III
+    4    0  5 41.9 +13 23 47 106.19 -47.98  5.51  +0.90                G5III
+    5    0  6 15.9 +58 26 12 117.03 - 3.92  5.96  +0.67 +0.20          G5V
+    6    0  6 19.0 -49  4 31 321.61 -66.38  5.70  +0.52 +0.05          G1IV
+    7    0  6 26.5 +64 11 47 118.06   1.75  5.59  -0.03 -0.19          B9IIIe
+    8    0  6 36.7 +29  1 17 111.26 -32.83  6.13  +0.75 +0.33          K0V
+    9    0  6 50.0 -23  6 27  52.21 -79.14  6.18  +0.38 +0.05          A7V
+   10    0  7 18.1 -17 23 11  74.36 -75.90  6.19  +0.14 +0.10          A6Vn
+   11    0  7 44.0 - 2 32 55  98.02 -63.29  6.43  -0.14 -0.47          B8IIIpSi
+   12    0  7 46.7 -22 30 32  55.56 -79.07  5.94  +0.14 +0.06          A3V
+
+Column 1111111111111111111111111111111111111111111111111111112222222222222
+Index  4444555555555566666666667777777777888888888899999999990000000000111
+       6789012345678901234567890123456789012345678901234567890123456789012
+Record
+    1            -0.014 -0.013       - 18      195   4.2   21.6 AC   3
+    2            +0.042 -0.055       + 14
+    3            -0.012 +0.094 +.014 -  6SB1O < 17   2.5    0.0  O   3   *
+    4            +0.045 +0.005       -  2
+    5            +0.262 +0.036 +.047 - 12            0.8    1.4          *
+    6            +0.565 -0.032 +.050 +  3SB          5.7    5.4          *
+    7            +0.009 +0.005       -  0V     153                       *
+    8            +0.380 -0.177 +.067 -  8            2.6  158.6 AB   4
+    9            +0.099 -0.038       +  3V
+   10            -0.021 +0.040                 195                       *
+   11            +0.024 +0.003       + 13                                *
+   12            +0.051 -0.040       - 13V           5.1    1.9          *
+
+                  LISTING OF RECORDS FROM YALE6.TXT
+              Record length: 212 bytes (plus CR and LF)
+
+Column          111111111122222222223333333333444444444455555555556666666666777
+Index  123456789012345678901234567890123456789012345678901234567890123456789012
+
+Record
+ 1599  9099           +65 1993 225136 I                    23 58 42.4 +66  9 20
+ 1600  9100  9    CAS +61 2586 225180   W                  23 59  4.5 +61 43 51
+ 1601  9101           -17 6868 225197                      23 59 12.4 -17  5  3
+ 1602  9102           -2918950 225200                      23 59 13.2 -29 49 33
+ 1603  9103  3    CET -11 6194 225212 I          102299    23 59 23.0 -11  3 58
+ 1604  9104           +66 1679 225216                      23 59 30.1 +66 36 32
+ 1605  9105           +41 4933 225218 I     30             23 59 28.2 +41 32 10
+ 1606  9106           -73 2346 225233                      23 59 26.8 -73 27 12
+ 1607  9107           +33 4828 225239                      23 59 39.2 +34  6  2
+ 1608  9108           -72 2800 225253                      23 59 37.0 -71 59 36
+ 1609  9109           +25 5068 225276 I     42             23 59 47.1 +26  5 33
+ 1610  9110           +60 2667 225289            V567 CAS  23 59 55.9 +60 45 26
+
+Column                            1111111111111111111111111111111111111111111111
+Index  7777777888888888899999999990000000000111111111122222222223333333333444444
+       3456789012345678901234567890123456789012345678901234567890123456789012345
+Record
+ 1599    0  3 51.8 +66 42 44 118.25   4.27  6.29  +1.67                M4III
+ 1600    0  4 13.5 +62 17 17 117.47 - 0.08  5.88  +0.30 +0.29          A1III
+ 1601    0  4 19.6 -16 31 45  74.70 -74.79  5.78  +1.10 +1.05          K2III
+ 1602    0  4 20.2 -29 16  7  18.53 -79.41  6.40  +0.00 -0.05          A0V
+ 1603    0  4 30.0 -10 30 35  87.07 -70.04  4.94  +1.63 +1.92          K3Ibv
+ 1604    0  4 41.9 +67 10  0 118.41   4.71  5.67  +1.07 +0.93          K1III
+ 1605    0  4 36.6 +42  5 32 113.72 -19.94  6.01R                      B9III
+ 1606    0  4 30.7 -72 53 52 307.68 -43.80  7.31  +0.44 +0.01          F2V
+ 1607    0  4 53.6 +34 39 36 112.17 -27.24  6.12  +0.62 +0.09          G2V
+ 1608    0  4 41.4 -71 26 13 308.18 -45.21  5.59  -0.12 -0.42          B8IV-V
+ 1609    0  4 55.9 +26 38 56 110.22 -35.07  6.25  +1.40 +1.59          K4IIIb
+ 1610    0  5  6.1 +61 18 51 117.40 - 1.06  5.80  -0.09 -0.32          B8pHgMn
+
+Column 1111111111111111111111111111111111111111111111111111112222222222222
+Index  4444555555555566666666667777777777888888888899999999990000000000111
+       6789012345678901234567890123456789012345678901234567890123456789012
+Record
+ 1599            +0.020 -0.002       + 15
+ 1600            -0.005 +0.012       - 18V           4.0  246.0
+ 1601            +0.036 -0.055       - 27
+ 1602            +0.030 +0.019       + 28
+ 1603            -0.009 -0.007 +.016 - 42V    < 17
+ 1604            +0.092 +0.037 +.013 - 27
+ 1605            +0.003 -0.017       -  8SB          3.7    5.4          *
+ 1606            +0.018 -0.051
+ 1607            +0.758 +0.105 +.035 +  4V
+ 1608            +0.037 -0.012       -  3V                               *
+ 1609            +0.110 -0.006       -  5            4.5   17.5
+ 1610            +0.014 +0.011       + 14V      50                       *
+
+        LISTING OF ALL RECORDS FROM YALERDES.TXT (Remarks description)
+                Record Length: 80 bytes (plus CR and LF)
+
+Column   11111111112222222222333333333344444444445555555555666666666677777777778
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+The fields in the REMARKS and SUPPLEMENTARY REMARKS:
+column 1: A blank.
+columns 2-5: A 1-4 digit HR number of the star (right justified) OR 4 blanks.
+columns 6&7: 2 blanks.
+columns 8-11: A 1-3 letter category followed by a colon (left justified) OR 4
+        blanks.
+column 12: A blank.
+columns 13-132: The remark for this star & category.
+
+Cases:
+1) Non-blank Star field:  The start of a remark for a new star.
+2) Blank Star field and non-blank Category field:  The start of a remark for the
+        previous star in a new category.
+3) Blank Star & Category fields:  A continuation of the remark for the previous
+        star and category.
+
+Codes for non-ASCII characters.
+The at-sign (@) is an escape symbol signifying that something that can not be
+represented as ASCII is following.  The general format is:
+        @command[argument]
+The following are found in the remarks:
+        @+[stuff]       Means that stuff is to be superscripted.
+                        ie: a@+[1] means a-superscript-1.
+        @-[stuff]       Means that stuff is to be subscripted.
+                        ie: a@-[1] means a-subscript-1.
+        @Greek(letter)  Means that the letter is a greek letter.
+                        ie: @Greek(a) is an alpha.
+                        See the following table for ASCII-greek correspondence.
+
+                Greek     ASCII
+                letter  equivalent
+
+                Alpha       a
+                Beta        b
+                Gamma       g
+                Delta       d
+                Epsilon     e
+                Zeta        z
+                Eta         h
+                Theta       q
+                Iota        i
+                Kappa       k
+                Lambda      l
+                Mu          m
+                Nu          n
+                Xi          j
+                Omicron     o
+                Pi          p
+
+        LISTING OF ALL RECORDS FROM YALERDES.TXT CONTINUED
+                Record Length: 80 bytes (plus CR and LF)
+
+Column   11111111112222222222333333333344444444445555555555666666666677777777778
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+                Rho         r
+                Sigma       s
+                Tau         t
+                Upsilon     u
+                Phi         f
+                Chi         x
+                Psi         v
+                Omega       w
+
+              LISTING OF RECORDS FROM YALEREM1.TXT (REMARKS)
+              Record length: 132 bytes (plus CR and LF)
+Column          1111111111222222222233333333334444444444555555555566666666667
+Index  1234567890123456789012345678901234567890123456789012345678901234567890
+
+Record
+    1      3  VAR: Amp. 0.05V.
+    2         SB:  72.93d, K 16.4k/s, V@-[0] -6.6k/s, asini 15.8.
+    3         D:   Occultation triple 5.0, 7.5v, 0.00003", third component 7.
+    4      5  D:   6.43 dG4, 7.19 dG8, 106.83y, a = 1.432".  Component B has
+    5         DYN: ".051.
+    6      6  D:   CPM.
+    7         G:   61 Cyg group.
+    8      7  S:   Also classified B8IV-Ve.
+    9     10  S:   Shell star.
+   10     11  N:   4 Cet in Psc.
+   11     12  VAR: ADS 89B, 11 - [14v.
+   12         D:   CPM.
+   13     14  N:   5 Cet in Psc.
+   14         SB:  96.41d, K 23.8k/s, V@-[0] +1.1k/s, asini 31.3.
+   15         D:   Blue companion? Sep. 0.002".
+   16     15  N:   ALPHERATZ; Alpherat; Sirrah; Sirah.  Also formerly called
+   17         S:   Gallium II lines strong. Hg. Manganese star. Spectrum appe
+   18         VAR: @Greek(a) CV 2.02 - 2.06V, 0.9636d.  Some spectral lines v
+   19         SB:  ADS 94A, 96.6960d, K 30.1k/s, V@-[0] -11.6k/s, asini 34.2.
+   20         R:   Radius 5 solar.
+   21         G:   Pleiades group.
+
+
+Column                              111111111111111111111111111111111
+Index  77777777788888888889999999999000000000011111111112222222222333
+       12345678901234567890123456789012345678901234567890123456789012
+Record
+    1
+    2
+    3  5v at 0.002".
+    4  possible invisible companion, period 6.9y.
+    5
+    6
+    7
+    8
+    9
+   10
+   11
+   12
+   13
+   14
+   15
+   16  @Greek(d) Peg.
+   17  ars earlier at shorter wavelengths.
+   18  ary same period, others half period, some non-variable.
+   19
+   20
+   21
+
+              LISTING OF RECORDS FROM YALEREM6.TXT (REMARKS)
+              Record length: 132 bytes (plus CR and LF)
+Column          1111111111222222222233333333334444444444555555555566666666667
+Index  1234567890123456789012345678901234567890123456789012345678901234567890
+
+Record
+ 1293   9087  S:   Sp. shows Mn.
+ 1294   9088  SB:  ADS 17175AB, 26.27y D, K 5.1k/s, V@-[0] -37.9k/s, asini 62
+ 1295         D:   AB 5.84 G3V, 8.88 K6V, 26.386y, a = 0.803".  Components C,
+ 1296         DYN: ".081.
+ 1297         G:   Sco-Cen assoc.
+ 1298   9089  S:   Ultraviolet FeII emission.
+ 1299         VAR: Lb? 4.35 - 4.41V.
+ 1300   9090  C:   Colors correspond to about minimum light.
+ 1301         VAR: M 7.1 - 14.8v, 351.33d.
+ 1302   9091  G:   Member of high latitude, young metal-deficient cluster, @G
+ 1303   9094  D:   ADS 1B, 7.47V, +0.08(B-V), +0.05(U-B), A2Vn, vsini 275k/s,
+ 1304   9097  VAR: I?  Amp. 0.1B.
+ 1305         G:   Cas OB5.
+ 1306   9105  S:   Primary discordant classifications, B9III or A3Vs.
+ 1307         SB:  ADS 30B, 9.5 F5.
+ 1308         D:   Binary.
+ 1309   9108  G:   Sco-Cen assoc.
+ 1310   9110  VAR: Amp. 0.02:V, 6.4322d.
+
+Column                              111111111111111111111111111111111
+Index  77777777788888888889999999999000000000011111111112222222222333
+       12345678901234567890123456789012345678901234567890123456789012
+Record
+ 1293
+ 1294  2.
+ 1295   D probably optical.  C is K7V.
+ 1296
+ 1297
+ 1298
+ 1299
+ 1300
+ 1301
+ 1302  reek(z) Scl; Sco-Cen assoc.
+ 1303   may be shell star.  AB binary. C, 10.8m at 99" optical.
+ 1304
+ 1305
+ 1306
+ 1307
+ 1308
+ 1309
+ 1310
+
+
+
+
+
+
+
+                 THE PC VERSION OF THE YALE BRIGHT STAR CATALOG
+                              Adapted for the PC by
+                        Bruce L. Gotwols and Ray Sterner
+                                  Dec. 29, 1986
+
+                                   BACKGROUND
+
+          Sometime in 1983, a magnetic tape containing the 4th edition of
+        the Yale Bright Star Catalog was obtained from the National Space
+        Science Data Center/World Data Center A for Rockets and
+        Satellites, courtesy of Dr. Wayne H. Warren Jr. The catalog was
+        first installed on a PDP 11/34 computer, and later a VAX 11/750.
+        In 1986, with the advent of an astronomically oriented electronic
+        bulletin board ("Astro") located in the Washington DC area, a
+        highly abbreviated subset of the Yale catalog (YALECAT.ARC)
+        consisting only of right ascension, declination, and visual
+        magnitude, was uploaded by us to Astro. Subsequently there were a
+        number of requests by Astro participants, particularly the SYSOP
+        Kurt Riegel, that the unabridged catalog be uploaded. This short
+        document describes our attempt to satisy these requests.
+
+                               THE PC DISTRIBUTION
+
+        The PC distribution of the Yale Bright Star Catalog, 4th edition
+        is necessarily somewhat different than the original tape. The
+        main reason for the difference is that two of the three files
+        present on the tape were far too long to fit on a single 360 kb
+        floppy disk, and also are impractically long for transfer over
+        the telephone at 1200 baud, where a several hour transmission
+        could be lost by a break in the connection. Following a
+        suggestion by Kurt Riegel, we broke the catalog up into files
+        which were on the order of 100 kb, in archived format. With this
+        arrangement, transmission of the catalog does not become an all
+        or nothing proposition. Also, the use of archive format results
+        in about a factor of three compression in file size, which saves
+        both in transmission time as well as disk space. (The original
+        text files may be easily regenerated at the users end by the
+        program ARCE.COM, available from Astro.) Another small difference
+        is that in order to make the files easily viewable on a PC it was
+        necessary to add a carriage-return/line-feed (CR/LF) at the end
+        of each record. Even with this addition, it is impractical to
+        print the catalog because of the long record length (212 bytes
+        plus CR and LF). One way to at least view the catalog on the PC's
+        screen is to use Vernon Buerg's LIST.COM file screen listing
+        utility (available on Astro under the name TYP.COM). This utility
+        allows the extra wide format to be easily viewed by using the
+        left and right arrow keys. We are very pleased with how LIST
+        handles the PC version of the catalog.
+
+          The main catalog from the distribution tape has been broken up
+        into 6 files named YALEN.TXT where N runs from 1 to 6. The
+        original remarks file has similarly been broken into 6 files
+        named YALEREMN.TXT. Finally, the remarks description file,
+        YALERDES.TXT stands unchanged (except for the addition of CR/LF
+
+
+
+
+
+        at the end of each line). In addition to the above 3 files from
+        the original tape, we have added the file YALEDOC.TXT and this
+        file, YALEREAD.ME. YALEDOC.TXT was typed straight from the
+        original paper documentation which accompanied the distribution
+        tape. Appropriate comments have been added to point out the
+        slight differences present in this distribution for PC's. The
+        archived version of each file ends in ARC instead of TXT. A table
+        of the PC distribution files follows:
+
+        Table 1 - Files present in the PC distribution of the
+               YALE BRIGHT STAR CATALOGUE, 4th EDITION.
+
+          Name      Bytes        Name       Bytes      Name        Bytes
+        YALE1.ARC  103046     YALEREM1.ARC  43086    YALERDES.ARC   1121
+        YALE2.ARC  102196     YALEREM2.ARC  41443    YALEDOC.ARC   22000+
+        YALE3.ARC  101650     YALEREM3.ARC  29699    YALEREAD.ME    8000+
+        YALE4.ARC  104198     YALEREM4.ARC  37042    + Approximate length
+        YALE5.ARC  103909     YALEREM5.ARC  36453
+        YALE6.ARC  112434     YALEREM6.ARC  37067
+
+           Once the above files have been obtained they may be "de-arced"
+        back into their working form. When this is done (use ARC or ARCE
+        available from most electronic bulletin boards), the following
+        files are obtained:
+
+        Table 2 - Files present in the PC version of the YALE BRIGHT STAR
+                  CATALOGUE, 4th EDITION, after de-archiving.
+
+                              Rec
+            Name       Bytes  Len*  Star Numbers  Comments
+           YALE1.TXT  321000  212     1 - 1500     Data
+           YALE2.TXT  321000  212  1501 - 3000      "
+           YALE3.TXT  321000  212  3001 - 4500      "
+           YALE4.TXT  321000  212  4501 - 6000      "
+           YALE5.TXT  321000  212  6001 - 7500      "
+           YALE6.TXT  344540  212  7501 - 9110      "
+        YALEREM1.TXT  200196  132     1 - 1500    Remarks (not all stars
+        YALEREM2.TXT  188940  132  1501 - 3000       "     have a remark;
+        YALEREM3.TXT  148204  132  3001 - 4500       "     many remarks
+        YALEREM4.TXT  176880  132  4501 - 6000       "     take several
+        YALEREM5.TXT  176746  132  6001 - 7500       "     records)
+        YALEREM6.TXT  175540  132  7501 - 9110       "
+        YALERDES.TXT    4592   80  Not applicable  Remarks description
+         YALEDOC.TXT   56000+ VAR  Not applicable  Overall documentation
+        YALEREAD.ME     8000+ VAR  Not applicable  This brief overview
+
+        * Does not include the CR and LF characters for each line
+        + Approximate length
+
+                           WORKING WITH THE CATALOGUE
+
+           You will probably quickly find, as we have, that the catalogue
+        is quite difficult to work with in its current form. This is true
+        on a large virtual memory machine like the VAX, and is even more
+
+
+
+
+
+        true on a PC. This was the reason that we originally uploaded a
+        highly abbreviated version which contained only Right Ascension,
+        Declination, and visual magnitude. We were quite surprised at the
+        ensuing outcry for the whole catalogue. Well you asked for it, so
+        here it is! The challenge now is to make some sensible use out of
+        this large data base, given the limited memory and disk space
+        available on a PC or AT. We are now convinced that the outcry for
+        the whole catalogue was quite justified and the best way for the
+        amateur astronomical community to cooperatively exploit this
+        wonderful data base is for each participant to start from exactly
+        the same point, namely from the unadulterated distribution
+        deposited on Astro. Any serious work such as statistical studies,
+        plotting of sky maps, etc. will probably be preceeded by writing
+        a program to extract into a manageable disk file, only the
+        information actually needed. Participants can then deposit their
+        extraction and analysis software on Astro for others to share.
+        This way we won't see various subsets of the catalogue flying
+        around. (The software will probably be much smaller than most
+        subsets of the catalogue.)
+
+           While on the subject of software we would like to make several
+        suggestions. First, that both source and executable files be made
+        available. The source code, since it can be modified to do a new
+        job, and the executable files, in case a person doesn't have the
+        proper compiler/assembler. Second, that any programs deposited on
+        Astro be accompanied by reasonably complete instructions for
+        their use, and they be "signed" and dated. This allows possible
+        future updates to be distinguished from older versions, and gives
+        proper credit to the author. Third, that any graphic programs
+        make every attempt to be as device independent as possible. We
+        are frustrated by not being able to display most of the
+        astronomically oriented graphics programs because we run Hercules
+        high resolution monochrome graphics cards, and most programs use
+        the old IBM Color Garphics Adapter. In case you haven't heard,
+        even the newer EGA card is on it's way out in favor of a new high
+        performance graphics card. Any software written in a device
+        independent way will survive this constant update madness much
+        better than device specific software. Finally, we would like to
+        reserve the two names given in the following table, for the
+        complete (concatenated) data and remarks files:
+
+        Table 3 - Names for the concatenated data and remarks files of
+               the YALE BRIGHT STAR CATALOGUE, 4th EDITION.
+
+            Name      Files concatenated
+           YALE.TXT   YALE1.TXT through YALE6.TXT
+        YALEREM.TXT   YALEREM1.TXT through YALEREM6.TXT
+
+                                 PROJECT IDEAS
+
+           Probably the first thing to do is write programs which
+        manipulate the catalogue into more convenient form for certain
+        studies. Thus it might be useful to have a concatenation program
+        to put the 6 parts back into one. This can perhaps be done by
+
+
+
+
+
+        DOS, but it would be much nicer to have a program that could work
+        on one input floppy at a time, outputing to a single large file
+        such as YALE.TXT on a hard disk. The program should be user
+        friendly and not blow up if a file is not found where it is
+        expected. Another desirable program would extract specific
+        "fields" (eg. RA, DEC) into a much smaller data file. Ideally
+        this program would operate either on YALE.TXT or the 6 component
+        pieces of YALE.TXT (making it work either way allows users
+        without hard disks to participate).
+
+           Other project ideas include a program to compute galactic
+        latitude and longitude, given RA and DEC (2000). (Why take up
+        precious space when it's so easily calculated?) Similarly, RA and
+        DEC could be calculated for any epoch, given their values for AD
+        2000. A program to plot specified parts of the sky would be
+        useful. On a color monitor the radial velocity could be color
+        encoded. Proper motion and variability could also be encoded and
+        plotted.
+
+           The documentation given in YALEDOC.TXT could certainly be
+        augmented. Short essays on some of the more esoteric fields would
+        certainly be helpful to many observers. For instance, how many
+        people know what the Bayer designation is?  Likewise the
+        Durchmusterung number. The Johnson and Kron photometric systems
+        could use some explanation and references. Finally, if anyone
+        obtains a copy of the original source reference by D. Hoffleit
+        and C. Jaschek, 1982, perhaps we can figure out a way to
+        distribute it to interested parties.
+
+

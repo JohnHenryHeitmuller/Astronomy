@@ -1,0 +1,29 @@
+--------------------Configuration: ACompile - Win32 Debug--------------------
+Begining build with project "D:\Dev\Astro3D\ACompile\ACompile.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /Zp1 /MLd /W3 /Gm /GX /Zi /Od /I "..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ACompile.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x409 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/ACompile.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ACompile.pdb" /debug /machine:I386 /out:"Debug/ACompile.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WINDOWS\TEMP\RSPF0E0.TMP" with contents </nologo /Zp1 /MLd /W3 /Gm /GX /Zi /Od /I "..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ACompile.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\Dev\Astro3D\ACompile\ACompile.cpp"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPF0E0.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSPF0E1.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ACompile.pdb" /debug /machine:I386 /out:"Debug/ACompile.exe" /pdbtype:sept 
+.\Debug\ACompile.obj
+.\Debug\smlists.obj
+.\Debug\smutil.obj>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPF0E1.TMP" 
+Compiling...
+ACompile.cpp
+..\include\smdata.h(194) : error C2504: 'CObject' : base class undefined
+Error executing cl.exe.
+
+
+
+ACompile.exe - 1 error(s), 0 warning(s)

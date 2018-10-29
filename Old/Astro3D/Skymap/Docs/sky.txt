@@ -1,0 +1,763 @@
+FLIGHT DYNAMICS' STAR CATALOG DATABASE
+SKY2000 MASTER CATALOG / SKYMAP SOFTWARE CAPABILITIES
+
+The SKYMAP Star Catalog System consists of a Master Catalog stellar database 
+and a collection of utility software designed to create and maintain the 
+database and to generate derivative mission star catalogs (run catalogs). 
+
+
+THE MASTER CATALOG
+
+The original SKYMAP Master Catalog was generated in the early 1970's. 
+Incremental updates and corrections were made over the following years but the
+first complete revision of the source data occurred with Version 4.0. This 
+revision also served to meet the requirements of the new CCD-based star 
+trackers and to produce a unique, consolidated source of astrometric 
+information which can be used by the astronomical community. In addition, many
+derived quantities were removed and wideband and photometric data in the R 
+(red) and I (infrared) systems were added. Additional upgrades and 
+improvements were made in Version 4.0a as well. The version following Version 
+4.0a is the most recent version and has been named the SKY2000 Master Catalog 
+due to the change in format as well as other extensive modifications. This 
+version is discussed in detail in the following paragraph. 
+
+
+The SKY2000 Master Catalog
+
+The new SKY2000 Master Catalog - Version 1 contains 299,485 records with 463 
+bytes of data (plus 1 byte control character) per entry and has data based in 
+the J2000 coordinate system. This version contains the following upgrades: 
+
+Rehosting of the catalog from a PC-based system to an HP workstation using UNIX 
+Modification of the catalog format to conform to well-known source catalogs 
+Addition of new star identification information 
+Generation of more realistic positional errors 
+Correction and expansion of double- and multiple-star data 
+Incorporation of improved reference magnitudes for stars not having 
+photoelectrically measured values 
+
+
+
+A conference paper on the SKY2000 Master Catalog was written that describes 
+these upgrades in detail.
+
+There are some deficiencies that exist in the SKY2000 Master Catalog that we 
+are aware of. These items will be researched and corrected in future SKY2000 
+Master Catalog releases. 
+
+
+Please send comments, questions, or corrections to David Tracewell. 
+
+
+--------------------------------------------------------------------------------
+
+
+SKY2000 Conference Paper
+Latest report on SKY2000 - Version 1 
+(back to Home )
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+The SKY2000 Version 1 Master Catalog Format Description
+Star catalog numbers(SKYMAP,HD,DM,HR,WDS,and PPM) and Flamsteed names 
+Star positions, proper motions, and parallax 
+Magnitudes and color indices 
+Spectral types 
+Multiple star information 
+Variable star information 
+Red Magnitude Data 
+Formatted Data 
+Detailed Format description 
+
+
+The SKY2000 Version 2 Master Catalog Format Description
+Star catalog numbers(SKYMAP,HD,DM,HR,WDS,and PPM) and Flamsteed names 
+Star positions, proper motions, and parallax 
+Magnitudes and color indices 
+Spectral types 
+Multiple star information 
+Variable star information 
+Red Magnitude Data 
+Formatted Data 
+Detailed Format description 
+
+
+
+--------------------------------------------------------------------------------
+
+
+SKY2000 Master Catalog Deficiencies
+A list of SKY2000 - Version 1 deficiencies 
+(back to Home )
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+The SKY2000 Version 1 Master Catalog is available for download in 2 different 
+formats:
+
+A version compressed using GZIP (24.5 Mb). 
+Netscape Users: Place the cursor here, hold down the right mouse button, and 
+select Save this Link as... to FTP the file to your local disk. 
+
+A self-extracting version compressed using WIN Zip (~23.5 Mb):
+Windows 95/NT users (32 bit) 
+Netscape Users: Place the cursor here, hold down the right mouse button, and 
+select Save this Link as... to FTP the file to your local disk. 
+
+
+The SKYMAP SKY2000 Version 2 Master Catalog 
+
+Version 2 of the SKY2000 Master Catalog was completed in September of 1998 and
+represents a substantial improvement over Version 1. A high proportion of the 
+astrometric data in Version 2 comes from ESA's Hipparcos mission, by way of 
+the Hipparcos Output, Hipparcos Component, and Tycho Catalogues. Astrometric 
+data are also present from USNO's ACT Catalog and the European Tycho Reference
+Catalogue, both of which refine the proper motions in the original Tycho 
+catalog by an order of magnitude. While some objects still retain ACRS and PPM 
+data, the proportion is very small and there are no stars left in the catalog 
+which do not have astrometric quality positions. A large number of 
+photoelectric data on the Johnson system (V, B) has been added from the Tycho 
+Catalogue, such that there are now very few stars in SKY2000 that lack 
+photoelectric data. More than 4000 stars observed by the Ball CT-601 star 
+trackers on the RXTE spacecraft now have observed CCD ST magnitudes in Version
+2. IAU designations based on J2000.0 positions have been added to the catalog, 
+while all previous identifiers (SKY2000, HD, SAO, DM, HR, WDS, PPM, AG, 
+bright- and variable-star designations) have been retained. The IAU-approved 
+identifiers allow new objects to be inserted without disrupting the natural 
+order of the principal catalog identifier.
+
+The SKY2000 Master Catalog, Version 2 is available for download in 2 different
+formats:
+
+A version compressed using GZIP (~32 Mb). 
+Netscape Users: Place the cursor here, hold down the right mouse button, and 
+select Save this Link as... to FTP the file to your local disk. 
+
+A self-extracting version compressed using WIN Zip (~32 Mb):
+Windows 95/NT users (32 bit) 
+Netscape Users: Place the cursor here, hold down the right mouse button, and 
+select Save this Link as... to FTP the file to your local disk. 
+
+SKY2000 Master Catalog Version 2 Deficiencies 
+A list of SKY2000 Version 2 deficiencies. 
+(back to Home ) 
+
+
+MISSION STAR CATALOGS
+
+
+The primary function of any Master Catalog is the generation of star
+catalogs to support attitude determination and analysis for satellites
+equipped with star sensors. Star catalogs are a subset of the Master
+Catalog and have a standard, eight-word Multi-Modular Spacecraft (MMS)
+mission star catalog format.
+
+   * EUVE Star Catalog - unavailable presently: SKYMAP 3.7
+   * UARS Star Catalog - unavailable presently: SKYMAP 3.7
+   * SOHO Star Catalog
+   * XTE Star Catalog
+   * SWAS Star Catalog
+   * LANDSAT-7 Star Catalog
+   * EOS AM-1 Star Catalog
+   * (back to Home page)
+
+---------------------------------------------------------------------------
+
+RUN CATALOG Format Description
+
+A RUN star catalog has eight (8) columns with the following
+characteristics:
+
+  1. SKYMAP Number
+  2. G.C.I. unit vector (x) mean J2000
+  3. G.C.I. unit vector (y) mean J2000
+  4. G.C.I. unit vector (Z) mean J2000
+  5. Instrumental magnitude for CCD
+  6. Proper motion
+  7. Quality Flags (4 bit flags)
+  8. Color Word
+
+(back to Home )
+
+---------------------------------------------------------------------------
+
+EUVE Star Catalog
+
+(back to catalog selection)
+(back to Home page)
+
+---------------------------------------------------------------------------
+
+UARS Star Catalog
+
+(back to catalog selection)
+(back to Home )
+
+---------------------------------------------------------------------------
+
+SOHO Star Catalog
+
+Solar and Heliospheric Observatory (SOHO)
+
+SOHO, one of the International Solar-Terrestrial Physics (ISTP) missions,
+is designed to gather information on coronal dynamics, solar flux, and
+solar oscillations. SOHO is a joint mission between the National
+Aeronautics and Space Administration (NASA) and the European Space Agency
+(ESA). Data gathered from SOHO will be used with data obtained from other
+ISTP missions to understand processes in the Sun-Earth interaction chain.
+SOHO was launched from an expendable launch vehicle.
+
+SOHO will be placed into a halo orbit about the sunward libration point
+(L1) with a planned mission life of 2 years with enough fuel for a 4-year
+extension.
+
+The SOHO spacecraft will maintain a Sun-pointing attitude throughout the
+course of the mission using a fine-pointing Sun sensor and will maintain
+the roll orientation about the Sun-pointing axis by using a gyro during
+maneuvers and a charge-coupled device (CCD) star tracker otherwise. The
+star tracker is nominally mounted with its boresight 90 degrees to the
+spacecraft X-axis, which is nominally parallel to the Sun-pointing line.
+Early in the mission, the X-axis will be aligned with the Sun line. The
+SOHO star tracker is produced by Officine Galileo and incorporates a
+band-pass filter to provide tracker spectral response characteristics
+similar to the visual spectrum.
+
+SOHO SKYMAP Mission Run Catalog
+
+   * The Run Catalog generated has stars as faint as +8.0 instrumental
+     magnitudes.
+   * The star tracker's instrument magnitude is normalized to the visual
+     magnitude of spectral class A0V stars.
+   * The quality of a potential guide star in the SOHO Run Catalog is
+     gauged by the magnitude of the various quality flags within the limits
+     given below:
+        o Variability: largest known variability in amplitude flagged is 10
+          magnitudes;
+        o Color: the largest difference between the V magnitude and the
+          Instrumental magnitude flagged is 2 magnitudes;
+        o Multiplicity: This flag maps a multiple star related to this star
+          in the range of 0.5 and 6 magnitudes difference.
+        o Net position error of primary stars as a result of near neighbor
+          interference between -1 and 1000 arcseconds;
+        o Position measurement errors contained in the SKYMAP Master
+          Catalog between 0 and 150 (arcseconds);
+        o Instrumental magnitude errors written to the SWAS Run Catalog
+          between 0 and 3.25;
+        o Near-neighbor trackability flag was not turned on;
+        o Near-neighbor identifiability flag was not turned on.
+   * The SKYMAP Version 4.0 Master Catalog was used to generate the SOHO
+     Run Catalog.
+
+The SOHO mission star catalog has eight (8) columns with the following
+characteristics:
+
+  1. SKYMAP Number
+  2. G.C.I. unit vector (x) mean J2000
+  3. G.C.I. unit vector (y) mean J2000
+  4. G.C.I. unit vector (Z) mean J2000
+  5. Instrumental magnitude
+  6. Proper motion
+  7. Quality Flags (4 bit flags)
+  8. Color Word
+
+Link to SOHO Star Catalog (5.9 Mbytes)
+
+   * Netscape Users: Place the cursor here, hold down the right mouse
+     button, and select Save this Link as... to FTP the file to your local
+     disk.
+
+(back to catalog selection)
+(back to home page)
+
+---------------------------------------------------------------------------
+
+XTE Star Catalog
+
+The X-ray Timing Explorer (XTE)
+
+The X-ray Timing Explorer (XTE) is designed to gather data about
+X-ray-emitting objects within the Milky Way and beyond. XTE performs timing
+studies of X-ray sources, which vary in the intensity of their emissions,
+and spectral studies, which will reveal emission processes and locations of
+regions emitting X-rays. The spacecraft was launched on a Delta II rocket
+on December 30, 1995 from Cape Canaveral Air Station in Florida.
+
+The XTE mission baseline requires a 580 km low earth orbit with a 23 degree
+inclination. XTE is a three-axis stabilized inertial pointing spacecraft.
+The attitude determination and control hardware of the spacecraft consists
+of one onboard computer (OBC), two three-axis magnetometers (TAM), eight
+coarse Sun sensors (CSSs), two digital Sun sensor (DSS), three two-axis
+inertial reference units (IRUs), two charged-couple device (CCD) star
+trackers, two three-axis magnetic torquer assemblies (MTA), one four-wheel
+reaction wheel assembly (RWA) and one experimental inertial fiber-optic
+gyro (IFOG).
+
+XTE SKYMAP Mission Run Catalog
+
+  1. The Run Catalog generated has stars as faint as +7.0 instrumental
+     magnitudes.
+  2. The star tracker instrumental magnitude is normalized to the visual
+     magnitude of spectral class A0V stars.
+  3. To prevent anomalous star intensity and position due to the images of
+     near neighbors, during the Run Catalog generation, the near neighbors
+     of each star catalog star are considered.
+  4. The quality of a potential guide star in the XTE Run Catalog is gauged
+     by the magnitude of the various quality flags within the limits given
+     below:
+
+     (a) variability: the largest variability mapped in amplitude is 10
+     magnitudes;
+
+     (b) color: the value of the largest mapped difference between the V
+     magnitude and the I magnitude is 3 magnitudes;
+
+     (c) multiplicity: a star is considered to be a multiple star if the
+     magnitude difference between the star and its nearest star is between
+     0.5 and 6 magnitudes; if the nearest star is either greater than or
+     equal to 6 magnitudes fainter or the nearest star is less than 2.0
+     arcseconds away (which is the sensor resolution ), it is not likely
+     that it is a multiple star; if the above conditions are not present
+     the star is not a multiple star or multiple star is treated as a near
+     neighbor;
+
+     (d) Net position error of primary stars as a result of near neighbor
+     interference between 10 and 1000 arcseconds is mapped;
+
+     (e) All position measurement errors contained in the XTE Run Catalog
+     are mapped;
+
+     (f) Instrumental magnitude uncertainties written to the XTE Run
+     Catalog between 0 and 2.5 are mapped;
+
+     (g) Near-neighbor trackability maps the nearest star either brighter
+     than or up to 4 magnitudes fainter for angles to the star between 0
+     and 1.0 degrees;
+
+     (h) Near-neighbor identifiability maps the nearest star within 1
+     magnitude for angles to the star between 0 and 5.0 degrees.
+
+  5. The SKYMAP Version 4.0a Master Catalog is used to generate the XTE Run
+     Catalog. Observed instrumental magnitudes from XTE tracked stars were
+     analyzed and compared to the SKYMAP magnitude predictions, and based
+     on this analysis, a correlation was found between the size of the
+     difference in the magnitudes and the star's spectral class. All the
+     instrumental magnitudes in the XTE Run Catalog were then tweaked based
+     on the correlation found.
+
+The XTE mission star catalog has eight columns with the following
+characteristics:
+
+  1. SKYMAP Number
+  2. G.C.I. unit vector (x) mean J2000
+  3. G.C.I. unit vector (y) mean J2000
+  4. G.C.I. unit vector (z) mean J2000
+  5. Instrumental magnitude for CCD
+  6. Proper Motion
+  7. Quality Flags (4 bit flags)
+  8. Color Word
+
+Link to the XTE Star Catalog ( 3.5 Mbytes)
+
+   * Netscape Users: Place the cursor here, hold down the right mouse
+     button, and select Save this Link as... to FTP the file to your local
+     disk.
+
+(back to catalog selection)
+(back to home page)
+
+---------------------------------------------------------------------------
+
+SWAS Star Catalog
+
+Submillimeter Wave Astronomy Satellite (SWAS)
+
+The Submillimeter Wave Astronomy Satellite (SWAS) is designed to
+investigate molecular clouds in the galactic plane and to study
+extragalactic sources of radiation in the submillimeter range. The main
+science instrument on the spacecraft consists of an off-axis Cassegrain
+telescope, a two-channel receiver, an acoustic optical spectrometer,
+instrument control electronics and a thermal control system. The mission
+has a planned lifetime of 36 months.
+
+The SWAS mission baseline requires a 600 km circular orbit with a 65 degree
+inclination. SWAS is a three-axis stabilized inertial pointing spacecraft.
+The attitude determination and control hardware of the spacecraft consists
+of one onboard computer (OBC), one three-axis magnetometer (TAM), six
+coarse Sun sensors (CSSs), one digital Sun sensor (DSS), three two-axis
+inertial reference units (IRUs), one charged-couple device (CCD) star
+tracker, one three-axis magnetic torquer assembly (MTA) and one four-wheel
+reaction wheel assembly (RWA). Science data will be collected when the
+spacecraft is pointing at specific source and off-source targets as
+specified from the ground. Three different scenarios for science data
+collection are planned. In one scenario the spacecraft will remain at one
+attitude for an extended period of time. In a second scenario, the
+spacecraft will nod between on-source and off-source targets every minute,
+for up to 20 minutes at a time. In the third scenario, the spacecraft will
+map a region of the galactic plane by pointing at a series of preset
+gridpoints 2 arcminutes apart. Science data will be collected during these
+three scenarios.
+
+                      SWAS SKYMAP Mission Run Catalog
+
+  1. The Run Catalog generated has stars as faint as +7.5 instrumental
+     magnitudes.
+
+  2. The star tracker instrumental magnitude is normalized to the visual
+     magnitude of spectral class G0V stars.
+
+  3. To prevent anomalous star intensity and position due to the images of
+     near neighbors, during the Run Catalog generation, the near neighbors
+     of each star catalog star are considered.
+
+  4. The quality of a potential guide star in the SWAS Run Catalog is
+     gauged by the magnitude of the various quality flags within the limits
+     given below:
+
+     (a) variability: the largest variability mapped in amplitude is 10
+     magnitudes;
+
+     (b) color: the value of the largest mapped difference between the V
+     magnitude and the I magnitude is 3 magnitudes;
+
+     (c) multiplicity: a star is considered to be a multiple star if the
+     magnitude difference between the star and its nearest star is between
+     0.5 and 6 magnitudes; if the nearest star is either greater than or
+     equal to 6 magnitudes fainter or the nearest star is less than 2.0
+     arcseconds away (which is the sensor resolution ) it is not likely
+     that it is a multiple star; if the above conditions are not present
+     the star is not a multiple star or multiple star is treated as a near
+     neighbor;
+
+     (d) Net position error of primary stars as a result of near neighbor
+     interference between -1 and 1000 arcseconds is mapped;
+
+     (e) Position measurement errors contained in the SWAS Run Catalog
+     between 0 and 150 (arcseconds) are mapped;
+
+     (f) Instrumental magnitude uncertainties written to the SWAS Run
+     Catalog between 0 and 2.5 are mapped;
+
+     (g) Near-neighbor trackability maps the nearest star either brighter
+     than or up to 4 magnitudes fainter for angles to the star between 0
+     and 1.0 degrees;
+
+     (h) Near-neighbor identifiability maps the nearest star within 1
+     magnitude for angles to the star between 0 and 5.0 degrees.
+
+  5. The SKYMAP Version 4.0a Master Catalog is used to generate the SWAS
+     Run Catalog.
+
+The SWAS mission star catalog has eight (8) columns with the following
+characteristics:
+
+  1. SKYMAP Number
+  2. G.C.I. unit vector (x) mean J2000
+  3. G.C.I. unit vector (y) mean J2000
+  4. G.C.I. unit vector (Z) mean J2000
+  5. Instrumental magnitude for CCD
+  6. Proper motion
+  7. Quality Flags (4 bit flags)
+  8. Color Word
+
+Link to SWAS Star Catalog (3.6 Mbytes)
+
+   * Netscape Users: Place the cursor here, hold down the right mouse
+     button, and select Save this Link as... to FTP the file to your local
+     disk.
+
+(back to catalog selection)
+
+(back to home page)
+
+---------------------------------------------------------------------------
+
+LANDSAT-7 SKYMAP Mission Run Catalog
+
+Landsat-7 Satellite
+
+Landsat-7 is designed to provide remote sensing of the Earth and return
+data that can either be processed into images or used in digital form for
+scientific, military and commercial applications. Its multispectral imaging
+payload consists of the Enhanced Thematic Mapper Plus (ETM+), which is kept
+continuously pointing towards the Earth during each orbit by the attitude
+control subsystem (ACS) employed by the satellite. It will provide data
+continuity with the Landsat-4 and -5 payloads, as well as add a
+panchromatic band and an enhanced resolution of the long wavelength
+infrared band.
+
+The major sensors and actuators on Landsat-7 that provide control of its
+orbit and attitude consist of 1 inertial measurement unit (IMU), 1
+celestial sensor assembly (CSA), 1 Earth sensor assembly (ESA), 2
+three-axis magnetometers (TAMs), 1 coarse Sun sensor (CSS) which includes 2
+array-mounted and 1 body-mounted CSS units, 4 reaction wheel assemblies
+(RWAs), 2 magnetic torquer rods (MTRs), hydrazine jets (orbit adjust and
+momentum management), 1 rotatable solar array (SA), 3 gimbaled X-band
+antennas (GXAs) and 2 S-band Omni antennas.
+
+Landsat-7 spacecraft will be launched on a Delta II Expendable Launch
+Vehicle (ELV) from the west coast of the United States in May 1998. It will
+be injected into a Sun-synchronous near-polar orbit (98.2 degree
+inclination) at a nominal altitude of 705 kilometers with a descending node
+mean local time (MLT) of 10:00 A.M. Its life time is expected to be 5
+years.
+
+For Landsat-7, both a Run Catalog and a Supplemental Catalog were
+generated. The Run Catalog provides data based on mission-specific
+requirements. For example, the Run Catalog contains instrumental magnitudes
+that are calculated using the Landsat-7 sensor sensitivity curve with the
+observed visual or red magnitudes of the star. The Supplemental Catalog is
+generated after the Run Catalog and contains the same set of stars that are
+in the Run Catalog. However, this catalog provides additional generic star
+information that is not contained in the Run Catalog, and that the mission
+needs for analysis purposes. The formats for these catalogs are described
+below.
+
+                    Landsat-7 SKYMAP Mission Run Catalog
+
+  1. The Run Catalog generated has stars as faint as +4.75 instrumental
+     magnitudes.
+
+  2. The star tracker instrumental magnitude is normalized to the visual
+     magnitude of spectral class A0V stars.
+
+  3. To prevent anomalous star intensity and position due to the images of
+     near neighbors, during the Run Catalog generation, the near neighbors
+     of each star catalog star are considered.
+
+  4. The quality of a potential guide star in the Landsat-7 Run Catalog is
+     gauged by the magnitude of the various quality flags within the limits
+     given below:
+
+     (a) variability: the largest variability amplitude bin flag is set to
+     10 magnitudes;
+
+     (b) color: the value of the largest bin giving the difference between
+     the V magnitude and the I magnitude is 3 magnitudes;
+
+     (c) multiplicity: This flag is set so that the star is flagged as a
+     multiple star if the magnitude difference between the star and its
+     nearest star is between 0.5 and 6 magnitudes; if the nearest star is
+     either greater than or equal to 6 magnitudes fainter or the nearest
+     star is less than 4.2 arcseconds away (which is the sensor resolution
+     ) it is not likely that it is a multiple star; if the above conditions
+     are not present the star is not a multiple star or multiple star is
+     treated as a near neighbor;
+
+     (d) Net position error of primary stars as a result of near neighbor
+     interference between -1 and 1000 arcseconds is mapped;
+
+     (e) Position measurement errors contained in the Landsat-7 Run Catalog
+     are flagged for errors with values between 0 and 150 (arcseconds);
+
+     (f) Instrumental magnitude uncertainties written to the Landsat-7 Run
+     Catalog between 0 and 2.5;
+
+     (g) Near-neighbor trackability maps the nearest star either brighter
+     than or up to 4 magnitudes fainter for angles to the star between 0
+     and 1.0 degrees;
+
+     (h) Near-neighbor identifiability maps the nearest star within 1
+     magnitude for angles to the star between 0 and 5.0 degrees.
+
+  5. The SKYMAP Version 4.0a Master Catalog is used to generate the
+     Landsat-7 Run Catalog.
+
+                       Landsat-7 Supplemental Catalog
+
+A description of the Landsat-7 Supplemental Catalog format is given below:
+
+Field 1 (1-8) SKYMAP number of the star.
+Field 2 (10-19) right ascension of the star, in hours, minutes and seconds
+of time.
+Field 3 (21-30) declination of the star, in degrees, minutes and seconds of
+arc.
+Field 4 (32-37) position uncertainty for the star, in arcseconds.
+Field 5 (39-47) proper motion of the star in right ascension, in
+arcseconds/year.
+Field 6 (49-57) proper motion of the star in declination, in
+arcseconds/year.
+Field 7 (59-65) radial velocity of the star, in kilometers/second.
+Field 8 (67-72) trigonometric parallax of the star, in arcseconds.
+Field 9 (74-79) parallax uncertainty of the star, in arcseconds.
+
+Link to LANDSAT-7 Star Catalog (326 Kbytes)
+
+   * Netscape Users: Place the cursor here, hold down the right mouse
+     button, and select Save this Link as... to FTP the file to your local
+     disk.
+
+Link to LANDSAT-7 Star Supplemental Catalog (241 Kbytes)
+
+   * Netscape Users: Place the cursor here, hold down the right mouse
+     button, and select Save this Link as... to FTP the file to your local
+     disk.
+
+(back to catalog selection)
+
+(back to home page)
+
+---------------------------------------------------------------------------
+
+EOS AM-1 Star Catalog
+
+Mission to Planet Earth (MTPE) is the NASA contribution to the USGCRP
+(United States Global Change Research Program) and the Earth Observing
+System (EOS) is the centerpiece of that effort. EOS is a fifteen-year
+program consisting of a series of Earth remote sensing spacecraft to study
+the atmosphere, oceans, cyrosphere, biosphere and solid Earth. Key issues
+to be explored and understood are the interrelationships between these
+components of the Earth system and the flow of energy, water and chemicals
+among them. Each series will have several spacecraft, thereby enabling
+continuous observations over the program's lifetime. When fully implemented
+the EOS constellation will have as many as five spacecraft (one from each
+series) in orbit simultaneously and conducting routine operations.
+
+The first series of spacecraft to launch is the AM series ( AM refers to
+the morning equatorial crossing of 10:30 GMT required to accommodate
+cloud-cover constraints), with the first launch designated as EOS-AM1. The
+EOS AM-1 spacecraft will be launched by an Atlas II AS expendable launch
+vehicle from the Western Test Range (WTR) at Vandenberg Air Force Base
+(VAFB) into a frozen, Sun-synchronous orbit inclined at 98.2 degrees. The
+mean altitude will be 705 km over the Equator, with a descending node mean
+local time (MLT) of 10:30 AM (+/- 15 minutes). Currently, launch is
+scheduled for June 1998, with a required 5-year lifetime. EOS AM-1 will fly
+in a constellation with Landsat-7.
+
+The spacecraft will carry instruments capable of producing high-resolution
+images of land, water, and clouds from the visible through infrared
+spectrum. The EOS AM spacecraft will provide detailed measurements of
+clouds, aerosols and the Earth's radiative energy balance, together with
+measurements of the land surface and its interaction with the atmosphere
+through exchanges of energy, carbon and water. These interactive processes
+present scientific questions of the highest priority to understanding
+global climate change. The instruments will provide a 5-year data set on
+the atmospheric radiative balance and the physical and radiative properties
+of clouds (ASTER, CERES, MISR, MODIS); high resolution observations of
+land, ocean, ice surface and cloud processes (ASTER, MISR, MODIS); vertical
+profiles of important greenhouse gases (MOPITT, MODIS); vegetation
+structure and dynamics (MISR, MODIS, ASTER); and volcanology (ASTER, MISR,
+MODIS). Specific information on the EOS AM1 science instrument complement
+may be obtained from:
+
+http://newsroom.gsfc.nasa.gov/fos/eos-am1/eos-am1.html and from
+http://eospso.gsfc.nasa.gov/
+
+EOS AM-1 is a 3-axis stabilized, Earth-pointing spacecraft. The Attitude
+Determination and Control System (ADACS) consists of an Onboard Computer
+(OBC) and the following sensors and actuators:
+
+   * Earth Sensor Assembly (ESA) (2)
+   * Three-Axis Magnetometer (TAM) (2)
+   * Coarse Sun Sensor (CSS) (2)
+   * Digital Fine Sun Sensor (DSS) (1)
+   * CCD Solid State Star Tracker (SSST) (2)
+   * Inertial Reference Unit (IRU) (2 units of 3-axis gyros)
+   * Magnetic Torquer Assembly (MTA) (1 unit of 3-axes)
+   * Reaction Wheel Assembly (RWA) (1 unit, 4 wheels)
+   * Attitude Control Thrusters (6 Primary, 6 Redundant)
+
+EOS AM1 Mission Star Catalog
+
+A star catalog was produced using SKYMAP Version 4.0a to support the EOS
+AM1 onboard and ground based attitude control/determination systems. The
+Multimission Modular Spacecraft run catalog format is used as shown below:
+
+  1. The Run Catalog generated has stars as faint as +5.7 instrumental
+     magnitudes.
+  2. The star tracker instrumental magnitude is normalized to the visual
+     magnitude of spectral class G2V stars.
+  3. To prevent anomalous star intensity and position due to the images of
+     near neighbors, during the Run Catalog generation, the near neighbors
+     of each star catalog star are considered.
+  4. The quality of a potential guide star in the XTE Run Catalog is gauged
+     by the magnitude of the various quality flags within the limits given
+     below:
+
+     (a) variability: the largest variability mapped in amplitude is 10
+     magnitudes;
+
+     (b) color: the range of differences between the V magnitude and the I
+     magnitude is -10 to + 3 magnitudes;
+
+     (c) multiplicity: a star is considered to be a multiple star if the
+     magnitude difference between the star and its nearest star is between
+     0.25 and 5 magnitudes; if the nearest star is either greater than or
+     equal to 5 magnitudes fainter or the nearest star is less than 5.0
+     arcseconds away (which is the sensor resolution ), it is not likely
+     that it is a multiple star; if the above conditions are not present
+     the star is not a multiple star or multiple star is treated as a near
+     neighbor;
+
+     (d) Net position error of primary stars as a result of near neighbor
+     interference between 0 and 1000 arcseconds is mapped;
+
+     (e) All position measurement errors contained in the EOS AM1 Run
+     Catalog are mapped;
+
+     (f) Instrumental magnitude uncertainties written to the EOS AM1 Run
+     Catalog between 0 and 2.5 are mapped with those between 2.5 and 999.0
+     contained in a single bin;
+
+     (g) Near-neighbor trackability maps the nearest star either brighter
+     than or up to 5 magnitudes fainter for angles to the star between 0
+     and 1.0 degrees;
+
+     (h) Near-neighbor identifiability maps the nearest star within 0.75
+     magnitude for angles to the star between between 0 and 5.0 degrees.
+
+  5. The SKYMAP Version 4.0a Master Catalog is used to generate the EOS AM1
+     Run Catalog.
+
+The EOS AM1 mission star catalog has eight columns with the following
+characteristics:
+
+  1. SKYMAP Number
+  2. G.C.I. unit vector (x) mean J2000
+  3. G.C.I. unit vector (y) mean J2000
+  4. G.C.I. unit vector (z) mean J2000
+  5. Instrumental magnitude for CCD
+  6. Proper Motion
+  7. Quality Flags (4 bit flags)
+  8. Color Word
+
+Significant post processing was done on the Run Catalog by FDD and
+McDonnel-Douglas personnel to reduce the catalog to ~700 of the best guide
+stars with equal distribution. The final report by P. Kudva (in Microsoft
+Word format) is available here.
+
+Link to the EOS AM1 Star Catalog (~ 75 Kbytes)
+
+   * Netscape Users: Place the cursor here, hold down the right mouse
+     button, and select Save this Link as... to FTP the file to your local
+     disk.
+
+(back to catalog selection)
+
+(back to home page)
+
+---------------------------------------------------------------------------
+
+Star Trackers
+
+The "first generation" star trackers, e.g., the NASA-Standard Fixed-Head
+Star Tracker (FHST) using analog photomultiplier technology, were designed
+to provide peak sensor response near the visual portion of the stellar
+spectrum. Therefore, measured "visual" stellar magnitudes (Mv), the most
+commonly measured stellar spectral band, were sufficient to predict
+instrumental magnitudes for the FHST's. However, with the advent of
+charge-coupled device (CCD)-based star sensors, which characteristically
+have peak sensitivities biased toward the "red/infrared" portion of the
+stellar spectra, additional spectral data were necessary to accurately
+predict instrumental magnitudes.
+
+[Image]  Provide us with your comments!

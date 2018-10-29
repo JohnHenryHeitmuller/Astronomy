@@ -1,0 +1,23 @@
+M#  NGC# Con T ra      dec    b   r
+-----------------------------------
+M# = Messier Catalog Number
+NGC# = NGC (New General Catalog) Number
+Con = Constellation Abbreviation
+T = Type {1= Open Cluster
+          2= Globular Cluster
+          3= Planetary Nebula
+          4= Diffuse Nebula
+	  5= Spiral Galaxy
+          6= Elliptical Galaxy
+	  7= Irregular Galaxy
+          8= Binary Star System}
+ra = Right Ascension in hours minutes
+dec = Declination in degrees minutes
+b = visual magnitude
+r = distance in thousands of light-years
+------------------------------------
+
+During the years from 1730 to 1817 Charles Messier complied a list of 
+approximately 100 diffuse objects that could always be seen by the naked 
+eye.  The Messier Catalog contains a majority of the most beautiful 
+objects in the sky including nebulae, star clusters, and galaxies.

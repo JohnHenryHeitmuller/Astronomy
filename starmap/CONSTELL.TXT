@@ -1,0 +1,89 @@
+"AND","Andromeda","Princess of Ethiopia",1,40
+"ANT","Antlia","Air Pump",10,-35
+"APS","Apus","Bird of Paradise",16,-75
+"AQL","Aquila","Eagle",20,5
+"AQR","Aquarius","Water Bearer",23,-15
+"ARA","Ara","Altar",17,-55
+"ARI","Aries","Ram",3,20
+"AUR","Auriga","Charioteer",6,40
+"BOO","Bootes","Bear Driver",15,30
+"CAE","Caelum","Sculptor's Chisel",5,-40
+"CAM","Camelopardalis","Giraffe",6,-70
+"CAP","Capricornus","Sea Goat",21,-20
+"CAR","Carina","Keel of Argo Navis",9,-60
+"CAS","Cassiopeia","Queen of Ethiopia",1,60
+"CEN","Centaurus","Centaur",13,-50
+"CEP","Cepheus","King of Ethiopia",22,70
+"CET","Cetus","Sea Monster",2,-10
+"CHA","Chamaeleon","Chameleon",11,-80
+"CIR","Circinus","Compasses",15,-60
+"CMA","Canis Major","Greater Dog",7,-20
+"CMI","Canis Minor","Lesser Dog",8,5
+"CNC","Cancer","Crab",9,20
+"COL","Columba","Dove of Noah",6,-35
+"COM","Coma Berenices","Berenice's Hair",13,20
+"CRA","Corona Australis","Southern Crown",19,-40
+"CRB","Corona Borealis","Northern Crown",16,30
+"CRT","Crater","Cup",11,-15
+"CRU","Crux","Southern Cross",12,-60
+"CRV","Corvus","Crow/Raven",12,-20
+"CVN","Canes Venatici","Hunting Dogs",13,40
+"CYG","Cygnus","Swan",21,40
+"DEL","Delphinus","Dolphin",21,10
+"DOR","Dorado","Swordfish",5,-65
+"DRA","Draco","Dragon",17,65
+"EQU","Equuleus","Foal",21,10
+"ERI","Eridanus","River",3,-20
+"FOR","Fornax","Laboratory Furnace",3,-30
+"GEM","Gemini","Twins",7,20
+"GRU","Grus","Crane",22,-45
+"HER","Hercules","Hercules",17,30
+"HOR","Horologium","Clock",3,-60
+"HYA","Hydra","Water Serpent",10,-20
+"HYI","Hydrus","Water Snake",2,-75
+"IND","Indus","American Indian",21,-55
+"LAC","Lacerta","Lizard",22,45
+"LEO","Leo","Lion",11,15
+"LEP","Lepus","Hare",6,-20
+"LIB","Libra","Beam Balance",15,-15
+"LMI","Leo Minor","Lion Cub",10,35
+"LUP","Lupus","Wolf",15,-45
+"LYN","Lynx","Lynx",8,45
+"LYR","Lyra","Lyre",19,40
+"MEN","Mensa","Table Mountain",5,-80
+"MIC","Microscopium","Microscope",21,-35
+"MON","Monoceros","Unicorn",7,-5
+"MUS","Musca","Fly",12,-70
+"NOR","Norma","Carpenter's Square",15,-50
+"OCT","Octans","Octant",22,-85
+"OPH","Ophiuchus","Serpent Holder",17,0
+"ORI","Orion","Great Hunter",5,5
+"PAV","Pavo","Peacock",20,-65
+"PEG","Pegasus","Winged Horse",22,20
+"PER","Perseus","Hero",3,45
+"PHE","Phoenix","Phoenix",1,-50
+"PIC","Pictor","Painter's Easel",6,-55
+"PSA","Pisces Austrinus","Southern Fish",22,-30
+"PSC","Pisces","Fishes",1,15
+"PUP","Puppis","Stern of Argo Navis",8,-40
+"PYX","Pyxis","Compass Box of Argo",9,-30
+"RET","Reticulum","Net",4,-60
+"SCL","Sculptor","Sculptor's Workshop",0,-30
+"SCO","Scorpius","Scorpion",17,-40
+"SCT","Scutum","Shield of John Sobieski",19,-10
+"SER","Serpens","Serpent",17,0
+"SEX","Sextans","Sextant",10,0
+"SGE","Sagitta","Arrow",10,10
+"SGR","Sagittarius","Archer",19,-25
+"TAU","Taurus","Bull",4,15
+"TEL","Telescopium","Telescope",19,-50
+"TRA","Triangulum Australe","Southern Triangle",16,-65
+"TRI","Triangulum","Triangle",2,30
+"TUC","Tucana","Toucan",0,-65
+"UMA","Ursa Major","Greater Bear",11,50
+"UMI","Ursa Minor","Lesser Bear",15,70
+"VEL","Vela","Sail of Argo Navis",9,-50
+"VIR","Virgo","Maiden",13,0
+"VOL","Volans","Flying Fish",8,-70
+"VUL","Vulpecula","Fox",20,25
+

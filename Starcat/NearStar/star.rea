@@ -1,0 +1,29 @@
+
+Nearby Stars Listing: star.list
+
+Each line has 7 fields :
+
+	- x distance in light years from Sun
+	- y distance in light years from Sun
+	- z distance in light years from Sun
+	- number of stars in the system (i.e 2 means it is a binary)
+	- the spectral type. There are eight classes given, with 1 being O,
+	  7 M, and 8 a catch all.
+	- the luminosity class. 1 is Ia, 2 is Ib, 3 is II, and so. (8 classes)
+	- the name. Some of these are not real, as the source was apparently
+	  a game, which used Gleise's catalogue.
+
+This data file was prepared in 1988 by a student who was curious about the
+possibility of structure within 50 or so light years. Therefore, I can give
+no assurance that the data is correct. He used a FORTRAN program to do the
+sorting, with free format reads ( he didn't bother with the names! ), which
+might help explain the file's nature. Therefore, you'll need to either write
+your own program (and perhaps push the data into a graphics package like
+Telagraf, or use graphics routines like Pgplot), or push the data into a
+spreadsheet. MacSpin might be a good move for those interested in 3D
+representations.....
+
+There are some 748 stars. Note that some double stars are listed twice,
+such as Sirius. In any such cases, the companion stars follow right after
+the primary. You may like to edit these out, or simply check that (x,y,z)
+are different in each subsequent line - which isn't too hard! :-)

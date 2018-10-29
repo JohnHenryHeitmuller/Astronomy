@@ -1,0 +1,231 @@
+/*	YALE_BSC.H
+
+	By:  JRD	91/01/01	ver 1.0
+
+*/
+
+#define	ENT_SIZE	212
+
+/* Yale Bright Star Catalog Record format */
+typedef struct BSC_ENTRY {
+	char bs_num[4];		/* 1-  4    ---   I4             BS = HR number. */
+	/* 5- 14    ---   A10 (10A1)     Name (subdivided) */
+	char flamsteed[3];	/* 5-  7    ---   I3             Flamsteed number */
+	char bayer[2];		/* 8-  9    ---   I2		 Coded Bayer Designation */
+	char bayer_sup[2];	/* 10- 11   ---   I2             Sup number for bayer */
+	char abbrev[3]; 	/* 12- 14   ---   A3             Constellation abbrev */
+	char unused1;		/* 15       ---   1X             Blank */
+	/* 16- 23    ---   A8             Durchmusterung (DM) number */
+	char dm_sign[1];	/* 16       ---   A1             Sign of DM number. */
+        char dm_zone[2];	/* 17- 18   ---   A2 (I2)        DM zone. */
+	char dm_num[5];		/* 19- 23   ---   A5  (I5)       DM number. */
+	char unused2;		/* 24       ---   1X             Blank */
+	char hd_num[6];		/* 25- 30   ---   I6             Henty Draper Cat num */
+	char unused3;		/* 31       ---   1X             Blank */
+	char ir_flag[1];	/* 32       ---   A1             IR flag (I if IR)*/
+	char ir_ref[1];		/* 33       ---   A1             Reference for IR src */
+	char multi_star[6];	/* 34- 39   ---   A6 (6A1)       Double or multi star */
+	char multi_comp[2];	/* 40- 41   ---   A2             Multi-star components */
+	char unused4;		/* 42       ---   1X             Blank */
+	char var_desig[9];	/* 43- 51   ---   A9 (9A1)       Variable star desig */
+	char unused5;		/* 52       ---   1X             Blank */
+	char ra_hour_1900[2];	/* 53- 54   ---   I2 (hours)     RA (alpha) for 1900 */
+	char unused6;		/* 55       ---   1X             Blank */
+	char ra_min_1900[2];	/* 56- 57   ---   I2 (min)       Alpha */
+	char unused7;		/* 58       ---   1X             Blank */
+	char ra_sec_1900[4];	/* 59- 62   ---   F4.1 (sec)     Alpha */
+	char unused8;		/* 63       ---   1X             Blank */
+	char dec_sign_1900[1];	/* 64       ---   A1             DEC sign (delta) 1900 */
+	char dec_deg_1900[2];	/* 65- 66   ---   I2 (deg)       Delta */
+	char unused9;		/* 67       ---   1X             Blank */
+	char dec_min_1900[2];	/* 68- 69   ---   I2 (min)       Delta */
+	char unused10;		/* 70       ---   1X             Blank */
+	char dec_sec_1900[2];	/* 71- 72   ---   I2 (sec)       Delta */
+	char unused11;		/* 73       ---   1X             Blank */
+	char ra_hour_2000[2];	/* 74- 75   ---   I2 (hours)     RA (alpha) for 2000 */
+	char unused12;		/* 76       ---   1X             Blank */
+	char ra_min_2000[2];	/* 77- 78   ---   I2 (min)       Alpha */
+	char unused13;		/* 79       ---   1X             Blank */
+	char ra_sec_2000[4];	/* 80- 83   ---   F4.1 (sec)     Alpha */
+	char unused14;		/* 84       ---   1X             Blank */
+	char dec_sign_2000[1];	/* 85       ---   A1             DEC sign (delta) 2000 */
+	char dec_deg_2000[2];	/* 86- 87   ---   I2 (deg)       Delta */
+	char unused15;		/* 88       ---   1X             Blank */
+	char dec_min_2000[2];	/* 89- 90   ---   I2 (min)       Delta */
+	char unused16;		/* 91       ---   1X             Blank */
+	char dec_sec_2000[2];	/* 92- 93   ---   I2 (sec)       Delta */
+	char unused17;		/* 94       ---   1X             Blank */
+	char longitude[6];	/* 95-100   ---   F6.2 (deg)     Galactic longitude II */
+	char unused18;		/* 101      ---   1X             Blank */
+	char latitude[6];	/* 102-107  ---   F6.2 (lat)     Galactic latitude II */
+	char unused19;		/* 108      ---   1X             Blank */
+	char magnitude[5];	/* 109-113  ---   F5.2 (mag)     Visual magnitude */
+	char mag_code[1];	/* 114      ---   A1             Visual magnitude code */
+	char unused20;		/* 115      ---   1X             Blank */
+	char b_v_mag[5];	/* 116-120  ---   F5.2 (mag)     B - V on Johnson */
+	char unused21;		/* 121      ---   1X             Blank */
+	char u_b_mag[5];	/* 122-126  ---   F5.2 (mag)     U - B on Johnson */
+	char unused22;		/* 127      ---   1X             Blank */
+	char r_i_mag[5];	/* 128-132  ---   F5.2 (mag)     R - I */
+	char r_i_system[1];	/* 133      ---   A1             Code for R - I system */
+	char unused23;		/* 134      ---   1X             Blank */
+	char spec_type[20];	/* 135-154  ---   20A1 (5A4)     Spectral type */
+	char unused24;		/* 155      ---   1X             Blank */
+	char nu_sub_alpha[6];	/* 156-161  ---   F6.3           Annual proper motion */
+	char unused25;		/* 162      ---   1X             Blank */
+	char mu_sub_delta[6];	/* 163-168  ---   F6.3           Annula proper motion */
+	char parallax_type[1];	/* 169      ---   A1             parallax type */
+	char parallax[5];	/* 170-174  ---   F5.3           parallax */
+	char unused26;		/* 175      ---   1X             Blank */
+	char rad_vel[4];	/* 176-179  ---   I4 (km/s)      Radial velocity */
+	char rad_vel_com[4];	/* 180-183  ---   A4 (4A1)       Radial-velocity comts */
+	char unused27;		/* 184      ---   1X             Blank */
+	char rot_vel[1];	/* 185      ---   A1             Proj rot velocity */
+	char v_sin_i[3];	/* 186-188  ---   I3 (km/s)      v*sin(i) */
+	char v_sin_i_unc[1];	/* 189      ---   A1             (:) for uncertain */
+	char unused28;		/* 190      ---   1X             Blank */
+	char delta_mag[4];	/* 191-194  ---   F4.1 (mag)     magnitude diff */
+	char reserved1;		/* 195      ---   1X             Reserved for (:) */
+	char separation[6];	/* 196-201  ---   F6.1           Separation of comp */
+	char unused29;		/* 202      ---   1X             Blank */
+	char comp_id[4];	/* 203-206  ---   4A1 (A4)       Id of the components */
+	char comp_num[2];	/* 207-208  ---   I2 (A2)        Numof components */
+	char unused30[3];	/* 209-211  ---   3X             Blank */
+	char remarks[1];	/* 212      ---   A1             (*) indicates a remark */
+	char unused31[8];	/* 213-220  ---   8X             Blank Padding */
+} bsc_entry;
+
+/* Field format datatype */
+struct FIELD_FORMAT {
+	char field_name[33];	/* Name of field */
+	int start;		/* Starting position */
+	int size;		/* Size of field (bytes) */
+	char units[8];		/* The units of the field */
+	char format[8];		/* data format */ 
+};
+
+#define	ENT_SIZE	212
+#define	NUM_FIELDS	56
+
+/* Field ID Numbers */
+#define BS_NUM		0
+#define FLAMSTEED	1
+#define BAYER		2
+#define BAYER_SUB	3
+#define ABBREV		4
+#define DM_SIGN		5
+#define DM_ZONE		6
+#define DM_NUM		7
+#define HD_NUM		8
+#define IR_FLAG		9
+#define IR_REF		10
+#define MULTI_STAR	11
+#define MULTI_COMP	12
+#define VAR_DESIG	13
+#define RA_HOUR_1900	14
+#define RA_MIN_1900	15
+#define RA_SEC_1900	16
+#define DEC_SIGN_1900	17
+#define DEC_DEG_1900	18
+#define DEC_MIN_1900	19
+#define DEC_SEC_1900	20
+#define RA_HOUR_2000	21
+#define RA_MIN_2000	22
+#define RA_SEC_2000	23
+#define DEC_SIGN_2000	24
+#define DEC_DEG_2000	25
+#define DEC_MIN_2000	26
+#define DEC_SEC_2000	27
+#define LONGITUDE	28
+#define LATITUDE	29
+#define MAGNITUDE	30
+#define MAG_CODE	31
+#define B_V_MAG		32
+#define U_B_MAG		33
+#define R_I_MAG		34
+#define R_I_SYSTEM	35
+#define SPEC_TYPE	36
+#define NU_SUB_ALPHA	37
+#define MU_SUB_DELTA	38
+#define PARALLAX_TYPE	39	
+#define PARALLAX	40
+#define RAD_VEL		41
+#define RAD_VEL_COM	42
+#define ROT_VEL		43
+#define V_SIN_I		44
+#define V_SIN_I_UNC	45
+#define DELTA_MAG	46
+#define SEPARATION	47
+#define COMP_ID		48
+#define COMP_NUM	49
+#define REMARKS		50
+/* Special ID Codes */
+#define BSC_NAME	51
+#define	BSC_DM		52
+#define BSC_RA_1900	53
+#define BSC_DEC_1900	54
+#define	BSC_RA_2000	55
+#define BSC_DEC_2000	56
+
+/* Global variables */
+struct FIELD_FORMAT data_format[] =  {
+/*	 0000000000111111111122222222223333333333444444444455555555556 */
+/*       0123456789012345678901234567890123456789012345678901234567890 */
+	{"Bright Star Number"		,1	,4	,""	,"I4"},
+	{"Flamsteed Number"		,5	,3	,""	,"I3"},
+	{"Bayer Designation"		,8	,2	,""	,"I2"},
+	{"Bayer Supersposition"		,10	,2	,""	,"I2"},
+	{"Constellation Abbreviation"	,12	,3	,""	,"A3"},
+	{"Durchmusterung Sign"		,16	,1	,""	,"A1"},
+	{"Durchmusterung Zone"		,17	,2	,""	,"I2"},
+	{"Durchmusterung Number"	,19	,5	,""	,"I5"},
+	{"Henty Draper Catalog Number"	,25	,6	,""	,"I6"},
+	{"Infrared Source"		,32	,1	,""	,"A1"},
+	{"Infrared Source Reference"	,33	,1	,""	,"A1"},
+	{"Multiple Star Reference"	,34	,6	,""	,"A6"},
+	{"Multiple Star Components"	,40	,2	,""	,"A2"},
+	{"Variable Star Designation"	,43	,9	,""	,"A9"},
+	{"Right Acension Epoch 1900"	,53	,2	,"h"	,"I2"},
+	{"Right Acension Epoch 1900"	,56	,2	,"m"	,"I2"},
+	{"Right Acension Epoch 1900"	,59	,4	,"s"	,"F4.1"},
+	{"Declination Epoch 1900"	,64	,1	,""	,"A1"},
+	{"Declination Epoch 1900"	,65	,2	,"deg"	,"I2"},
+	{"Declination Epoch 1900"	,68	,2	,"min"	,"I2"},
+	{"Declination Epoch 1900"	,71	,2	,"sec"	,"I2"},
+	{"Right Acension Epoch 2000"	,74	,2	,"h"	,"I2"},
+	{"Right Acension Epoch 2000"	,77	,2	,"m"	,"I2"},
+	{"Right Acension Epoch 2000"	,80	,4	,"s"	,"F4.1"},
+	{"Declination Epoch 2000"	,85	,1	,""	,"A1"},
+	{"Declination Epoch 2000"	,86	,2	,"deg"	,"I2"},
+	{"Declination Epoch 2000"	,89	,2	,"min"	,"I2"},
+	{"Declination Epoch 2000"	,92	,2	,"sec"	,"I2"},
+	{"Galactic Longitude II"	,95	,6	,"deg"	,"F6.2"},
+	{"Galactic Latitude II"		,102	,6	,"deg"	,"F6.2"},
+	{"Visual Magnitude"		,109	,5	,"mag"	,"F5.2"},
+	{"Visual Magnitude Code"	,114	,1	,""	,"A1"},
+	{"B - V on Johnson System"	,116	,5	,"mag"	,"F5.2"},
+	{"U - B on Johnson System"	,122	,5	,"mag"	,"F5.2"},
+	{"R - I"			,128	,5	,"mag"	,"F5.2"},
+	{"R - I System"			,133	,1	,""	,"A1"},
+	{"Spectral Type"		,135	,20	,""	,"A20"},
+	{"Proper Motion (nu_sub_alpha)"	,156	,6	,"year"	,"F6.3"},
+	{"Proper Motion (mu_sub_delta)"	,163	,6	,"year"	,"F6.3"},
+	{"Parallax Type"		,169	,1	,""	,"A1"},
+	{"Parallax"			,170	,5	,""	,"F5.3"},
+	{"Radial Velocity"		,176	,4	,"km/s"	,"I4"},
+	{"Radial Velocity Comments"	,180	,4	,""	,"A4"},
+	{"Projected Rotational Velocity",185	,1	,""	,"A1"},
+	{"v*sin(i)"			,186	,3	,"km/s"	,"I3"},
+	{"v*sin(i) uncertainty"		,189	,1	,""	,"A1"},
+	{"Magnitude Difference"		,191	,4	,"mag"	,"F4.1"},
+	{"Component Separation"		,196	,6	,""	,"F6.1"},
+	{"Component Identification"	,203	,4	,""	,"A4"},
+	{"Number of Components"		,207	,2	,""	,"I2"},
+	{"Remarks"			,212	,1	,""	,"A1"},
+	{"Name"				,5	,10	,""	,"A10"},
+	{"Durchmusterung Designation"	,16	,8	,""	,"A8"},
+	{"Right Acension (1900)"	,53	,10	,""	,"A10"},
+	{"Declination (1900)"		,64	,10	,""	,"A10"},
+	{"Right Acension (2000)"	,74	,10	,""	,"A10"},
+	{"Declination (2000)"		,85	,10	,""	,"A10"}
+};
